@@ -1,0 +1,398 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  padding: 14px 0;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eeeeee;
+  max-width: 900px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.navbar .container {
+  max-width: 1100px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #142b55;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.navbar-brand img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.navbar-brand span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0.6;
+}
+
+.navbar-brand strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.navbar-brand small {
+  display: block;
+  color: #42b8b0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin-top: -4px;
+}
+/* =========================
+   MENU
+========================= */
+
+.navbar-nav {
+  gap: 2px;
+}
+
+.navbar .nav-link {
+  color: #142b55;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 8px !important;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #2bb5ae;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: 8px !important;
+  box-shadow: 0 8px 25px rgba(20, 43, 85, 0.12);
+}
+
+.dropdown-item {
+  color: #142b55;
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #142b55;
+  background-color: #e9f8f6;
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.nav-item.ms-lg-3 {
+  margin-left: 10px !important;
+}
+
+.nav-item.ms-lg-3 .nav-link {
+  border: 1px solid #42b8b0;
+  border-radius: 25px;
+  padding: 6px 12px !important;
+}
+
+/* =========================
+   HERO TITLE (text)
+========================= */
+
+.hero h1 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+}
+
+.info {
+  color: #022252;
+}
+
+.help {
+  color: #fd8eb4;
+}
+
+.inclusion {
+  color: #2dada8;
+}
+
+/* =========================
+   HERO TITLE (sparkle e coração)
+========================= */
+
+.title-line {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.title-line img {
+  object-fit: contain;
+}
+
+.sparkle img {
+  width: 100px;
+  height: 100px;
+  margin-left: -28px;
+  margin-top: -12px;
+}
+
+.heart img {
+  width: 65px;
+  height: 65px;
+}
+
+.melting {
+  display: block;
+  width: 95px;
+  position: relative;
+  top: 40px; /* desce a imagem 40px, sem empurrar o h1 para baixo */
+}
+
+/* =========================
+   Hero-text
+========================= */
+
+.hero-text {
+  text-align: left;
+  margin-top: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+  display: flex; /* input e botão lado a lado */
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px; /* deixa toda a caixa arredondada tipo "pílula" */
+  padding: 6px;
+  max-width: 500px; /* pra não esticar demais em telas grandes */
+  margin-top: 35px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1; /* ocupa todo o espaço disponível, empurrando o botão pra direita */
+  padding-left: 8px;
+}
+
+.search-icon {
+  color: #999999;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.search-input {
+  border: none !important; /* remove a borda padrão do Bootstrap */
+  box-shadow: none !important; /* remove o "brilho" azul do Bootstrap ao clicar */
+  padding: 8px 0;
+}
+
+.search-btn {
+  background-color: #2bb5ae; /* verde-azulado, parecido com o da sua marca */
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 500;
+  white-space: nowrap; /* impede o texto "Buscar" de quebrar linha */
+}
+
+.search-btn:hover {
+  background-color: #239b95; /* um tom mais escuro ao passar o mouse */
+}
+
+.search-example {
+  color: #777777;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* =========================
+  IMAGE
+========================= */
+
+.hero-image {
+  display: flex;
+  object-fit: contain;
+  height: 500px;
+  margin-top: 60px;
+  margin-right: 15px;
+  align-self: center;
+  border-radius: 40px;
+}
+
+/* =========================
+   HELP SECTION
+========================= */
+
+.help-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.help-title {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  color: #142b55;
+  margin-bottom: 10px;
+}
+
+.rainbow {
+  text-align: center;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.help-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 24px 18px;
+  height: 100%; /* faz todos os cards terem a mesma altura */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  font-family: "Fredoka", sans-serif;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+}
+
+.help-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #142b55;
+  margin-bottom: 10px;
+}
+
+.help-card p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.help-link {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Círculo do ícone */
+.help-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%; /* transforma o quadrado em círculo perfeito */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto; /* centraliza o círculo horizontalmente */
+  font-size: 22px;
+  color: #ffffff;
+}
+
+/* Cores de cada card (fundo do círculo e texto do link) */
+.bg-purple {
+  background-color: #9b8ce0;
+}
+.bg-green {
+  background-color: #3fb28f;
+}
+.bg-yellow {
+  background-color: #f0b429;
+}
+.bg-pink {
+  background-color: #f087a8;
+}
+.bg-blue {
+  background-color: #4a9fd8;
+}
+
+.text-purple {
+  color: #9b8ce0;
+}
+.text-green {
+  color: #3fb28f;
+}
+.text-yellow {
+  color: #f0b429;
+}
+.text-pink {
+  color: #f087a8;
+}
+.text-blue {
+  color: #4a9fd8;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-nav {
+    padding-top: 15px;
+    gap: 0;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 5px !important;
+  }
+
+  .nav-item.ms-lg-3 {
+    margin-left: 0 !important;
+  }
+
+  .dropdown-menu {
+    box-shadow: none;
+    background-color: #f8fbfb;
+    margin-top: 0 !important;
+  }
+}
