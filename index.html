@@ -3,29 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
     <title>Autismo Portugal</title>
   </head>
+
   <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container">
         <!-- Logo -->
@@ -36,6 +47,7 @@
             width="55"
             class="me-2"
           />
+
           <span>
             <strong>AUTISMO</strong><br />
             <small>PORTUGAL</small>
@@ -81,14 +93,17 @@
                     Suspeita de autismo
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="avaliacao.html"> Avaliação </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="diagnostico.html">
                     Diagnóstico
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="depois-diagnostico.html">
                     Depois do diagnóstico
@@ -115,14 +130,17 @@
                     Direitos
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="medidas-suporte.html">
                     Medidas de suporte
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="pei.html"> PEI </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="crises-escola.html">
                     Ansiedade e crises
@@ -131,7 +149,7 @@
               </ul>
             </li>
 
-            <!-- Direitos -->
+            <!-- Direitos e Apoios -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -147,16 +165,19 @@
                 <li>
                   <a class="dropdown-item" href="amim.html"> AMIM </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="psi.html">
                     Prestação Social para a Inclusão
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="beneficios.html">
                     Benefícios e apoios
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="balcao-inclusao.html">
                     Balcão da Inclusão
@@ -183,9 +204,11 @@
                     Crises e sobrecarga
                   </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="ansiedade.html"> Ansiedade </a>
                 </li>
+
                 <li>
                   <a class="dropdown-item" href="rotina.html">
                     Rotina e organização
@@ -215,17 +238,26 @@
       </div>
     </nav>
 
+    <!-- =========================
+         HERO
+    ========================== -->
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
           <!-- LEFT -->
           <div class="col-lg-6">
+            <!-- Decoration -->
             <span class="melting">
               <img src="images/melting.png" alt="melting decoration" />
             </span>
+
+            <!-- Main title -->
             <h1>
               <div class="title-line">
-                <span class="info">Informação.</span><br />
+                <span class="info">Informação.</span>
+
+                <br />
+
                 <span class="sparkle">
                   <img
                     src="images/sparkle.png"
@@ -234,15 +266,20 @@
                 </span>
               </div>
 
-              <span class="help">Apoio.</span><br />
+              <span class="help"> Apoio. </span>
+
+              <br />
 
               <div class="title-line">
                 <span class="heart">
                   <img src="images/heart.png" alt="little heart decoration" />
                 </span>
-                <span class="inclusion">Inclusão.</span>
+
+                <span class="inclusion"> Inclusão. </span>
               </div>
             </h1>
+
+            <!-- Hero text -->
             <p class="hero-text">
               Um guia prático para pessoas autistas e famílias em Portugal.
             </p>
@@ -251,6 +288,7 @@
             <div class="search-box">
               <div class="search-input-wrapper">
                 <i class="bi bi-search search-icon"></i>
+
                 <input
                   type="text"
                   class="form-control search-input"
@@ -277,95 +315,197 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <section class="help-section">
-        <div class="container">
-          <h2 class="help-title">Como podemos ajudar?</h2>
-          <span class="heart">
-            <img src="images/rainbow.png" alt="little rainbow decoration" />
-          </span>
+    <!-- =========================
+         COMO PODEMOS AJUDAR
+    ========================== -->
+    <section class="help-section">
+      <div class="container">
+        <h2 class="help-title">Como podemos ajudar?</h2>
 
-          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
-            <!-- Card 1 -->
-            <div class="col">
-              <div class="help-card">
-                <div class="help-icon bg-purple">
-                  <i class="bi bi-search"></i>
-                </div>
-                <h3>Diagnóstico</h3>
-                <p>
-                  Entenda o processo de avaliação e diagnóstico em Portugal.
-                </p>
-                <a href="diagnostico.html" class="help-link text-purple"
-                  >Saiba mais →</a
-                >
+        <span class="heart">
+          <img src="images/rainbow.png" alt="little rainbow decoration" />
+        </span>
+
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="help-card">
+              <div class="help-icon bg-purple">
+                <i class="bi bi-search"></i>
               </div>
+
+              <h3>Diagnóstico</h3>
+
+              <p>Entenda o processo de avaliação e diagnóstico em Portugal.</p>
+
+              <a href="diagnostico.html" class="help-link text-purple">
+                Saiba mais →
+              </a>
             </div>
+          </div>
 
-            <!-- Card 2 -->
-            <div class="col">
-              <div class="help-card">
-                <div class="help-icon bg-green">
-                  <i class="bi bi-house"></i>
-                </div>
-                <h3>Escola</h3>
-                <p>
-                  Direitos, apoios e estratégias para uma educação inclusiva.
-                </p>
-                <a href="escola.html" class="help-link text-green"
-                  >Saiba mais →</a
-                >
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="help-card">
+              <div class="help-icon bg-green">
+                <i class="bi bi-house"></i>
               </div>
+
+              <h3>Escola</h3>
+
+              <p>Direitos, apoios e estratégias para uma educação inclusiva.</p>
+
+              <a href="escola.html" class="help-link text-green">
+                Saiba mais →
+              </a>
             </div>
+          </div>
 
-            <!-- Card 3 -->
-            <div class="col">
-              <div class="help-card">
-                <div class="help-icon bg-yellow">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3>Direitos e Apoios</h3>
-                <p>Conheça seus direitos, benefícios e apoios disponíveis.</p>
-                <a href="direitos.html" class="help-link text-yellow"
-                  >Saiba mais →</a
-                >
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="help-card">
+              <div class="help-icon bg-yellow">
+                <i class="bi bi-people"></i>
               </div>
+
+              <h3>Direitos e Apoios</h3>
+
+              <p>Conheça seus direitos, benefícios e apoios disponíveis.</p>
+
+              <a href="direitos.html" class="help-link text-yellow">
+                Saiba mais →
+              </a>
             </div>
+          </div>
 
-            <!-- Card 4 -->
-            <div class="col">
-              <div class="help-card">
-                <div class="help-icon bg-pink">
-                  <i class="bi bi-heart"></i>
-                </div>
-                <h3>Vida Diária</h3>
-                <p>Dicas e informações para lidar com desafios do dia a dia.</p>
-                <a href="vida-diaria.html" class="help-link text-pink"
-                  >Saiba mais →</a
-                >
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="help-card">
+              <div class="help-icon bg-pink">
+                <i class="bi bi-heart"></i>
               </div>
+
+              <h3>Vida Diária</h3>
+
+              <p>Dicas e informações para lidar com desafios do dia a dia.</p>
+
+              <a href="vida-diaria.html" class="help-link text-pink">
+                Saiba mais →
+              </a>
             </div>
+          </div>
 
-            <!-- Card 5 -->
-            <div class="col">
-              <div class="help-card">
-                <div class="help-icon bg-blue">
-                  <i class="bi bi-book"></i>
-                </div>
-                <h3>Recursos</h3>
-                <p>
-                  Artigos, guias, instituições e materiais úteis para você e sua
-                  família.
-                </p>
-                <a href="recursos.html" class="help-link text-blue"
-                  >Saiba mais →</a
-                >
+          <!-- Card 5 -->
+          <div class="col">
+            <div class="help-card">
+              <div class="help-icon bg-blue">
+                <i class="bi bi-book"></i>
               </div>
+
+              <h3>Recursos</h3>
+
+              <p>
+                Artigos, guias, instituições e materiais úteis para você e sua
+                família.
+              </p>
+
+              <a href="recursos.html" class="help-link text-blue">
+                Saiba mais →
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+
+    <!-- =========================
+         LEITURAS RECOMENDADAS
+    ========================== -->
+
+    <section class="articles">
+      <div class="container-2">
+        <h2 class="articles-title">Leituras Recomendadas</h2>
+        <span class="star">
+          <img src="images/star.png" alt="little star decoration" />
+        </span>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Article Card 1 -->
+          <div class="col">
+            <div class="article-card">
+              <h3>Genética e Terapias para o Síndrome do X Frágil e Autismo</h3>
+
+              <p>
+                Cientistas portugueses identificaram um novo alvo molecular e
+                biológico associado ao autismo e à Síndrome do X Frágil.
+              </p>
+
+              <a
+                href="https://observador.pt/2025/01/14/projeto-europeu-auxilia-criacao-de-terapias-personalizadas-para-o-autismo-com-investigadores-da-universidade-de-coimbra-envolvidos/"
+                class="article-link text-yellow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais →
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 2 -->
+          <div class="col">
+            <div class="article-card">
+              <h3>Autismo e altas capacidades</h3>
+
+              <p>
+                Uma pessoa com autismo pode ser considerada sobredotada? Quais
+                as semelhanças e diferenças entre as duas condições? A
+                coexistência de ambas as condições representa uma vantagem ou um
+                risco acrescido de exclusão?
+              </p>
+
+              <a
+                href="https://observador.pt/2025/01/14/projeto-europeu-auxilia-criacao-de-terapias-personalizadas-para-o-autismo-com-investigadores-da-universidade-de-coimbra-envolvidos/"
+                class="article-link text-purple"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais →
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 3 -->
+          <div class="col">
+            <div class="article-card">
+              <h3>
+                Saúde mental de pessoas autistas em Portugal: experiências e
+                recomendações de autistas adultos e profissionais aliados
+              </h3>
+
+              <p>
+                Este trabalho inovador traz o primeiro retrato coletivo da saúde
+                mental de pessoas adultas autistas em Portugal.
+              </p>
+
+              <a
+                href="https://estudogeral.uc.pt/handle/10316/114182"
+                class="article-link text-green"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         BOOTSTRAP JAVASCRIPT
+    ========================== -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
