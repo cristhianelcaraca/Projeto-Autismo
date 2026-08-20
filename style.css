@@ -1,6 +1,7 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "Fredoka", sans-serif;
 }
 
 /* =========================
@@ -12,7 +13,7 @@ body {
   background-color: #fdfaf5 !important;
   border-bottom: 1px solid #eeeeee;
   max-width: 1200px;
-  font-family: "Fredoka", sans-serif;
+  border-radius: 20px;
 }
 
 .navbar .container {
@@ -113,14 +114,30 @@ body {
    LANGUAGE
 ========================= */
 
-.nav-item.ms-lg-3 {
-  margin-left: 10px !important;
-}
-
-.nav-item.ms-lg-3 .nav-link {
+.lang-toggle {
+  display: flex;
+  background-color: #ffffff;
   border: 1px solid #42b8b0;
   border-radius: 25px;
-  padding: 6px 12px !important;
+  padding: 3px;
+  gap: 2px;
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #142b55;
+  cursor: pointer; /* mostra a "mãozinha" ao passar o mouse */
+  transition: all 0.2s ease;
+}
+
+.lang-option.active {
+  background-color: #42b8b0;
+  color: #ffffff;
 }
 
 /* =========================
@@ -439,15 +456,116 @@ body {
 }
 
 /* Cores de fundo do botão, uma por card */
-.text-purple {
+
+.btn-purple {
   background-color: #9b8ce0;
 }
-.text-green {
+.btn-green {
   background-color: #3fb28f;
 }
-
-.text-yellow {
+.btn-yellow {
   background-color: #f0b429;
+}
+
+/*=========================
+         Sobre nós link
+    ========================== */
+
+.about-us {
+  background-color: rgba(
+    125,
+    250,
+    212,
+    0.35
+  ); /* mesma cor, mas bem mais transparente */
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+
+.about-us-inner {
+  display: flex;
+  align-items: center; /* alinha os 3 blocos verticalmente ao centro */
+  justify-content: space-between; /* empurra: plant pra esquerda, botão pra direita */
+  gap: 30px;
+}
+
+.plant img {
+  width: 140px;
+  height: auto;
+}
+
+.about-text {
+  flex: 1; /* ocupa o espaço do meio, empurrando o botão pra direita */
+  text-align: center;
+}
+
+.about-text h3 {
+  font-weight: 600;
+  color: #142b55;
+  margin-bottom: 12px;
+}
+
+.about-text p {
+  color: #333333;
+  font-size: 15px;
+  margin: 0;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #142b55;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 50px;
+  white-space: nowrap; /* impede "Sobre Nós" de quebrar linha */
+  transition: transform 0.2s ease;
+}
+
+.btn-white:hover {
+  transform: translateY(-2px); /* levanta levemente o botão ao passar o mouse */
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-image: url("images/footer.png");
+  background-size: cover; /* a imagem preenche todo o espaço, sem distorcer */
+  background-position: center; /* centraliza a imagem dentro da área */
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 40px auto 0 auto; /* centraliza horizontalmente, com espaço acima */
+  min-height: 220px;
+  display: flex;
+  align-items: center; /* centraliza o conteúdo verticalmente dentro do footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* centraliza os 3 itens horizontalmente */
+  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+  gap: 50px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-icon {
+  font-size: 30px;
+  color: #2b7a6b; /* verde escuro, parecido com o da sua imagem */
+}
+
+.footer-item p {
+  margin: 0;
+  color: #2b7a6b;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.3;
 }
 /* =========================
    MOBILE
