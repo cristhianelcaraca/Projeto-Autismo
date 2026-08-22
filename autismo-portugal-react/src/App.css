@@ -1,7 +1,11 @@
 body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+}
+
+main {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "Fredoka", sans-serif;
 }
 
 /* =========================
@@ -9,15 +13,10 @@ body {
 ========================= */
 
 .navbar {
-  padding: 14px 0;
+  padding: 20px 0;
   background-color: #fdfaf5 !important;
   border-bottom: 1px solid #eeeeee;
-  max-width: 1200px;
   border-radius: 20px;
-}
-
-.navbar .container {
-  max-width: 1100px;
 }
 
 /* =========================
@@ -33,8 +32,8 @@ body {
 }
 
 .navbar-brand img {
-  width: 68px;
-  height: 68px;
+  width: 74px;
+  height: 74px;
   object-fit: contain;
   margin-right: 5px;
 }
@@ -43,12 +42,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 0.6;
+  line-height: 0.8;
 }
 
 .navbar-brand strong {
   display: block;
-  font-size: 19px;
+  font-size: 25px;
   line-height: 1.2;
   letter-spacing: 0.5px;
   margin: 0;
@@ -57,7 +56,7 @@ body {
 .navbar-brand small {
   display: block;
   color: #42b8b0;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 1.2;
@@ -536,7 +535,7 @@ body {
   background-position: center; /* centraliza a imagem dentro da área */
   background-repeat: no-repeat;
   border-radius: 20px;
-  max-width: 1200px;
+
   margin: 40px auto 0 auto; /* centraliza horizontalmente, com espaço acima */
   min-height: 220px;
   display: flex;
@@ -583,4 +582,924 @@ body {
 
 .credits-item a:hover {
   color: #022252;
+}
+
+/* =========================
+   DIAGNOSIS HERO
+========================= */
+
+.diagnosis-page {
+  font-family: "Fredoka", sans-serif;
+  color: #142b55;
+}
+
+.diagnosis-hero {
+  padding: 65px 0;
+  background-color: #ffffff;
+}
+
+.diagnosis-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 30px 50px;
+}
+
+.diagnosis-hero-image {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.diagnosis-hero-image img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+.diagnosis-hero-text {
+  flex: 1;
+  max-width: 620px;
+  text-align: center;
+}
+
+.diagnosis-label {
+  display: inline-block;
+  background-color: #e9f8f6;
+  color: #2dada8;
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.diagnosis-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #142b55;
+  margin-bottom: 15px;
+}
+
+.diagnosis-hero p {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   DIAGNOSIS CONTAINER
+========================= */
+
+.diagnosis-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+.diagnosis-container h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.diagnosis-container p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   INTRO - FUNDO BEGE
+========================= */
+
+.diagnosis-intro {
+  background-color: #fdfaf5;
+  border-radius: 20px;
+  margin-bottom: 48px;
+}
+
+.evaluation-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.evaluation-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(20, 43, 85, 0.07);
+}
+
+.evaluation-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+
+.evaluation-card p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.diagnosis-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.diagnosis-icon.purple {
+  background-color: #9b8ce0;
+}
+
+.diagnosis-icon.green {
+  background-color: #3fb28f;
+}
+
+.diagnosis-icon.yellow {
+  background-color: #f0b429;
+}
+
+/* =========================
+   PATHS - SEM FUNDO
+========================= */
+
+.diagnosis-paths {
+  background-color: transparent;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading p {
+  color: #666666;
+  margin-top: 10px;
+}
+
+.path-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 32px;
+  height: 100%;
+  box-shadow: 0 4px 18px rgba(20, 43, 85, 0.06);
+}
+
+.sns-card {
+  border-top: 5px solid #4a9fd8;
+}
+
+.private-card {
+  border-top: 5px solid #f087a8;
+}
+
+.path-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.path-icon {
+  width: 58px;
+  min-width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.sns-icon {
+  background-color: #4a9fd8;
+}
+
+.private-icon {
+  background-color: #f087a8;
+}
+
+.path-small-title {
+  color: #888888;
+  font-size: 13px;
+}
+
+.path-header h3 {
+  margin: 2px 0 0;
+  font-size: 24px;
+  color: #142b55;
+}
+
+.diagnosis-step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.diagnosis-step > span {
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #e9f8f6;
+  color: #2dada8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.diagnosis-step h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.diagnosis-step p {
+  color: #666666;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   ADULT DIAGNOSIS
+========================= */
+
+.adult-diagnosis {
+  background-color: #eef6ff;
+  border-radius: 22px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.adult-diagnosis .diagnosis-container {
+  background-color: transparent;
+}
+
+.adult-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.adult-icon {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a9fd8;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.adult-box h2 {
+  color: #142b55;
+  font-weight: 600;
+}
+
+.adult-box p {
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* =========================
+   OUR EXPERIENCE
+========================= */
+
+.our-experience {
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+.experience-card {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0 45px;
+}
+.experience-title-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.experience-image {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-title {
+  color: #3fb28f;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.experience-subtitle {
+  color: #142b55;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience-content {
+  text-align: center;
+}
+
+.experience-content p {
+  color: #555555;
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: left;
+}
+
+.experience-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #3fb28f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.experience-button:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* =========================
+   SOURCES - VERDE CLARO
+========================= */
+
+.diagnosis-sources {
+  background-color: rgba(125, 250, 212, 0.25);
+  border-radius: 22px;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.diagnosis-sources .diagnosis-container {
+  background-color: transparent;
+}
+
+.diagnosis-sources h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.source-card {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.source-icon {
+  font-size: 30px;
+  color: #3fb28f;
+}
+
+.source-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.source-card p {
+  color: #666666;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =========================
+   NAVBAR MOBILE
+========================= */
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-nav {
+    padding-top: 15px;
+    gap: 0;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 5px !important;
+  }
+
+  .nav-item.ms-lg-3 {
+    margin-left: 0 !important;
+  }
+
+  .dropdown-menu {
+    box-shadow: none;
+    background-color: #f8fbfb;
+    margin-top: 0 !important;
+  }
+}
+
+/* =========================
+   DIAGNOSIS MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .diagnosis-hero-content {
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 20px;
+  }
+
+  .diagnosis-hero-image {
+    flex: none;
+  }
+
+  .diagnosis-hero-image img {
+    width: 190px;
+  }
+
+  .diagnosis-hero h1 {
+    font-size: 38px;
+  }
+
+  .diagnosis-label {
+    font-size: 18px;
+  }
+
+  .diagnosis-container {
+    padding: 30px 20px;
+  }
+
+  .diagnosis-container h2 {
+    font-size: 28px;
+  }
+
+  .diagnosis-container p {
+    font-size: 17px;
+  }
+
+  .evaluation-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnosis-paths {
+    padding: 35px 0;
+  }
+
+  .path-card {
+    padding: 25px 20px;
+  }
+
+  .diagnosis-step h4 {
+    font-size: 18px;
+  }
+
+  .diagnosis-step p {
+    font-size: 16px;
+  }
+
+  .adult-box {
+    flex-direction: column;
+  }
+
+  /* Experience */
+
+  .experience-title-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .experience-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .experience-title {
+    font-size: 30px;
+  }
+
+  .experience-subtitle {
+    font-size: 20px;
+  }
+
+  .experience-card {
+    padding: 0 20px;
+  }
+
+  .experience-content p {
+    font-size: 16px;
+  }
+
+  /* Sources */
+
+  .source-card {
+    align-items: flex-start;
+  }
+}
+/* =====================================================
+   HOME RESPONSIVE
+===================================================== */
+
+/* TABLET E ECRÃS MENORES */
+@media (max-width: 991px) {
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    padding: 40px 25px;
+  }
+
+  .hero .row {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .hero-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 25px auto 0;
+  }
+
+  .title-line {
+    justify-content: center;
+  }
+
+  .melting {
+    margin: 0 auto;
+    top: 15px;
+  }
+
+  .sparkle img {
+    width: 80px;
+    height: 80px;
+    margin-left: -18px;
+  }
+
+  .hero .heart img {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* =========================
+     SEARCH
+  ========================= */
+
+  .search-box {
+    max-width: 550px;
+    margin: 30px auto 0;
+  }
+
+  .search-example {
+    text-align: center;
+  }
+
+  /* =========================
+     HERO IMAGE
+  ========================= */
+
+  .hero-image {
+    height: auto;
+    margin: 40px auto 0;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  /* =========================
+     HELP
+  ========================= */
+
+  .help-section {
+    margin-top: 30px;
+    padding: 50px 25px;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about-us {
+    margin: 0 20px;
+  }
+
+  .about-us-inner {
+    gap: 20px;
+  }
+
+  .plant img {
+    width: 110px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .melting {
+    width: 70px;
+  }
+
+  .sparkle img {
+    width: 65px;
+    height: 65px;
+    margin-left: -12px;
+  }
+
+  .hero .heart img {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* =========================
+     SEARCH
+  ========================= */
+
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .search-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  .search-example {
+    font-size: 12px;
+  }
+
+  /* =========================
+     HERO IMAGE
+  ========================= */
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    max-width: 380px;
+  }
+
+  /* =========================
+     HELP
+  ========================= */
+
+  .help-section {
+    padding: 45px 20px;
+    border-radius: 18px;
+  }
+
+  .help-title {
+    font-size: 28px;
+  }
+
+  .help-card {
+    padding: 25px 20px;
+  }
+
+  /* =========================
+     ARTICLES
+  ========================= */
+
+  .articles {
+    padding: 45px 20px;
+  }
+
+  .articles-title {
+    font-size: 28px;
+  }
+
+  .article-card {
+    padding: 24px 20px;
+  }
+
+  /* =========================
+     ABOUT US
+  ========================= */
+
+  .about-us {
+    margin: 0 15px;
+    padding: 35px 25px;
+  }
+
+  .about-us-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .plant img {
+    width: 100px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .btn-white {
+    padding: 10px 24px;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  .footer {
+    min-height: 280px;
+    padding: 35px 20px;
+    background-position: center bottom;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-item {
+    width: 220px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 25px 15px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .melting {
+    width: 60px;
+  }
+
+  .sparkle img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero .heart img {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Busca */
+
+  .search-box {
+    padding: 4px;
+  }
+
+  .search-input-wrapper {
+    padding-left: 5px;
+  }
+
+  .search-icon {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .search-input {
+    font-size: 13px;
+  }
+
+  .search-btn {
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+
+  /* Imagem */
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+  /* Titles */
+
+  .help-title,
+  .articles-title {
+    font-size: 25px;
+  }
+
+  /* About */
+
+  .about-us {
+    padding: 30px 18px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  /* Footer */
+
+  .footer-item p {
+    font-size: 13px;
+  }
+
+  .footer-icon {
+    font-size: 25px;
+  }
 }
