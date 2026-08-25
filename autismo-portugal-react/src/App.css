@@ -1415,6 +1415,420 @@ main {
   }
 }
 
+/* =========================
+   SUSPICION PAGE
+========================= */
+
+.suspicion-page {
+  color: #142b55;
+}
+
+/* HERO */
+
+.suspicion-hero {
+  padding: 65px 0;
+}
+
+.suspicion-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 30px 50px;
+}
+
+.suspicion-hero-image {
+  flex: 0 0 280px;
+}
+
+.suspicion-hero-image img {
+  width: 250px;
+  height: auto;
+}
+
+.suspicion-hero-text {
+  max-width: 620px;
+  text-align: center;
+}
+
+.suspicion-label {
+  display: inline-block;
+  background-color: #fff0f5;
+  color: #f087a8;
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.suspicion-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.suspicion-hero p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* CONTENT CONTAINER */
+
+.suspicion-container {
+  max-width: 1100px;
+  padding: 45px;
+}
+
+.suspicion-container h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #666;
+}
+
+/* SIGNS */
+
+.suspicion-signs {
+  background-color: #fdfaf5;
+  border-radius: 20px;
+  margin-bottom: 55px;
+}
+
+.signs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.sign-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(20, 43, 85, 0.07);
+}
+
+.sign-card h3 {
+  margin: 15px 0 10px;
+  font-size: 21px;
+}
+
+.sign-card p {
+  font-size: 17px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.sign-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+}
+
+.sign-icon.purple {
+  background-color: #9b8ce0;
+}
+
+.sign-icon.yellow {
+  background-color: #f0b429;
+}
+
+.sign-icon.blue {
+  background-color: #4a9fd8;
+}
+
+/* WHEN ASSESSMENT */
+
+.when-assessment {
+  padding: 30px 0 60px;
+}
+
+.assessment-box {
+  background-color: #eef6ff;
+  border-radius: 22px;
+  padding: 40px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.assessment-icon {
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a9fd8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.assessment-content h2 {
+  text-align: left;
+}
+
+.assessment-content p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.assessment-button {
+  display: inline-block;
+  background-color: #4a9fd8;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SCREENING */
+
+.screening-section {
+  padding-bottom: 60px;
+}
+
+.screening-card {
+  background-color: rgba(125, 250, 212, 0.25);
+  border-radius: 22px;
+  padding: 40px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.screening-icon {
+  min-width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #3fb28f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.screening-card span {
+  color: #3fb28f;
+  font-weight: 600;
+}
+
+.screening-card h2 {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.screening-card p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.screening-button {
+  border: none;
+  background-color: #3fb28f;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+
+/* EXPERIENCE */
+
+.suspicion-experience {
+  padding: 55px 0;
+}
+
+.suspicion-experience-row {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.suspicion-experience-image {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.suspicion-experience-image img {
+  width: 100%;
+}
+
+.suspicion-experience-content span {
+  color: #3fb28f;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.suspicion-experience-content h2 {
+  margin-top: 8px;
+  font-size: 30px;
+}
+
+.suspicion-experience-content p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* SOURCES */
+
+.suspicion-sources {
+  background-color: #fdfaf5;
+  border-radius: 22px;
+  margin-bottom: 60px;
+}
+
+.suspicion-sources h2 {
+  margin-bottom: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .suspicion-hero-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .suspicion-hero-image {
+    flex: none;
+  }
+
+  .suspicion-hero-image img {
+    width: 180px;
+  }
+
+  .suspicion-hero h1 {
+    font-size: 36px;
+  }
+
+  .suspicion-container {
+    padding: 30px 20px;
+  }
+
+  .suspicion-container h2 {
+    font-size: 28px;
+  }
+
+  .signs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assessment-box,
+  .screening-card,
+  .suspicion-experience-row {
+    flex-direction: column;
+  }
+
+  .assessment-content h2,
+  .screening-card h2 {
+    text-align: center;
+  }
+
+  .suspicion-experience-image {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .suspicion-experience-content {
+    text-align: center;
+  }
+
+  .suspicion-experience-content p {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   M-CHAT PROGRESS
+========================= */
+
+.mchat-progress {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3fb28f;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #dceee8;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3fb28f;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+/* =========================
+   M-CHAT OPTIONS
+========================= */
+
+.mchat-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.mchat-option {
+  border: 2px solid #3fb28f;
+  background-color: #ffffff;
+  color: #3fb28f;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mchat-option:hover {
+  background-color: #e9f8f6;
+}
+
+.mchat-option.selected {
+  background-color: #3fb28f;
+  color: #ffffff;
+}
+
+.mchat-previous {
+  margin-top: 25px;
+  border: none;
+  background: transparent;
+  color: #142b55;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mchat-previous:hover {
+  color: #3fb28f;
+}
 /* =====================================================
    SMALL MOBILE
 ===================================================== */

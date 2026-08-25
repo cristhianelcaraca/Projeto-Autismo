@@ -56,9 +56,9 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/suspeita">
+                  <Link className="dropdown-item" to="/suspeita">
                     Suspeita de autismo
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
