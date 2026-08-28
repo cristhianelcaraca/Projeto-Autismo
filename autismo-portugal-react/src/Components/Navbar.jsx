@@ -62,9 +62,9 @@ function Navbar() {
                 </li>
 
                 <li>
-                  <a className="dropdown-item" href="/avaliacao">
+                  <Link className="dropdown-item" href="/avaliacao">
                     Avaliação
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -74,9 +74,9 @@ function Navbar() {
                 </li>
 
                 <li>
-                  <a className="dropdown-item" href="/depois-diagnostico">
+                  <Link className="dropdown-item" to="/depois-diagnostico">
                     Depois do diagnóstico
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>

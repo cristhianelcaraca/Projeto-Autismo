@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import MChatTest from "../Components/MChatTest";
+
+import AutismCharacteristicsQuiz from "../Components/AutismCharacteristicsQuiz";
 
 function Suspicion() {
   return (
@@ -29,6 +30,7 @@ function Suspicion() {
           </div>
         </div>
       </section>
+
       {/* SINAIS */}
       <section className="suspicion-signs">
         <div className="container suspicion-container">
@@ -85,6 +87,7 @@ function Suspicion() {
           </div>
         </div>
       </section>
+
       {/* QUANDO PROCURAR AVALIAÇÃO */}
       <section className="when-assessment">
         <div className="container suspicion-container">
@@ -115,30 +118,78 @@ function Suspicion() {
           </div>
         </div>
       </section>
-      {/* M-CHAT */}
+
+      {/* QUESTIONÁRIO INFORMATIVO */}
       <section className="screening-section">
         <div className="container suspicion-container">
           <div className="screening-card">
-            <div className="screening-icon">
-              <i className="bi bi-clipboard2-check"></i>
+            <div className="screening-image">
+              <img
+                src="/images/teste.png"
+                alt="Questionário sobre características do autismo"
+              />
             </div>
 
-            <div>
-              <span>Rastreio precoce</span>
+            <div className="screening-content">
+              <span>Questionário informativo</span>
 
-              <h2>M-CHAT-R/F</h2>
+              <h2>Características do autismo na infância</h2>
 
               <p>
-                O M-CHAT-R/F é um questionário de rastreio utilizado para
-                identificar sinais de risco de autismo em crianças pequenas. Não
-                substitui uma avaliação ou diagnóstico profissional.
+                Responda a 20 perguntas sobre características relacionadas com
+                comunicação, interação social, comportamento e processamento
+                sensorial.
               </p>
 
-              <MChatTest />
+              <p className="screening-disclaimer">
+                Este questionário foi criado para fins informativos e de
+                sensibilização. Não é um instrumento clínico validado e não
+                permite diagnosticar ou excluir autismo.
+              </p>
+
+              <AutismCharacteristicsQuiz />
             </div>
           </div>
         </div>
       </section>
+
+      {/* M-CHAT */}
+      <section className="mchat-info-section">
+        <div className="container suspicion-container">
+          <div className="mchat-info-card">
+            <div className="mchat-info-icon">
+              <i className="bi bi-patch-check"></i>
+            </div>
+
+            <div>
+              <span>Instrumento de rastreio reconhecido</span>
+
+              <h2>M-CHAT-R/F</h2>
+
+              <p>
+                O M-CHAT-R/F é um instrumento de rastreio utilizado para
+                identificar crianças pequenas que podem beneficiar de uma
+                avaliação mais aprofundada.
+              </p>
+
+              <p>
+                O M-CHAT-R/F também não estabelece um diagnóstico de autismo.
+              </p>
+
+              <a
+                href="https://www.mchatscreen.com/mchat-rf/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mchat-official-button"
+              >
+                Conhecer o M-CHAT-R/F
+                <i className="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* EXPERIÊNCIA */}
       <section className="suspicion-experience">
         <div className="container">
@@ -173,6 +224,7 @@ function Suspicion() {
           </div>
         </div>
       </section>
+
       {/* FONTES */}
       <section className="suspicion-sources">
         <div className="container suspicion-container">

@@ -7,6 +7,8 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Diagnosis from "./Pages/Diagnosis";
 import Suspicion from "./Pages/Suspicion";
+import Evaluation from "./Pages/Evaluation";
+import AfterDiagnosis from "./Pages/AfterDiagnosis";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/diagnostico" element={<Diagnosis />} />
         <Route path="/suspeita" element={<Suspicion />} />
+        <Route path="/avaliacao" element={<Evaluation />} />
+        <Route path="/depois-diagnostico" element={<AfterDiagnosis />} />
       </Routes>
 
       <Footer />
