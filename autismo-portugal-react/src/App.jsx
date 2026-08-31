@@ -9,6 +9,7 @@ import Diagnosis from "./Pages/Diagnosis";
 import Suspicion from "./Pages/Suspicion";
 import Evaluation from "./Pages/Evaluation";
 import AfterDiagnosis from "./Pages/AfterDiagnosis";
+import SchoolRights from "./Pages/SchoolRights";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/suspeita" element={<Suspicion />} />
         <Route path="/avaliacao" element={<Evaluation />} />
         <Route path="/depois-diagnostico" element={<AfterDiagnosis />} />
+        <Route path="/direitos-escola" element={<SchoolRights />} />
       </Routes>
 
       <Footer />

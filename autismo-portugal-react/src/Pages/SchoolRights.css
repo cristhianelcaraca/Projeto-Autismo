@@ -1,0 +1,999 @@
+/* =====================================================
+   SCHOOL RIGHTS PAGE
+===================================================== */
+
+.school-rights-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+.school-rights-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 45px;
+}
+
+.school-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: #3fb28f;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.school-section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.school-section-heading h2 {
+  margin-bottom: 18px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.school-section-heading p {
+  margin: 0;
+
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.school-rights-hero {
+  padding: 75px 0 55px;
+}
+
+.school-rights-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.school-rights-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+  padding: 7px 18px;
+
+  background-color: #eaf8f5;
+  border-radius: 50px;
+
+  color: #3fb28f;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.school-rights-hero h1 {
+  margin-bottom: 20px;
+
+  color: #142b55;
+
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.school-rights-hero p {
+  margin: 0;
+
+  color: #4f5f70;
+
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   TEXT WRAP
+===================================================== */
+
+.school-wrap-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.school-wrap-image {
+  float: left;
+
+  width: 290px;
+
+  margin: 0 50px 30px 0;
+}
+
+.school-wrap-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.school-wrap-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.school-wrap-section p {
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   EDUCAÇÃO INCLUSIVA
+===================================================== */
+
+/* =====================================================
+   EDUCAÇÃO INCLUSIVA
+===================================================== */
+
+.inclusive-education {
+  margin-bottom: 60px;
+  background-color: #fdfaf5;
+  border-radius: 20px;
+}
+
+.inclusive-education .inclusion-image {
+  float: left;
+  width: 290px;
+  margin: 0 50px 25px 0;
+}
+
+.inclusive-education .inclusion-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Destaque ao lado da imagem */
+
+.law-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  margin: 25px 0 25px;
+  padding: 25px 28px;
+
+  background-color: #eaf8f5;
+
+  border-left: 6px solid #3fb28f;
+  border-radius: 20px;
+}
+
+.law-highlight i {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  color: #3fb28f;
+  font-size: 23px;
+}
+
+.law-highlight p {
+  margin: 0;
+
+  color: #34445f;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   DESTAQUE DA LEGISLAÇÃO
+===================================================== */
+
+.law-highlight {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+
+  margin: 35px 0;
+  padding: 30px 32px;
+
+  background-color: #eaf8f5;
+
+  border-left: 6px solid #3fb28f;
+  border-radius: 20px;
+}
+
+.law-highlight i {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  color: #3fb28f;
+
+  font-size: 25px;
+}
+
+.law-highlight p {
+  margin: 0;
+
+  color: #34445f;
+
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   DIAGNÓSTICO E APOIOS
+===================================================== */
+
+.diagnosis-school-support {
+  padding: 40px 0 70px;
+}
+
+.diagnosis-support-box {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 25px;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+  padding: 35px;
+
+  background-color: #eef6ff;
+
+  border-radius: 20px;
+}
+
+.diagnosis-support-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #4a9fd8;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 27px;
+}
+
+.diagnosis-support-box h3 {
+  margin-bottom: 10px;
+
+  color: #142b55;
+
+  font-size: 25px;
+}
+
+.diagnosis-support-box p {
+  margin: 0;
+
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   TRÊS NÍVEIS
+===================================================== */
+
+.support-levels {
+  padding: 75px 0;
+
+  background-color: #f8fbfc;
+}
+
+.support-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.support-level-card {
+  height: 100%;
+
+  padding: 32px 27px;
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 6px 22px rgba(20, 43, 85, 0.06);
+}
+
+.support-level-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 20px;
+
+  border-radius: 18px;
+
+  font-size: 28px;
+}
+
+.support-level-card > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.support-level-card h3 {
+  margin-bottom: 15px;
+
+  color: #142b55;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.support-level-card p,
+.support-level-card li {
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.support-level-card ul {
+  margin: 20px 0 0;
+  padding-left: 22px;
+}
+
+.support-level-card.universal {
+  border-top: 5px solid #3fb28f;
+}
+
+.support-level-card.universal .support-level-icon {
+  background-color: #e8f7f3;
+  color: #3fb28f;
+}
+
+.support-level-card.universal > span {
+  color: #3fb28f;
+}
+
+.support-level-card.selective {
+  border-top: 5px solid #4a9fd8;
+}
+
+.support-level-card.selective .support-level-icon {
+  background-color: #e9f3fb;
+  color: #4a9fd8;
+}
+
+.support-level-card.selective > span {
+  color: #4a9fd8;
+}
+
+.support-level-card.additional {
+  border-top: 5px solid #9b8ce0;
+}
+
+.support-level-card.additional .support-level-icon {
+  background-color: #f1eafa;
+  color: #8d6bc2;
+}
+
+.support-level-card.additional > span {
+  color: #8d6bc2;
+}
+
+/* =====================================================
+   EXEMPLOS PRÁTICOS
+===================================================== */
+
+.practical-support {
+  padding: 80px 0;
+}
+
+.practical-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0 50px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.practical-check-list li {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 72px;
+
+  padding: 16px 10px 16px 58px;
+
+  border-bottom: 1px solid rgba(20, 43, 85, 0.1);
+
+  color: #34445f;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.practical-check-list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 5px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.practical-check-list li:nth-child(5n + 1)::before {
+  background-color: #3fb28f;
+}
+
+.practical-check-list li:nth-child(5n + 2)::before {
+  background-color: #9b8ce0;
+}
+
+.practical-check-list li:nth-child(5n + 3)::before {
+  background-color: #4a9fd8;
+}
+
+.practical-check-list li:nth-child(5n + 4)::before {
+  background-color: #f0b429;
+}
+
+.practical-check-list li:nth-child(5n + 5)::before {
+  background-color: #f087a8;
+}
+
+/* =====================================================
+   PAPEL DOS PAIS
+===================================================== */
+
+.parents-role {
+  margin: 50px 0;
+
+  background-color: #eef6ff;
+
+  border-radius: 20px;
+}
+
+.parents-role-box {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+
+  gap: 55px;
+}
+
+.parents-role-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.parents-role-content h2 {
+  margin-bottom: 20px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.parents-role-content p,
+.parents-rights-list li {
+  color: #34445f;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.parents-rights-list {
+  padding-left: 24px;
+}
+
+/* =====================================================
+   EMAEI
+===================================================== */
+
+.emaei-section {
+  padding: 70px 0;
+}
+
+.emaei-box {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 25px;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+  padding: 35px;
+
+  background-color: #fdfaf5;
+
+  border-radius: 20px;
+}
+
+.emaei-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #f0b429;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 27px;
+}
+
+.emaei-box h3 {
+  font-size: 25px;
+}
+
+.emaei-box p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   COMO PEDIR APOIO
+===================================================== */
+
+.request-support {
+  padding: 80px 0;
+
+  background-color: #f8fbfc;
+}
+
+.request-support-steps {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.request-step {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  padding: 28px;
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+}
+
+.request-step > span {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  background-color: #3fb28f;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.request-step h3 {
+  margin-bottom: 8px;
+
+  font-size: 23px;
+}
+
+.request-step p {
+  margin: 0;
+
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   BARREIRAS
+===================================================== */
+
+.school-barriers {
+  padding: 80px 0;
+}
+
+.school-barriers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.school-barrier-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 28px;
+
+  background-color: #f7fafb;
+
+  border-radius: 20px;
+
+  color: #142b55;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.school-barrier-item i {
+  font-size: 34px;
+  color: #3fb28f;
+}
+
+/* =====================================================
+   NOSSA EXPERIÊNCIA
+===================================================== */
+
+.school-experience {
+  margin: 55px 0;
+  background-color: #fffaf2;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.school-experience-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.school-experience-image {
+  float: left;
+  width: 320px;
+  margin: 0 45px 25px 0;
+}
+
+.school-experience-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.school-experience-content h2 {
+  margin-bottom: 22px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.school-experience-content p {
+  color: #4f5f70;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.experience-disclaimer {
+  margin-top: 28px;
+  padding: 20px 23px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  color: #6d6250;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   FONTES
+===================================================== */
+
+.school-sources {
+  padding: 55px 0;
+}
+
+.school-source-card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+
+  max-width: 850px;
+
+  margin: 0 auto 20px;
+  padding: 28px;
+
+  background-color: #f7fafb;
+
+  border-radius: 20px;
+}
+
+.school-source-card > i {
+  color: #3fb28f;
+
+  font-size: 32px;
+}
+
+.school-source-card h3 {
+  margin-bottom: 8px;
+
+  font-size: 23px;
+}
+
+.school-source-card p {
+  margin-bottom: 10px;
+
+  color: #4f5f70;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.school-source-card a {
+  color: #3f8fbd;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.school-source-card a:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+  .support-levels-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .parents-role-box,
+  .school-experience-box {
+    grid-template-columns: 240px 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .school-rights-container {
+    padding: 50px 25px;
+  }
+
+  .school-rights-hero h1 {
+    font-size: 40px;
+  }
+
+  .school-rights-hero p {
+    font-size: 20px;
+  }
+
+  .school-wrap-image {
+    float: none;
+    width: 230px;
+    margin: 0 auto 30px;
+  }
+
+  .school-wrap-section {
+    text-align: center;
+  }
+
+  .school-wrap-section p {
+    text-align: left;
+  }
+
+  .law-highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .law-highlight p {
+    text-align: left;
+  }
+
+  .practical-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .parents-role-box,
+  .school-experience-box {
+    grid-template-columns: 1fr;
+  }
+
+  .parents-role-image,
+  .school-experience-image {
+    text-align: center;
+  }
+
+  .parents-role-image img,
+  .school-experience-image img {
+    margin: 0 auto;
+  }
+
+  .parents-role-content,
+  .school-experience-content {
+    text-align: center;
+  }
+
+  .parents-role-content p,
+  .parents-role-content ul,
+  .school-experience-content p {
+    text-align: left;
+  }
+
+  .school-barriers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diagnosis-support-box,
+  .emaei-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .school-rights-container {
+    padding: 42px 20px;
+  }
+
+  .school-rights-hero h1 {
+    font-size: 34px;
+  }
+
+  .school-section-heading h2,
+  .school-wrap-section h2,
+  .parents-role-content h2,
+  .school-experience-content h2 {
+    font-size: 30px;
+  }
+
+  .school-section-heading p,
+  .school-wrap-section p,
+  .diagnosis-support-box p,
+  .support-level-card p,
+  .support-level-card li,
+  .practical-check-list li,
+  .parents-role-content p,
+  .parents-rights-list li,
+  .emaei-box p,
+  .request-step p,
+  .school-experience-content p {
+    font-size: 18px;
+  }
+
+  .school-barriers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-step {
+    flex-direction: column;
+  }
+
+  .practical-check-list li {
+    padding-left: 52px;
+  }
+
+  .law-highlight p {
+    font-size: 19px;
+  }
+
+  .experience-disclaimer,
+  .school-source-card p,
+  .school-source-card a {
+    font-size: 18px;
+  }
+
+  .school-source-card {
+    flex-direction: column;
+  }
+}

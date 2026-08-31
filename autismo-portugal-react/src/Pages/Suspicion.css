@@ -864,6 +864,47 @@
   line-height: 1.6;
 }
 
+.quiz-result-message {
+  margin: 25px 0;
+  padding: 22px 25px;
+
+  background-color: #eef6ff;
+  border-radius: 18px;
+}
+
+.quiz-result-message h4 {
+  margin: 0 0 10px;
+
+  color: #142b55;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quiz-result-message p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.quiz-result-disclaimer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  padding: 16px 20px;
+
+  background-color: #fff9e9;
+  border-radius: 14px;
+
+  color: #6d6250;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */
