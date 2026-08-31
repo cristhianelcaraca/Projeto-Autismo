@@ -1,0 +1,527 @@
+/* =========================
+   DIAGNOSIS HERO
+========================= */
+
+.diagnosis-page {
+  font-family: "Fredoka", sans-serif;
+  color: #142b55;
+}
+
+.diagnosis-hero {
+  padding: 65px 0;
+  background-color: #ffffff;
+}
+
+.diagnosis-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 30px 50px;
+}
+
+.diagnosis-hero-image {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.diagnosis-hero-image img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+.diagnosis-hero-text {
+  flex: 1;
+  max-width: 620px;
+  text-align: center;
+}
+
+.diagnosis-label {
+  display: inline-block;
+  background-color: #e9f8f6;
+  color: #2dada8;
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.diagnosis-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #142b55;
+  margin-bottom: 15px;
+}
+
+.diagnosis-hero p {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   DIAGNOSIS CONTAINER
+========================= */
+
+.diagnosis-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+.diagnosis-container h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.diagnosis-container p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.diagnosis-intro {
+  background-color: #fdfaf5;
+  border-radius: 20px;
+  margin-bottom: 48px;
+}
+
+.evaluation-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.evaluation-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(20, 43, 85, 0.07);
+}
+
+.evaluation-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+
+.evaluation-card p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.diagnosis-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.diagnosis-icon.purple {
+  background-color: #9b8ce0;
+}
+
+.diagnosis-icon.green {
+  background-color: #3fb28f;
+}
+
+.diagnosis-icon.yellow {
+  background-color: #f0b429;
+}
+
+/* =========================
+   PATHS
+========================= */
+
+.diagnosis-paths {
+  background-color: transparent;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading p {
+  color: #666666;
+  margin-top: 10px;
+}
+
+.path-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 32px;
+  height: 100%;
+  box-shadow: 0 4px 18px rgba(20, 43, 85, 0.06);
+}
+
+.sns-card {
+  border-top: 5px solid #4a9fd8;
+}
+
+.private-card {
+  border-top: 5px solid #f087a8;
+}
+
+.path-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.path-icon {
+  width: 58px;
+  min-width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.sns-icon {
+  background-color: #4a9fd8;
+}
+
+.private-icon {
+  background-color: #f087a8;
+}
+
+.path-small-title {
+  color: #888888;
+  font-size: 13px;
+}
+
+.path-header h3 {
+  margin: 2px 0 0;
+  font-size: 24px;
+  color: #142b55;
+}
+
+.diagnosis-step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.diagnosis-step > span {
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #e9f8f6;
+  color: #2dada8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.diagnosis-step h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.diagnosis-step p {
+  color: #666666;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   ADULT DIAGNOSIS
+========================= */
+
+.adult-diagnosis {
+  background-color: #eef6ff;
+  border-radius: 20px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.adult-diagnosis .diagnosis-container {
+  background-color: transparent;
+}
+
+.adult-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.adult-icon {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a9fd8;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.adult-box h2 {
+  color: #142b55;
+  font-weight: 600;
+}
+
+.adult-box p {
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* =========================
+   OUR EXPERIENCE
+========================= */
+
+.our-experience {
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+.experience-card {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0 45px;
+}
+
+.experience-title-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.experience-image {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-title {
+  color: #3fb28f;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.experience-subtitle {
+  color: #142b55;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience-content {
+  text-align: center;
+}
+
+.experience-content p {
+  color: #555555;
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: left;
+}
+
+.experience-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #3fb28f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.experience-button:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* =========================
+   SOURCES
+========================= */
+
+.diagnosis-sources {
+  background-color: rgba(125, 250, 212, 0.25);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.diagnosis-sources .diagnosis-container {
+  background-color: transparent;
+}
+
+.diagnosis-sources h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.source-card {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.source-icon {
+  font-size: 30px;
+  color: #3fb28f;
+}
+
+.source-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.source-card p {
+  color: #666666;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .diagnosis-hero-content {
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 20px;
+  }
+
+  .diagnosis-hero-image {
+    flex: none;
+  }
+
+  .diagnosis-hero-image img {
+    width: 190px;
+  }
+
+  .diagnosis-hero h1 {
+    font-size: 38px;
+  }
+
+  .diagnosis-label {
+    font-size: 18px;
+  }
+
+  .diagnosis-container {
+    padding: 30px 20px;
+  }
+
+  .diagnosis-container h2 {
+    font-size: 28px;
+  }
+
+  .diagnosis-container p {
+    font-size: 17px;
+  }
+
+  .evaluation-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnosis-paths {
+    padding: 35px 0;
+  }
+
+  .path-card {
+    padding: 25px 20px;
+  }
+
+  .diagnosis-step h4 {
+    font-size: 18px;
+  }
+
+  .diagnosis-step p {
+    font-size: 16px;
+  }
+
+  .adult-box {
+    flex-direction: column;
+  }
+
+  .experience-title-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .experience-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .experience-title {
+    font-size: 30px;
+  }
+
+  .experience-subtitle {
+    font-size: 20px;
+  }
+
+  .experience-card {
+    padding: 0 20px;
+  }
+
+  .experience-content p {
+    font-size: 16px;
+  }
+
+  .source-card {
+    align-items: flex-start;
+  }
+}

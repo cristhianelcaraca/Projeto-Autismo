@@ -62,7 +62,7 @@ function Navbar() {
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" href="/avaliacao">
+                  <Link className="dropdown-item" to="/avaliacao">
                     Avaliação
                   </Link>
                 </li>

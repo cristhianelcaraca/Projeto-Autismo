@@ -1,3 +1,4 @@
+import "./Suspicion.css";
 import { Link } from "react-router-dom";
 
 import AutismCharacteristicsQuiz from "../Components/AutismCharacteristicsQuiz";

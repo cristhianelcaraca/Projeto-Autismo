@@ -1,0 +1,1559 @@
+/* =====================================================
+   AFTER DIAGNOSIS PAGE
+===================================================== */
+
+.after-diagnosis-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+.after-diagnosis-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 60px 45px;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.after-diagnosis-hero {
+  margin-top: 35px;
+  margin-bottom: 55px;
+  padding: 80px 50px;
+  background-color: #ffffff;
+}
+
+.after-diagnosis-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.after-diagnosis-label,
+.after-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: #3fb28f;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.after-diagnosis-hero h1 {
+  margin-bottom: 20px;
+
+  color: #142b55;
+
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.after-diagnosis-hero p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   SEÇÕES COM TEXTO AO REDOR DA IMAGEM
+===================================================== */
+
+.after-wrap-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.after-wrap-image {
+  float: left;
+
+  width: 220px;
+
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
+
+.after-wrap-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.after-wrap-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: #142b55;
+
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.after-wrap-section p {
+  color: #4f5f70;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   LISTA BASE
+===================================================== */
+
+.after-list {
+  margin-top: 15px;
+  padding-left: 25px;
+
+  color: #4f5f70;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.after-list li {
+  margin-bottom: 5px;
+}
+
+/* =====================================================
+   O DIAGNÓSTICO É UM PONTO DE PARTIDA
+===================================================== */
+
+.after-starting {
+  margin-bottom: 55px;
+
+  background-color: #fdfaf5;
+
+  border-radius: 20px;
+}
+
+/* Imagem */
+
+.after-starting .starting-image {
+  float: left;
+
+  width: 280px;
+
+  margin: 0 50px 25px 0;
+}
+
+.after-starting .starting-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* Label */
+
+.after-starting .after-section-label {
+  font-size: 18px;
+}
+
+/* Título */
+
+.after-starting h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Texto */
+
+.after-starting p {
+  color: #4f5f70;
+
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   PONTO DE PARTIDA - LISTA EM DUAS COLUNAS
+===================================================== */
+
+.after-starting .after-list {
+  clear: both;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 55px;
+  row-gap: 0;
+
+  width: 100%;
+
+  margin: 30px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.after-starting .after-list li {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 66px;
+
+  margin: 0;
+  padding: 15px 10px 15px 55px;
+
+  border-bottom: 1px solid rgba(20, 43, 85, 0.09);
+
+  color: #4f5f70;
+
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* CHECK */
+
+.after-starting .after-list li::before {
+  content: "✓";
+
+  position: absolute;
+  top: 50%;
+  left: 5px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow: 0 3px 8px rgba(20, 43, 85, 0.08);
+}
+
+/* Cores */
+
+.after-starting .after-list li:nth-child(1)::before {
+  background-color: #3fb28f;
+}
+
+.after-starting .after-list li:nth-child(2)::before {
+  background-color: #9b8ce0;
+}
+
+.after-starting .after-list li:nth-child(3)::before {
+  background-color: #4a9fd8;
+}
+
+.after-starting .after-list li:nth-child(4)::before {
+  background-color: #f0b429;
+}
+
+.after-starting .after-list li:nth-child(5)::before {
+  background-color: #f087a8;
+}
+
+.after-starting .after-list li:nth-child(6)::before {
+  background-color: #42b8b0;
+}
+
+.after-starting .after-list li:nth-child(7)::before {
+  background-color: #f29a45;
+}
+
+.after-starting .after-list li:nth-child(8)::before {
+  background-color: #8fbc4f;
+}
+
+/* =====================================================
+   APOIOS E TERAPIAS
+===================================================== */
+
+.after-supports {
+  padding: 70px 0;
+
+  background-color: #ffffff;
+}
+
+.after-supports .section-heading,
+.after-adults .section-heading,
+.after-checklist .section-heading {
+  max-width: 820px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.after-supports .section-heading h2,
+.after-adults .section-heading h2,
+.after-checklist .section-heading h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: #142b55;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.after-supports .section-heading p,
+.after-adults .section-heading p,
+.after-checklist .section-heading p {
+  color: #5d6875;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   CARDS DE APOIO
+===================================================== */
+
+.after-support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.after-support-card {
+  padding: 30px 25px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5eaee;
+  border-radius: 20px;
+}
+
+.after-support-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #142b55;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.after-support-card p {
+  margin-bottom: 0;
+
+  color: #5d6875;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   ÍCONES DOS CARDS
+===================================================== */
+
+.after-support-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  margin-bottom: 20px;
+
+  border-radius: 16px;
+
+  font-size: 25px;
+}
+
+.after-support-icon.purple {
+  background-color: #f1eafa;
+  color: #7653a6;
+}
+
+.after-support-icon.blue {
+  background-color: #e7f3fb;
+  color: #3f8fbd;
+}
+
+.after-support-icon.green {
+  background-color: #e6f7f2;
+  color: #3fb28f;
+}
+
+.after-support-icon.yellow {
+  background-color: #fff5db;
+  color: #d6a52e;
+}
+
+.after-support-icon.pink {
+  background-color: #fff0f5;
+  color: #f087a8;
+}
+
+/* =====================================================
+   QUAL É A MELHOR TERAPIA?
+===================================================== */
+
+.therapy-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  margin-top: 35px;
+  padding: 30px;
+
+  background-color: #fff9e9;
+
+  border-radius: 20px;
+}
+
+.therapy-note-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  color: #d6a52e;
+
+  font-size: 24px;
+}
+
+.therapy-note h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #142b55;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.therapy-note p {
+  margin-bottom: 10px;
+
+  color: #5d6875;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.therapy-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   ESCOLA
+===================================================== */
+
+.after-school {
+  margin: 55px 0;
+
+  background-color: #eef6ff;
+
+  border-radius: 20px;
+}
+
+/* Imagem à direita */
+
+.after-school .teacher-image {
+  float: right;
+
+  width: 320px;
+
+  margin: 0 0 30px 60px;
+}
+
+.after-school .teacher-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+
+  object-fit: contain;
+}
+
+/* Label */
+
+.after-school .after-section-label {
+  font-size: 18px;
+}
+
+/* Título */
+
+.after-school h2 {
+  max-width: 620px;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Texto */
+
+.after-school p {
+  color: #34445f;
+
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   ESCOLA - LISTA EM DUAS COLUNAS
+===================================================== */
+
+.after-school .after-list {
+  clear: both;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 55px;
+  row-gap: 0;
+
+  width: 100%;
+
+  margin: 35px 0 10px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.after-school .after-list li {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 70px;
+
+  margin: 0;
+  padding: 16px 10px 16px 58px;
+
+  border-bottom: 1px solid rgba(20, 43, 85, 0.1);
+
+  color: #34445f;
+
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* CHECK */
+
+.after-school .after-list li::before {
+  content: "✓";
+
+  position: absolute;
+  top: 50%;
+  left: 5px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  box-shadow: 0 3px 8px rgba(20, 43, 85, 0.08);
+}
+
+/* Cores */
+
+.after-school .after-list li:nth-child(1)::before {
+  background-color: #55c796;
+}
+
+.after-school .after-list li:nth-child(2)::before {
+  background-color: #9b8ce0;
+}
+
+.after-school .after-list li:nth-child(3)::before {
+  background-color: #4a9fd8;
+}
+
+.after-school .after-list li:nth-child(4)::before {
+  background-color: #f29a45;
+}
+
+.after-school .after-list li:nth-child(5)::before {
+  background-color: #f087a8;
+}
+
+.after-school .after-list li:nth-child(6)::before {
+  background-color: #42b8c2;
+}
+
+.after-school .after-list li:nth-child(7)::before {
+  background-color: #f0b429;
+}
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.after-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 15px;
+  padding: 12px 24px;
+
+  background-color: #3fb28f;
+
+  border-radius: 50px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.after-link-button:hover {
+  background-color: #329b7c;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+/* Botão da escola */
+
+.after-school .after-link-button {
+  margin-top: 25px;
+
+  background-color: #4a9fd8;
+}
+
+.after-school .after-link-button:hover {
+  background-color: #3b8fc4;
+}
+
+/* =====================================================
+   COMUNICAR O DIAGNÓSTICO
+===================================================== */
+
+.after-disclosure {
+  padding: 70px 0;
+
+  background-color: #ffffff;
+}
+
+.speaking-image {
+  width: 230px;
+}
+
+.disclosure-questions {
+  margin: 25px 0;
+  padding: 25px 30px;
+
+  background-color: #f7fafb;
+
+  border-radius: 20px;
+}
+
+.disclosure-questions h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #142b55;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =====================================================
+   DIAGNÓSTICO NA IDADE ADULTA
+===================================================== */
+
+.after-adults {
+  margin: 55px 0;
+
+  background-color: #fdfaf5;
+
+  border-radius: 20px;
+}
+
+.adult-diagnosis-box {
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+.adult-diagnosis-box p {
+  color: #4f5f70;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   MASKING / CAMUFLAGEM SOCIAL
+===================================================== */
+
+.after-masking {
+  padding: 75px 0;
+
+  background-color: #ffffff;
+}
+
+/* Imagem */
+
+.after-masking .masking-image {
+  float: left;
+
+  width: 300px;
+
+  margin: 0 50px 30px 0;
+}
+
+.after-masking .masking-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+/* Label */
+
+.after-masking .after-section-label {
+  font-size: 18px;
+}
+
+/* Título */
+
+.after-masking h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  color: #142b55;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Texto */
+
+.after-masking p {
+  color: #4f5f70;
+
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   MASKING - LISTA DE COMPORTAMENTOS
+===================================================== */
+
+.after-masking .masking-list {
+  clear: both;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+
+  margin: 40px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.after-masking .masking-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 190px;
+
+  margin: 0;
+  padding: 22px 18px;
+
+  color: #34445f;
+
+  text-align: center;
+}
+
+/* =====================================================
+   MASKING - CÍRCULOS DOS ÍCONES
+===================================================== */
+
+.masking-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 88px;
+  height: 88px;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+}
+
+.masking-icon i {
+  font-size: 34px;
+  line-height: 1;
+}
+
+/* Verde */
+
+.masking-icon.green {
+  background-color: #e8f7f3;
+  color: #3fb28f;
+}
+
+/* Roxo */
+
+.masking-icon.purple {
+  background-color: #f1eafa;
+  color: #8d6bc2;
+}
+
+/* Azul */
+
+.masking-icon.blue {
+  background-color: #e9f3fb;
+  color: #4a9fd8;
+}
+
+/* Amarelo */
+
+.masking-icon.yellow {
+  background-color: #fff3d8;
+  color: #e5a72e;
+}
+
+/* Rosa */
+
+.masking-icon.pink {
+  background-color: #fff0f5;
+  color: #f087a8;
+}
+
+/* Turquesa */
+
+.masking-icon.turquoise {
+  background-color: #e7f7f7;
+  color: #42b8b0;
+}
+
+/* Texto abaixo do círculo */
+
+.masking-list li > span {
+  max-width: 240px;
+
+  color: #34445f;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   PRÓXIMOS PASSOS
+===================================================== */
+
+.after-checklist {
+  margin-top: 55px;
+  margin-bottom: 55px;
+
+  background-color: rgba(125, 250, 212, 0.2);
+
+  border-radius: 20px;
+}
+
+.after-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.after-check-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 25px;
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+}
+
+.after-check-item > span {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background-color: #3fb28f;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.after-check-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  color: #142b55;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.after-check-item p {
+  margin: 0;
+
+  color: #5d6875;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   MENSAGEM FINAL
+===================================================== */
+
+.after-final-message {
+  max-width: 800px;
+
+  margin: 40px auto 0;
+  padding: 25px 30px;
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.after-final-message p {
+  margin: 0;
+
+  color: #142b55;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+/* =====================================================
+   TABLETS
+===================================================== */
+
+@media (max-width: 991px) {
+  .after-diagnosis-container {
+    padding: 55px 35px;
+  }
+
+  /* PONTO DE PARTIDA */
+
+  .after-starting .starting-image {
+    width: 240px;
+    margin-right: 40px;
+  }
+
+  .after-starting h2 {
+    font-size: 34px;
+  }
+
+  .after-starting .after-list {
+    column-gap: 35px;
+  }
+
+  /* APOIOS */
+
+  .after-support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ESCOLA */
+
+  .after-school .teacher-image {
+    width: 270px;
+    margin-left: 40px;
+  }
+
+  .after-school h2 {
+    font-size: 34px;
+  }
+
+  .after-school .after-list {
+    column-gap: 35px;
+  }
+
+  /* MASKING */
+
+  .after-masking .masking-image {
+    width: 250px;
+    margin-right: 35px;
+  }
+
+  .after-masking h2 {
+    font-size: 34px;
+  }
+
+  .after-masking .masking-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+  }
+}
+
+/* =====================================================
+   TABLETS PEQUENOS / MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  /* HERO */
+
+  .after-diagnosis-hero {
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    padding: 55px 25px;
+  }
+
+  .after-diagnosis-hero h1 {
+    font-size: 38px;
+  }
+
+  .after-diagnosis-hero p {
+    font-size: 17px;
+  }
+
+  .after-diagnosis-container {
+    padding: 45px 25px;
+  }
+
+  /* =====================================================
+     IMAGENS GENÉRICAS
+  ===================================================== */
+
+  .after-wrap-image {
+    float: none;
+
+    width: 190px;
+
+    margin: 0 auto 25px;
+  }
+
+  .after-wrap-section {
+    text-align: center;
+  }
+
+  .after-wrap-section p,
+  .after-wrap-section ul {
+    text-align: left;
+  }
+
+  .after-wrap-section h2 {
+    font-size: 29px;
+  }
+
+  /* =====================================================
+     PONTO DE PARTIDA
+  ===================================================== */
+
+  .after-starting .starting-image {
+    float: none;
+
+    width: 220px;
+
+    margin: 0 auto 30px;
+  }
+
+  .after-starting .after-section-label {
+    display: block;
+
+    text-align: center;
+  }
+
+  .after-starting h2 {
+    font-size: 30px;
+
+    text-align: center;
+  }
+
+  .after-starting p {
+    font-size: 17px;
+
+    text-align: left;
+  }
+
+  .after-starting .after-list {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+    margin: 28px auto 0;
+  }
+
+  .after-starting .after-list li {
+    min-height: 62px;
+
+    padding-left: 52px;
+
+    font-size: 16px;
+  }
+
+  /* =====================================================
+     APOIOS
+  ===================================================== */
+
+  .after-support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .therapy-note {
+    flex-direction: column;
+  }
+
+  .after-supports .section-heading h2,
+  .after-adults .section-heading h2,
+  .after-checklist .section-heading h2 {
+    font-size: 30px;
+  }
+
+  /* =====================================================
+     ESCOLA
+  ===================================================== */
+
+  .after-school .teacher-image {
+    float: none;
+
+    width: 230px;
+
+    margin: 0 auto 30px;
+  }
+
+  .after-school .after-section-label {
+    display: block;
+
+    text-align: center;
+  }
+
+  .after-school h2 {
+    max-width: 100%;
+
+    font-size: 30px;
+
+    text-align: center;
+  }
+
+  .after-school p {
+    font-size: 17px;
+
+    text-align: left;
+  }
+
+  .after-school .after-list {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+    margin: 30px auto 10px;
+  }
+
+  .after-school .after-list li {
+    min-height: 64px;
+
+    padding-left: 55px;
+
+    font-size: 16px;
+  }
+
+  .after-school .after-link-button {
+    display: flex;
+
+    width: fit-content;
+
+    margin: 25px auto 0;
+  }
+
+  /* =====================================================
+     MASKING
+  ===================================================== */
+
+  .after-masking {
+    padding: 60px 0;
+  }
+
+  .after-masking .masking-image {
+    float: none;
+
+    width: 220px;
+
+    margin: 0 auto 30px;
+  }
+
+  .after-masking .after-section-label {
+    display: block;
+
+    text-align: center;
+  }
+
+  .after-masking h2 {
+    font-size: 30px;
+
+    text-align: center;
+  }
+
+  .after-masking p {
+    font-size: 17px;
+
+    text-align: left;
+  }
+
+  .after-masking .masking-list {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    max-width: 650px;
+
+    margin: 30px auto;
+  }
+
+  .after-masking .masking-list li {
+    min-height: 170px;
+
+    padding: 20px 15px;
+  }
+
+  .masking-icon {
+    width: 74px;
+    height: 74px;
+
+    margin-bottom: 16px;
+  }
+
+  .masking-icon i {
+    font-size: 29px;
+  }
+
+  .masking-list li > span {
+    font-size: 15px;
+  }
+
+  /* =====================================================
+     CHECKLIST
+  ===================================================== */
+
+  .after-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+  /* HERO */
+
+  .after-diagnosis-hero {
+    padding: 45px 20px;
+  }
+
+  .after-diagnosis-hero h1 {
+    font-size: 34px;
+  }
+
+  .after-diagnosis-hero p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .after-diagnosis-label,
+  .after-section-label {
+    font-size: 15px;
+  }
+
+  .after-diagnosis-container {
+    padding: 40px 20px;
+  }
+
+  /* =====================================================
+     TÍTULOS
+  ===================================================== */
+
+  .after-wrap-section h2,
+  .after-supports .section-heading h2,
+  .after-adults .section-heading h2,
+  .after-checklist .section-heading h2 {
+    font-size: 27px;
+  }
+
+  /* =====================================================
+     TEXTOS
+  ===================================================== */
+
+  .after-wrap-section p,
+  .after-list,
+  .after-supports .section-heading p,
+  .after-adults .section-heading p,
+  .after-checklist .section-heading p,
+  .adult-diagnosis-box p {
+    font-size: 16px;
+  }
+
+  /* =====================================================
+     PONTO DE PARTIDA
+  ===================================================== */
+
+  .after-starting .starting-image {
+    width: 180px;
+  }
+
+  .after-starting h2 {
+    font-size: 28px;
+  }
+
+  .after-starting p {
+    font-size: 16px;
+  }
+
+  .after-starting .after-list li {
+    min-height: 58px;
+
+    padding: 13px 5px 13px 48px;
+
+    font-size: 15px;
+  }
+
+  .after-starting .after-list li::before {
+    left: 3px;
+
+    width: 33px;
+    height: 33px;
+
+    font-size: 18px;
+  }
+
+  /* =====================================================
+     SUPPORT CARDS
+  ===================================================== */
+
+  .after-support-card {
+    padding: 26px 22px;
+  }
+
+  .after-support-card h3 {
+    font-size: 19px;
+  }
+
+  /* =====================================================
+     THERAPY
+  ===================================================== */
+
+  .therapy-note {
+    padding: 25px 22px;
+  }
+
+  /* =====================================================
+     ESCOLA
+  ===================================================== */
+
+  .after-school .teacher-image {
+    width: 190px;
+  }
+
+  .after-school h2 {
+    font-size: 28px;
+  }
+
+  .after-school p {
+    font-size: 16px;
+  }
+
+  .after-school .after-list {
+    margin-top: 25px;
+  }
+
+  .after-school .after-list li {
+    min-height: 60px;
+
+    padding: 14px 5px 14px 50px;
+
+    font-size: 15px;
+  }
+
+  .after-school .after-list li::before {
+    left: 3px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 19px;
+  }
+
+  .after-school .after-link-button {
+    width: 100%;
+
+    padding: 12px 18px;
+  }
+
+  /* =====================================================
+     DISCLOSURE
+  ===================================================== */
+
+  .speaking-image {
+    width: 170px;
+  }
+
+  .disclosure-questions {
+    padding: 22px;
+  }
+
+  /* =====================================================
+     MASKING
+  ===================================================== */
+
+  .after-masking .masking-image {
+    width: 190px;
+  }
+
+  .after-masking h2 {
+    font-size: 28px;
+  }
+
+  .after-masking p {
+    font-size: 16px;
+  }
+
+  .after-masking .masking-list {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .after-masking .masking-list li {
+    min-height: auto;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 18px;
+
+    padding: 14px 10px;
+
+    text-align: left;
+  }
+
+  .masking-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0;
+  }
+
+  .masking-icon i {
+    font-size: 24px;
+  }
+
+  .masking-list li > span {
+    max-width: none;
+
+    font-size: 15px;
+  }
+
+  /* =====================================================
+     BUTTON
+  ===================================================== */
+
+  .after-link-button {
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 12px 20px;
+  }
+
+  /* =====================================================
+     CHECKLIST
+  ===================================================== */
+
+  .after-check-item {
+    flex-direction: column;
+
+    padding: 22px;
+  }
+
+  .after-final-message {
+    padding: 22px;
+  }
+
+  .after-final-message p {
+    font-size: 16px;
+  }
+}

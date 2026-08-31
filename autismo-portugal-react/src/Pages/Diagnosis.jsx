@@ -1,3 +1,5 @@
+import "./Diagnosis.css";
+
 function Diagnosis() {
   return (
     <main className="diagnosis-page">

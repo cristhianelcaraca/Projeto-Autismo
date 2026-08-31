@@ -1,0 +1,743 @@
+/* =====================================================
+   EVALUATION PAGE
+===================================================== */
+
+.evaluation-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.evaluation-hero {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  padding: 80px 50px;
+  background-color: #f7fbfc;
+  border-radius: 20px;
+}
+
+.evaluation-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.evaluation-hero-image {
+  flex: 0 0 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evaluation-hero-image img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
+
+.evaluation-hero-text {
+  max-width: 600px;
+  padding: 20px 0;
+}
+
+.evaluation-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #3fb28f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.evaluation-hero-text h1 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.evaluation-hero-text p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.evaluation-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   COMO COMEÇAR
+===================================================== */
+
+.evaluation-start {
+  padding: 80px 0;
+}
+
+.evaluation-start .section-heading,
+.evaluation-process .section-heading,
+.evaluation-after .section-heading {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.evaluation-start .section-heading h2,
+.evaluation-process .section-heading h2,
+.evaluation-after .section-heading h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.evaluation-start .section-heading p,
+.evaluation-process .section-heading p,
+.evaluation-after .section-heading p {
+  margin: 0;
+  color: #5d6875;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   CAMINHOS: SNS / PRIVADO
+===================================================== */
+
+.evaluation-paths {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.evaluation-path-card {
+  height: 100%;
+  padding: 35px;
+  background-color: #ffffff;
+  border: 1px solid #e7ecef;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(20, 43, 85, 0.06);
+}
+
+.evaluation-path-icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+.evaluation-path-icon.blue {
+  background-color: #e9f3fb;
+  color: #477fa8;
+}
+
+.evaluation-path-icon.green {
+  background-color: #e9f8f3;
+  color: #3fb28f;
+}
+
+.evaluation-path-card h3 {
+  margin-bottom: 15px;
+  color: #142b55;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.evaluation-path-card p {
+  color: #5d6875;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.evaluation-path-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   NOTA: O PROCESSO PODE VARIAR
+===================================================== */
+
+.evaluation-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding: 28px 32px;
+
+  background-color: #fff9e9;
+  border-radius: 20px;
+}
+
+.evaluation-note-icon {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  color: #d6a52e;
+  font-size: 23px;
+}
+
+.evaluation-note h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.evaluation-note p {
+  margin: 0;
+  color: #5d6875;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* =====================================================
+   PROCESSO DE AVALIAÇÃO
+===================================================== */
+
+.evaluation-process {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.evaluation-steps {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.evaluation-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  padding: 28px 30px;
+
+  background-color: #f7fafb;
+  border-radius: 20px;
+}
+
+.evaluation-step > span {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #3fb28f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.evaluation-step h3 {
+  margin: 0 0 8px;
+  color: #142b55;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.evaluation-step p {
+  margin: 0;
+  color: #34445f;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   ESCOLA
+===================================================== */
+
+.evaluation-school {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.evaluation-school-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  background-color: #eaf8f5;
+  border-radius: 20px;
+}
+
+/*
+  No Evaluation.jsx a classe utilizada é
+  evaluation-school-icon.
+*/
+
+.evaluation-school-icon {
+  flex: 0 0 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evaluation-school-icon img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+.evaluation-school-content {
+  flex: 1;
+}
+
+.evaluation-school-content span,
+.evaluation-experience-content span,
+.evaluation-next-label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: #3fb28f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.evaluation-school-content h2,
+.evaluation-experience-content h2 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.evaluation-school-content p,
+.evaluation-experience-content p {
+  margin-bottom: 15px;
+  color: #34445f;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.evaluation-school-content p:last-child,
+.evaluation-experience-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   DEPOIS DA AVALIAÇÃO
+===================================================== */
+
+.evaluation-after {
+  padding: 85px 0;
+  background-color: #ffffff;
+}
+
+.evaluation-after-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.evaluation-after-card {
+  padding: 32px 28px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5eaee;
+  border-radius: 20px;
+}
+
+.evaluation-after-icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  font-size: 26px;
+}
+
+.evaluation-after-icon.purple {
+  background-color: #f1eafa;
+  color: #7653a6;
+}
+
+.evaluation-after-icon.blue {
+  background-color: #e7f3fb;
+  color: #3f8fbd;
+}
+
+.evaluation-after-icon.green {
+  background-color: #e6f7f2;
+  color: #3fb28f;
+}
+
+.evaluation-after-card h3 {
+  margin-bottom: 12px;
+  color: #142b55;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.evaluation-after-card p {
+  margin: 0;
+  color: #34445f;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   NOSSA EXPERIÊNCIA
+===================================================== */
+
+.evaluation-experience {
+  padding: 85px 0;
+
+  background-color: #fffaf2;
+  border-radius: 20px;
+}
+
+.evaluation-experience-box {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.evaluation-experience-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evaluation-experience-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+/* =====================================================
+   PRÓXIMO PASSO
+===================================================== */
+
+.evaluation-next {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.evaluation-next .evaluation-container {
+  max-width: 800px;
+}
+
+.evaluation-next h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.evaluation-next p {
+  margin: 0 auto 28px;
+  color: #34445f;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.evaluation-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 13px 26px;
+
+  background-color: #3fb28f;
+  border-radius: 50px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.evaluation-link:hover {
+  background-color: #329b7c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+  .evaluation-after-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .evaluation-experience-box {
+    grid-template-columns: 240px 1fr;
+    gap: 35px;
+  }
+
+  .evaluation-experience-image img {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .evaluation-hero {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 50px 25px;
+  }
+
+  .evaluation-hero-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .evaluation-hero-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .evaluation-hero-image img {
+    max-width: 260px;
+  }
+
+  .evaluation-hero-text {
+    max-width: 100%;
+  }
+
+  .evaluation-hero-text h1 {
+    font-size: 38px;
+  }
+
+  .evaluation-hero-text p {
+    font-size: 16px;
+  }
+
+  .evaluation-start,
+  .evaluation-process,
+  .evaluation-school,
+  .evaluation-after,
+  .evaluation-experience,
+  .evaluation-next {
+    padding: 60px 0;
+  }
+
+  .evaluation-start .section-heading,
+  .evaluation-process .section-heading,
+  .evaluation-after .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .evaluation-start .section-heading h2,
+  .evaluation-process .section-heading h2,
+  .evaluation-after .section-heading h2,
+  .evaluation-next h2 {
+    font-size: 29px;
+  }
+
+  .evaluation-paths {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .evaluation-path-card {
+    padding: 28px;
+  }
+
+  .evaluation-note {
+    padding: 25px;
+  }
+
+  .evaluation-step {
+    padding: 24px 20px;
+    gap: 18px;
+  }
+
+  .evaluation-step > span {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .evaluation-school-box {
+    flex-direction: column;
+    padding: 35px 28px;
+    gap: 25px;
+  }
+
+  .evaluation-school-icon {
+    flex: none;
+    width: 100%;
+  }
+
+  .evaluation-school-icon img {
+    max-width: 160px;
+  }
+
+  .evaluation-school-content {
+    text-align: center;
+  }
+
+  .evaluation-school-content h2 {
+    font-size: 28px;
+  }
+
+  .evaluation-experience-box {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .evaluation-experience-image img {
+    max-width: 240px;
+  }
+
+  .evaluation-experience-content {
+    text-align: center;
+  }
+
+  .evaluation-experience-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .evaluation-start,
+  .evaluation-process,
+  .evaluation-school,
+  .evaluation-after,
+  .evaluation-experience,
+  .evaluation-next {
+    padding: 50px 0;
+  }
+
+  .evaluation-process .section-heading h2,
+  .evaluation-after .section-heading h2,
+  .evaluation-next h2 {
+    font-size: 27px;
+  }
+
+  .evaluation-process .section-heading p,
+  .evaluation-after .section-heading p,
+  .evaluation-next p {
+    font-size: 16px;
+  }
+
+  .evaluation-step {
+    flex-direction: column;
+  }
+
+  .evaluation-step h3 {
+    font-size: 20px;
+  }
+
+  .evaluation-step p {
+    font-size: 16px;
+  }
+
+  .evaluation-school-box {
+    padding: 30px 22px;
+  }
+
+  .evaluation-school-icon img {
+    max-width: 140px;
+  }
+
+  .evaluation-school-content h2 {
+    font-size: 26px;
+  }
+
+  .evaluation-school-content p {
+    font-size: 16px;
+  }
+
+  .evaluation-after-card {
+    padding: 28px 24px;
+  }
+
+  .evaluation-experience-content h2 {
+    font-size: 26px;
+  }
+
+  .evaluation-experience-content p {
+    font-size: 16px;
+  }
+
+  .evaluation-link {
+    width: 100%;
+    max-width: 330px;
+    padding: 13px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .evaluation-hero-text h1 {
+    font-size: 34px;
+  }
+
+  .evaluation-start .section-heading h2,
+  .evaluation-next h2 {
+    font-size: 27px;
+  }
+
+  .evaluation-path-card {
+    padding: 24px;
+  }
+
+  .evaluation-note {
+    flex-direction: column;
+    gap: 15px;
+    padding: 23px;
+  }
+}
