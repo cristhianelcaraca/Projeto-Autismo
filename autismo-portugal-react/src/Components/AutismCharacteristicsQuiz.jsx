@@ -55,7 +55,6 @@ function AutismCharacteristicsQuiz() {
       text: "A criança raramente procura partilhar espontaneamente interesses, conquistas ou experiências com outras pessoas?",
       characteristicAnswer: "sim",
     },
-
     {
       id: 9,
       category: "behavior",
@@ -98,7 +97,6 @@ function AutismCharacteristicsQuiz() {
       text: "A criança demonstra um apego particularmente intenso a determinados objetos, incluindo objetos que habitualmente não são usados como brinquedos?",
       characteristicAnswer: "sim",
     },
-
     {
       id: 16,
       category: "sensory",
@@ -135,6 +133,7 @@ function AutismCharacteristicsQuiz() {
 
   function handleAnswer(answer) {
     const newAnswers = [...answers];
+
     newAnswers[currentQuestion] = answer;
 
     setAnswers(newAnswers);
@@ -192,6 +191,37 @@ function AutismCharacteristicsQuiz() {
     };
   }
 
+  function getResultMessage(total) {
+    if (total <= 2) {
+      return {
+        title: "Poucas características foram assinaladas",
+        text: `As suas respostas indicam poucas ou nenhuma das características
+        incluídas neste questionário. Isto não permite excluir autismo, uma vez
+        que as características podem manifestar-se de formas muito diferentes
+        entre pessoas e ao longo do desenvolvimento.`,
+      };
+    }
+
+    if (total <= 6) {
+      return {
+        title: "Algumas características foram assinaladas",
+        text: `As suas respostas indicam a presença de algumas características
+        que também podem ser observadas em pessoas autistas. Isoladamente,
+        estas características não permitem determinar se uma criança é ou não
+        autista.`,
+      };
+    }
+
+    return {
+      title: "Foram assinaladas várias características",
+      text: `As suas respostas indicam a presença de várias das características
+      abordadas neste questionário. Isto não significa necessariamente que a
+      criança seja autista, mas pode ser útil observar se estas características
+      são persistentes, aparecem em diferentes contextos ou têm impacto
+      significativo no dia a dia.`,
+    };
+  }
+
   if (!started) {
     return (
       <div className="quiz-start">
@@ -213,9 +243,12 @@ function AutismCharacteristicsQuiz() {
 
   if (completed) {
     const totalCharacteristics = countCharacteristics();
+
     const social = countCategory("social");
     const behavior = countCategory("behavior");
     const sensory = countCategory("sensory");
+
+    const resultMessage = getResultMessage(totalCharacteristics);
 
     return (
       <div className="quiz-result">
@@ -226,9 +259,16 @@ function AutismCharacteristicsQuiz() {
           características.
         </p>
 
+        <div className="quiz-result-message">
+          <h4>{resultMessage.title}</h4>
+
+          <p>{resultMessage.text}</p>
+        </div>
+
         <div className="quiz-result-categories">
           <div>
             <strong>Comunicação e interação social</strong>
+
             <span>
               {social.selected} / {social.total}
             </span>
@@ -236,6 +276,7 @@ function AutismCharacteristicsQuiz() {
 
           <div>
             <strong>Comportamentos e interesses</strong>
+
             <span>
               {behavior.selected} / {behavior.total}
             </span>
@@ -243,22 +284,24 @@ function AutismCharacteristicsQuiz() {
 
           <div>
             <strong>Processamento sensorial</strong>
+
             <span>
               {sensory.selected} / {sensory.total}
             </span>
           </div>
         </div>
 
-        <p className="quiz-result-info">
-          Estas respostas indicam apenas a presença de algumas características
-          que também podem ser observadas em pessoas autistas. O resultado não
-          permite determinar se uma criança é ou não autista.
-        </p>
+        {totalCharacteristics > 2 && (
+          <p className="quiz-result-info">
+            Se estas características são persistentes, aparecem em diferentes
+            contextos ou têm impacto significativo no dia a dia da criança,
+            considere conversar com um profissional de saúde.
+          </p>
+        )}
 
-        <p className="quiz-result-info">
-          Se estas características são persistentes, aparecem em diferentes
-          contextos ou têm impacto significativo no dia a dia da criança,
-          considere conversar com um profissional de saúde.
+        <p className="quiz-result-disclaimer">
+          Este resultado é apenas informativo e não permite diagnosticar ou
+          excluir autismo.
         </p>
 
         <button
