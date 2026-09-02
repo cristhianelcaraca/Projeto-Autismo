@@ -1,0 +1,886 @@
+/* =====================================================
+   PSI PAGE
+===================================================== */
+
+.psi-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+.psi-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 45px;
+}
+
+.psi-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.psi-section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.psi-section-heading.left {
+  max-width: none;
+  margin: 0 0 35px;
+  text-align: left;
+}
+
+.psi-section-heading h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.psi-section-heading p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.psi-hero {
+  padding: 45px 0 30px;
+}
+
+.psi-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.psi-hero-text {
+  max-width: 760px;
+}
+
+.psi-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 7px 18px;
+  background-color: #eaf8f5;
+  border-radius: 50px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.psi-hero h1 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.psi-hero p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.psi-hero-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background-color: #eaf8f5;
+  border-radius: 50%;
+  color: #3fb28f;
+  font-size: 72px;
+}
+
+/* =====================================================
+   ELIGIBILITY
+===================================================== */
+
+.psi-eligibility {
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.psi-eligibility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.psi-eligibility-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(20, 43, 85, 0.05);
+}
+
+.psi-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  border-radius: 17px;
+  font-size: 26px;
+}
+
+.psi-card-icon.green {
+  background-color: #eaf8f5;
+  color: #3fb28f;
+}
+
+.psi-card-icon.blue {
+  background-color: #eef6ff;
+  color: #4a9fd8;
+}
+
+.psi-card-icon.purple {
+  background-color: #f1eefa;
+  color: #9b8ce0;
+}
+
+.psi-card-icon.yellow {
+  background-color: #fff8df;
+  color: #dca01d;
+}
+
+.psi-eligibility-card h3 {
+  margin-bottom: 10px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.psi-eligibility-card p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.psi-important-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 35px auto 0;
+  padding: 25px 28px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.psi-important-note i {
+  flex-shrink: 0;
+  color: #dca01d;
+  font-size: 30px;
+}
+
+.psi-important-note p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   COMPONENTS
+===================================================== */
+
+.psi-components {
+  padding: 30px 0;
+}
+
+.psi-components-image {
+  float: right;
+  width: 315px;
+  margin: 0 0 30px 48px;
+}
+
+.psi-components-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.psi-components::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.psi-components-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  clear: both;
+}
+
+.psi-component-card {
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(20, 43, 85, 0.07);
+}
+
+.psi-component-card.base {
+  border-top: 6px solid #3fb28f;
+}
+
+.psi-component-card.complement {
+  border-top: 6px solid #4a9fd8;
+}
+
+.psi-component-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: #eaf8f5;
+  border-radius: 18px;
+  color: #3fb28f;
+  font-size: 28px;
+}
+
+.psi-component-card.complement .psi-component-number {
+  background-color: #eef6ff;
+  color: #4a9fd8;
+}
+
+.psi-component-card h3 {
+  margin-bottom: 12px;
+  color: #142b55;
+  font-size: 27px;
+}
+
+.psi-component-card > p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.psi-value-box {
+  margin: 25px 0 20px;
+  padding: 20px;
+  background-color: #f8fbfc;
+  border-radius: 16px;
+}
+
+.psi-value-box span {
+  display: block;
+  margin-bottom: 5px;
+  color: #6d7886;
+  font-size: 18px;
+}
+
+.psi-value-box strong {
+  color: #142b55;
+  font-size: 32px;
+}
+
+.psi-small-note {
+  color: #6d6250 !important;
+  font-size: 18px !important;
+}
+
+.psi-values-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 35px auto 0;
+  padding: 27px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.psi-values-warning > i {
+  flex-shrink: 0;
+  color: #dca01d;
+  font-size: 30px;
+}
+
+.psi-values-warning h3 {
+  margin-bottom: 7px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.psi-values-warning p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   CHILDREN
+===================================================== */
+
+.psi-children {
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.psi-children-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.psi-children-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #4a9fd8;
+  font-size: 30px;
+}
+
+.psi-children-box h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 36px;
+}
+
+.psi-children-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.psi-children-highlight {
+  margin-top: 22px;
+  padding: 21px 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #142b55;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   AMIM
+===================================================== */
+
+.psi-amim {
+  padding: 30px 0;
+}
+
+.psi-amim-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #eaf8f5;
+  border-radius: 20px;
+}
+
+.psi-amim-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #3fb28f;
+  font-size: 30px;
+}
+
+.psi-amim-content h2 {
+  margin-bottom: 15px;
+  color: #142b55;
+  font-size: 34px;
+}
+
+.psi-amim-content p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.psi-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 13px 25px;
+  background-color: #3fb28f;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.psi-button:hover {
+  background-color: #339879;
+  color: #ffffff;
+}
+
+/* =====================================================
+   REQUEST
+===================================================== */
+
+.psi-request {
+  background-color: #fdfaf5;
+  border-radius: 20px;
+}
+
+.psi-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.psi-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.psi-step > span {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #3fb28f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.psi-step h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.psi-step p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   INCOME
+===================================================== */
+
+.psi-income-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.psi-income-card {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(20, 43, 85, 0.06);
+}
+
+.psi-income-card h3 {
+  color: #142b55;
+  font-size: 24px;
+}
+
+.psi-income-card p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.psi-income-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 850px;
+  margin: 35px auto 0;
+  padding: 25px;
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.psi-income-note i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 29px;
+}
+
+.psi-income-note p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   WORK
+===================================================== */
+
+.psi-work {
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.psi-work-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.psi-work-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #9b8ce0;
+  font-size: 30px;
+}
+
+.psi-work-box h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 36px;
+}
+
+.psi-work-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.psi-work-highlight {
+  margin-top: 24px;
+  padding: 22px 25px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.psi-work-highlight strong {
+  color: #142b55;
+  font-size: 20px;
+}
+
+.psi-work-highlight p {
+  margin: 10px 0 0;
+}
+
+/* =====================================================
+   DIFFERENCES
+===================================================== */
+
+.psi-differences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.psi-difference-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(20, 43, 85, 0.06);
+}
+
+.psi-difference-card > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  background-color: #f1eefa;
+  border-radius: 17px;
+  color: #9b8ce0;
+  font-size: 26px;
+}
+
+.psi-difference-card h3 {
+  margin-bottom: 10px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.psi-difference-card p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   HELP
+===================================================== */
+
+.psi-help {
+  background-color: #eaf8f5;
+  border-radius: 20px;
+}
+
+.psi-help-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.psi-help-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #3fb28f;
+  font-size: 30px;
+}
+
+.psi-help-content h2 {
+  margin-bottom: 15px;
+  color: #142b55;
+  font-size: 34px;
+}
+
+.psi-help-content p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   UPDATE
+===================================================== */
+
+.psi-update {
+  padding: 30px 0;
+}
+
+.psi-update-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.psi-update-box > i {
+  flex-shrink: 0;
+  color: #dca01d;
+  font-size: 32px;
+}
+
+.psi-update-box h2 {
+  margin-bottom: 10px;
+  color: #142b55;
+  font-size: 28px;
+}
+
+.psi-update-box p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   SOURCES
+===================================================== */
+
+.psi-sources {
+  background-color: #f8fbfc;
+}
+
+.psi-source-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.psi-source-card > i {
+  flex-shrink: 0;
+  color: #3fb28f;
+  font-size: 31px;
+}
+
+.psi-source-card h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.psi-source-card p {
+  margin-bottom: 10px;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.psi-source-card a {
+  color: #3f8fbd;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.psi-source-card a:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+  .psi-eligibility-grid,
+  .psi-differences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .psi-components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .psi-components-image {
+    width: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .psi-container {
+    padding: 55px 25px;
+  }
+
+  .psi-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .psi-hero-icon {
+    width: 130px;
+    height: 130px;
+    font-size: 55px;
+  }
+
+  .psi-hero h1 {
+    font-size: 40px;
+  }
+
+  .psi-components-image {
+    float: none;
+    width: 260px;
+    margin: 0 auto 30px;
+  }
+
+  .psi-section-heading.left {
+    text-align: center;
+  }
+
+  .psi-section-heading.left p {
+    text-align: left;
+  }
+
+  .psi-components-grid,
+  .psi-income-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .psi-important-note,
+  .psi-values-warning,
+  .psi-children-box,
+  .psi-amim-box,
+  .psi-income-note,
+  .psi-work-box,
+  .psi-help-box,
+  .psi-update-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .psi-container {
+    padding: 45px 20px;
+  }
+
+  .psi-hero h1 {
+    font-size: 34px;
+  }
+
+  .psi-section-heading h2,
+  .psi-children-box h2,
+  .psi-work-box h2,
+  .psi-help-content h2 {
+    font-size: 30px;
+  }
+
+  .psi-hero p,
+  .psi-section-heading p,
+  .psi-eligibility-card p,
+  .psi-important-note p,
+  .psi-component-card > p,
+  .psi-values-warning p,
+  .psi-children-box p,
+  .psi-amim-content p,
+  .psi-step p,
+  .psi-income-card p,
+  .psi-income-note p,
+  .psi-work-box p,
+  .psi-difference-card p,
+  .psi-help-content p {
+    font-size: 18px;
+  }
+}

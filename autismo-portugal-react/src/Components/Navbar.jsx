@@ -100,23 +100,17 @@ function Navbar() {
                   </a>
                 </li>
 
-                <li>
-                  <a className="dropdown-item" href="/medidas-suporte">
-                    Medidas de suporte
-                  </a>
-                </li>
+                <Link to="/medidas-suporte" className="dropdown-item">
+                  Medidas de suporte
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/pei">
-                    PEI
-                  </a>
-                </li>
+                <Link to="/PEI" className="dropdown-item">
+                  PEI
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/crises-escola">
-                    Ansiedade e crises
-                  </a>
-                </li>
+                <Link to="/ansiedade-crises" className="dropdown-item">
+                  Ansiedade e crises
+                </Link>
               </ul>
             </li>
 
@@ -133,29 +127,17 @@ function Navbar() {
               </a>
 
               <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="/amim">
-                    AMIM
-                  </a>
-                </li>
+                <Link to="/amim" className="dropdown-item">
+                  AMIM
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/psi">
-                    Prestação Social para a Inclusão
-                  </a>
-                </li>
+                <Link to="/psi" className="dropdown-item">
+                  Prestação Social para a Inclusão
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/beneficios">
-                    Benefícios e apoios
-                  </a>
-                </li>
-
-                <li>
-                  <a className="dropdown-item" href="/balcao-inclusao">
-                    Balcão da Inclusão
-                  </a>
-                </li>
+                <Link to="/benefits" className="dropdown-item">
+                  Benefícios e apoios
+                </Link>
               </ul>
             </li>
 
@@ -172,31 +154,25 @@ function Navbar() {
               </a>
 
               <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="/crises">
-                    Crises e sobrecarga
-                  </a>
-                </li>
+                <Link to="/crises-sobrecarga" className="dropdown-item">
+                  Crises e sobrecarga
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/ansiedade">
-                    Ansiedade
-                  </a>
-                </li>
+                <Link to="/ansiedade" className="dropdown-item">
+                  Ansiedade
+                </Link>
 
-                <li>
-                  <a className="dropdown-item" href="/rotina">
-                    Rotina e organização
-                  </a>
-                </li>
+                <Link to="/rotina-organizacao" className="dropdown-item">
+                  Rotina e organização
+                </Link>
               </ul>
             </li>
 
             {/* Recursos */}
             <li className="nav-item">
-              <a className="nav-link" href="/recursos">
+              <Link className="nav-link" to="/recursos">
                 Recursos
-              </a>
+              </Link>
             </li>
 
             {/* Sobre */}

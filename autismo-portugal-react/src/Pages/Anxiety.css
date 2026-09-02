@@ -1,0 +1,1016 @@
+/* =====================================================
+   ANXIETY PAGE
+===================================================== */
+
+.daily-anxiety-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+.daily-anxiety-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 45px;
+}
+
+.daily-anxiety-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.daily-anxiety-section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.daily-anxiety-heading-left {
+  max-width: none;
+  margin: 0 0 40px;
+  text-align: left;
+}
+
+.daily-anxiety-section-heading h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.daily-anxiety-section-heading p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.daily-anxiety-hero {
+  padding: 45px 0 30px;
+}
+
+.daily-anxiety-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.daily-anxiety-hero-text {
+  max-width: 760px;
+}
+
+.daily-anxiety-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 7px 18px;
+  background-color: #eaf8f5;
+  border-radius: 50px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.daily-anxiety-hero h1 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.daily-anxiety-hero p {
+  margin-bottom: 12px;
+  color: #4f5f70;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.daily-anxiety-hero-symbol {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  background-color: #fff0f5;
+  border-radius: 50%;
+  color: #f087a8;
+  font-size: 68px;
+}
+
+/* =====================================================
+   NOT AUTISM
+===================================================== */
+
+.daily-anxiety-not-autism {
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.daily-anxiety-important {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-important > i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 32px;
+}
+
+.daily-anxiety-important h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 24px;
+}
+
+.daily-anxiety-important p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   CAUSES
+===================================================== */
+
+.daily-anxiety-causes {
+  padding: 30px 0;
+}
+
+.daily-anxiety-causes::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.daily-anxiety-causes-image {
+  float: right;
+  width: 310px;
+  margin: 0 0 30px 45px;
+}
+
+.daily-anxiety-causes-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.daily-anxiety-causes-grid {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.daily-anxiety-cause-card {
+  padding: 27px;
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.daily-anxiety-cause-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  font-size: 27px;
+}
+
+.daily-anxiety-cause-card.sensory .daily-anxiety-cause-icon {
+  background-color: #f1eefa;
+  color: #9b8ce0;
+}
+
+.daily-anxiety-cause-card.uncertainty .daily-anxiety-cause-icon {
+  background-color: #fff8df;
+  color: #dca01d;
+}
+
+.daily-anxiety-cause-card.social .daily-anxiety-cause-icon {
+  background-color: #eef6ff;
+  color: #4a9fd8;
+}
+
+.daily-anxiety-cause-card.masking .daily-anxiety-cause-icon {
+  background-color: #fff0f5;
+  color: #f087a8;
+}
+
+.daily-anxiety-cause-card.emotions .daily-anxiety-cause-icon {
+  background-color: #eaf8f5;
+  color: #3fb28f;
+}
+
+.daily-anxiety-cause-card.experiences .daily-anxiety-cause-icon {
+  background-color: #fff3ea;
+  color: #e9965a;
+}
+
+.daily-anxiety-cause-card h3 {
+  margin-bottom: 10px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.daily-anxiety-cause-card p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   SIGNS
+===================================================== */
+
+.daily-anxiety-signs {
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-signs::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.daily-anxiety-signs-image {
+  float: left;
+  width: 300px;
+  margin: 0 45px 25px 0;
+}
+
+.daily-anxiety-signs-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.daily-anxiety-signs-content h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 38px;
+}
+
+.daily-anxiety-signs-content > p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.daily-anxiety-sign-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px 25px;
+  margin-top: 25px;
+}
+
+.daily-anxiety-sign-list > div,
+.daily-anxiety-adults-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #4f5f70;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.daily-anxiety-sign-list i,
+.daily-anxiety-adults-list i {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #3fb28f;
+}
+
+.daily-anxiety-behaviour-note {
+  clear: both;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 35px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-behaviour-note > i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 30px;
+}
+
+.daily-anxiety-behaviour-note h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.daily-anxiety-behaviour-note p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   ANTICIPATORY
+===================================================== */
+
+.daily-anxiety-anticipatory {
+  padding: 30px 0;
+}
+
+.daily-anxiety-thoughts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 850px;
+  margin: 0 auto 35px;
+}
+
+.daily-anxiety-thoughts span {
+  padding: 11px 19px;
+  background-color: #fff0f5;
+  border-radius: 50px;
+  color: #8d5166;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.daily-anxiety-cycle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.daily-anxiety-cycle article {
+  width: 190px;
+  min-height: 125px;
+  padding: 20px;
+  background-color: #f8fbfc;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.daily-anxiety-cycle article span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 12px;
+  background-color: #3fb28f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.daily-anxiety-cycle h3 {
+  margin: 0;
+  color: #142b55;
+  font-size: 19px;
+}
+
+.daily-anxiety-cycle > i {
+  color: #3fb28f;
+  font-size: 23px;
+}
+
+.daily-anxiety-cycle-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 850px;
+  margin: 32px auto 0;
+  padding: 23px;
+  background-color: #fff8df;
+  border-radius: 18px;
+}
+
+.daily-anxiety-cycle-note i {
+  flex-shrink: 0;
+  color: #dca01d;
+  font-size: 27px;
+}
+
+.daily-anxiety-cycle-note p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   CONTROL
+===================================================== */
+
+.daily-anxiety-control {
+  background-color: #fdfaf5;
+  border-radius: 20px;
+}
+
+.daily-anxiety-control-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.daily-anxiety-control-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #dca01d;
+  font-size: 31px;
+}
+
+.daily-anxiety-control-box h2 {
+  margin-bottom: 17px;
+  color: #142b55;
+  font-size: 36px;
+}
+
+.daily-anxiety-control-box p,
+.daily-anxiety-control-box li {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.daily-anxiety-control-box ul {
+  padding-left: 25px;
+}
+
+.daily-anxiety-control-box li {
+  margin-bottom: 7px;
+}
+
+.daily-anxiety-control-note {
+  margin-top: 22px;
+  padding: 21px;
+  background-color: #ffffff;
+  border-radius: 17px;
+}
+
+.daily-anxiety-control-note strong {
+  color: #142b55;
+  font-size: 20px;
+}
+
+.daily-anxiety-control-note p {
+  margin: 7px 0 0;
+  font-size: 18px;
+}
+
+/* =====================================================
+   IMPACT
+===================================================== */
+
+.daily-anxiety-impact {
+  padding: 30px 0;
+}
+
+.daily-anxiety-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.daily-anxiety-impact-grid article {
+  padding: 25px;
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.daily-anxiety-impact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 17px;
+  border-radius: 18px;
+  font-size: 26px;
+}
+
+.daily-anxiety-impact-icon.school {
+  background-color: #eef6ff;
+  color: #4a9fd8;
+}
+
+.daily-anxiety-impact-icon.social {
+  background-color: #eaf8f5;
+  color: #3fb28f;
+}
+
+.daily-anxiety-impact-icon.independence {
+  background-color: #f1eefa;
+  color: #9b8ce0;
+}
+
+.daily-anxiety-impact-icon.health {
+  background-color: #fff0f5;
+  color: #f087a8;
+}
+
+.daily-anxiety-impact-grid h3 {
+  color: #142b55;
+  font-size: 22px;
+}
+
+.daily-anxiety-impact-grid p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   HELP
+===================================================== */
+
+.daily-anxiety-help {
+  background-color: #eaf8f5;
+  border-radius: 20px;
+}
+
+.daily-anxiety-help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.daily-anxiety-help-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 18px 21px;
+  background-color: #ffffff;
+  border-radius: 17px;
+  color: #4f5f70;
+  font-size: 20px;
+}
+
+.daily-anxiety-help-item i {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #3fb28f;
+}
+
+.daily-anxiety-professional {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 900px;
+  margin: 35px auto 0;
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-professional > i {
+  flex-shrink: 0;
+  color: #3fb28f;
+  font-size: 32px;
+}
+
+.daily-anxiety-professional h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 24px;
+}
+
+.daily-anxiety-professional p {
+  color: #4f5f70;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   OVERLOAD LINK
+===================================================== */
+
+.daily-anxiety-overload {
+  padding: 30px 0;
+}
+
+.daily-anxiety-overload-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+}
+
+.daily-anxiety-overload-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #f087a8;
+  font-size: 30px;
+}
+
+.daily-anxiety-overload-box h2 {
+  margin-bottom: 15px;
+  color: #142b55;
+  font-size: 34px;
+}
+
+.daily-anxiety-overload-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.daily-anxiety-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 8px;
+  padding: 13px 24px;
+  background-color: #3fb28f;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.daily-anxiety-button:hover {
+  background-color: #339879;
+  color: #ffffff;
+}
+
+/* =====================================================
+   CHILDHOOD
+===================================================== */
+
+.daily-anxiety-childhood {
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-childhood-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-childhood-box > i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 31px;
+}
+
+.daily-anxiety-childhood-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   ADULTS
+===================================================== */
+
+.daily-anxiety-adults {
+  padding: 30px 0;
+}
+
+.daily-anxiety-adults::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.daily-anxiety-adults-image {
+  float: right;
+  width: 315px;
+  margin: 0 0 30px 48px;
+}
+
+.daily-anxiety-adults-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.daily-anxiety-adults-content h2 {
+  margin-bottom: 17px;
+  color: #142b55;
+  font-size: 38px;
+}
+
+.daily-anxiety-adults-content > p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.daily-anxiety-adults-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px 25px;
+  margin-top: 24px;
+}
+
+.daily-anxiety-adults-note {
+  clear: both;
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  margin-top: 35px;
+  padding: 24px;
+  background-color: #f1eefa;
+  border-radius: 20px;
+}
+
+.daily-anxiety-adults-note > i {
+  flex-shrink: 0;
+  color: #9b8ce0;
+  font-size: 29px;
+}
+
+.daily-anxiety-adults-note p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   OBSERVATION
+===================================================== */
+
+.daily-anxiety-observe {
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.daily-anxiety-observe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.daily-anxiety-observe-grid article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 22px;
+  background-color: #ffffff;
+  border-radius: 17px;
+  color: #4f5f70;
+  font-size: 19px;
+}
+
+.daily-anxiety-observe-grid i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 24px;
+}
+
+/* =====================================================
+   URGENT
+===================================================== */
+
+.daily-anxiety-urgent {
+  padding: 30px 0;
+}
+
+.daily-anxiety-urgent-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.daily-anxiety-urgent-box > i {
+  flex-shrink: 0;
+  color: #dca01d;
+  font-size: 31px;
+}
+
+.daily-anxiety-urgent-box h2 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 27px;
+}
+
+.daily-anxiety-urgent-box p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   SOURCES
+===================================================== */
+
+.daily-anxiety-sources {
+  background-color: #f8fbfc;
+}
+
+.daily-anxiety-source-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.daily-anxiety-source-card > i {
+  flex-shrink: 0;
+  color: #3fb28f;
+  font-size: 31px;
+}
+
+.daily-anxiety-source-card h3 {
+  margin-bottom: 8px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.daily-anxiety-source-card p {
+  margin-bottom: 10px;
+  color: #4f5f70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.daily-anxiety-source-card a {
+  color: #3f8fbd;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.daily-anxiety-source-card a:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+  .daily-anxiety-causes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daily-anxiety-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .daily-anxiety-container {
+    padding: 55px 25px;
+  }
+
+  .daily-anxiety-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .daily-anxiety-hero h1 {
+    font-size: 40px;
+  }
+
+  .daily-anxiety-hero-symbol {
+    width: 135px;
+    height: 135px;
+    font-size: 52px;
+  }
+
+  .daily-anxiety-causes-image,
+  .daily-anxiety-signs-image,
+  .daily-anxiety-adults-image {
+    float: none;
+    width: 270px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .daily-anxiety-heading-left,
+  .daily-anxiety-signs-content,
+  .daily-anxiety-adults-content {
+    text-align: center;
+  }
+
+  .daily-anxiety-causes-grid,
+  .daily-anxiety-sign-list,
+  .daily-anxiety-help-grid,
+  .daily-anxiety-impact-grid,
+  .daily-anxiety-adults-list,
+  .daily-anxiety-observe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-anxiety-cycle {
+    flex-direction: column;
+  }
+
+  .daily-anxiety-cycle article {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .daily-anxiety-cycle > i {
+    transform: rotate(90deg);
+  }
+
+  .daily-anxiety-control-box,
+  .daily-anxiety-overload-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .daily-anxiety-container {
+    padding: 45px 20px;
+  }
+
+  .daily-anxiety-hero h1 {
+    font-size: 34px;
+  }
+
+  .daily-anxiety-section-heading h2,
+  .daily-anxiety-signs-content h2,
+  .daily-anxiety-control-box h2,
+  .daily-anxiety-adults-content h2 {
+    font-size: 30px;
+  }
+
+  .daily-anxiety-hero p,
+  .daily-anxiety-section-heading p,
+  .daily-anxiety-signs-content > p,
+  .daily-anxiety-control-box p,
+  .daily-anxiety-control-box li,
+  .daily-anxiety-overload-box p,
+  .daily-anxiety-adults-content > p {
+    font-size: 18px;
+  }
+
+  .daily-anxiety-important,
+  .daily-anxiety-behaviour-note,
+  .daily-anxiety-professional,
+  .daily-anxiety-childhood-box,
+  .daily-anxiety-adults-note,
+  .daily-anxiety-urgent-box {
+    flex-direction: column;
+  }
+}

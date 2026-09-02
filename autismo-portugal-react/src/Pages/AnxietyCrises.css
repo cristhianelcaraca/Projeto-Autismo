@@ -1,0 +1,746 @@
+/* =====================================================
+   ANXIETY & CRISES PAGE
+===================================================== */
+
+.anxiety-page {
+  background-color: #ffffff;
+  color: #142b55;
+}
+
+.anxiety-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 45px;
+}
+
+.anxiety-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.anxiety-section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.anxiety-section-heading.left {
+  max-width: none;
+  margin: 0 0 35px;
+  text-align: left;
+}
+
+.anxiety-section-heading h2 {
+  margin-bottom: 18px;
+  color: #142b55;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.anxiety-section-heading p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.anxiety-hero {
+  padding: 45px 0 35px;
+}
+
+.anxiety-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.anxiety-hero-image {
+  flex: 0 0 40%;
+}
+
+.anxiety-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.anxiety-hero-text {
+  flex: 1;
+}
+
+.anxiety-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 7px 18px;
+  background-color: #eaf8f5;
+  border-radius: 50px;
+  color: #3fb28f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.anxiety-hero h1 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.anxiety-hero p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   SIGNS
+===================================================== */
+
+.anxiety-signs {
+  background-color: #f8fbfc;
+  border-radius: 20px;
+}
+
+.anxiety-signs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 28px;
+}
+
+.anxiety-sign-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.anxiety-sign-item i {
+  flex-shrink: 0;
+  color: #3fb28f;
+  font-size: 27px;
+}
+
+.anxiety-sign-item span {
+  color: #34445f;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.anxiety-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 25px 28px;
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.anxiety-highlight i {
+  flex-shrink: 0;
+  color: #4a9fd8;
+  font-size: 30px;
+}
+
+.anxiety-highlight p {
+  margin: 0;
+  color: #34445f;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   CAUSES
+===================================================== */
+
+.anxiety-causes-image {
+  float: right;
+  width: 180px;
+  margin: 0 0 25px 45px;
+}
+
+.anxiety-causes-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.anxiety-causes::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.anxiety-causes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.anxiety-cause-card {
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(20, 43, 85, 0.06);
+}
+
+.anxiety-cause-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  font-size: 26px;
+}
+
+.anxiety-cause-card.sensory .anxiety-cause-icon {
+  background-color: #f1eefa;
+  color: #9b8ce0;
+}
+
+.anxiety-cause-card.routine .anxiety-cause-icon {
+  background-color: #eef6ff;
+  color: #4a9fd8;
+}
+
+.anxiety-cause-card.social .anxiety-cause-icon {
+  background-color: #eaf8f5;
+  color: #3fb28f;
+}
+
+.anxiety-cause-card.academic .anxiety-cause-icon {
+  background-color: #fff8df;
+  color: #dca01d;
+}
+
+.anxiety-cause-card.transition .anxiety-cause-icon {
+  background-color: #fff0f5;
+  color: #f087a8;
+}
+
+.anxiety-cause-card.bullying .anxiety-cause-icon {
+  background-color: #f1eefa;
+  color: #765bb5;
+}
+
+.anxiety-cause-card h3 {
+  margin-bottom: 10px;
+  color: #142b55;
+  font-size: 23px;
+}
+
+.anxiety-cause-card p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   MELTDOWN
+===================================================== */
+
+.anxiety-meltdown {
+  background-color: #fffaf2;
+  border-radius: 20px;
+}
+
+.anxiety-meltdown-image {
+  float: left;
+  width: 300px;
+  margin: 0 45px 25px 0;
+}
+
+.anxiety-meltdown-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.anxiety-meltdown-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.anxiety-meltdown-content h2 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 38px;
+}
+
+.anxiety-meltdown-content p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.shutdown-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 27px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.shutdown-box i {
+  color: #9b8ce0;
+  font-size: 32px;
+}
+
+.shutdown-box h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+/* =====================================================
+   DURING
+===================================================== */
+
+.anxiety-during {
+  padding: 25px 0;
+}
+
+.anxiety-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 25px;
+}
+
+.anxiety-help-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 20px;
+  background-color: #f8fbfc;
+  border-radius: 16px;
+}
+
+.anxiety-help-item span {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #3fb28f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.anxiety-help-item p {
+  margin: 0;
+  color: #34445f;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.anxiety-during-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 850px;
+  margin: 40px auto 0;
+  padding: 27px;
+  background-color: #eaf8f5;
+  border-radius: 20px;
+}
+
+.anxiety-during-note i {
+  color: #3fb28f;
+  font-size: 31px;
+}
+
+.anxiety-during-note p {
+  margin: 0;
+  color: #34445f;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   AFTER
+===================================================== */
+
+.anxiety-after {
+  background-color: #f8fbfc;
+}
+
+.anxiety-observation-flow {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.anxiety-observation-flow div {
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  color: #34445f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.anxiety-observation-flow i {
+  display: block;
+  margin: 12px 0;
+  color: #3fb28f;
+  font-size: 26px;
+}
+
+/* =====================================================
+   AVOIDANCE
+===================================================== */
+
+.anxiety-avoidance-image {
+  float: right;
+  width: 320px;
+  margin: 0 0 25px 45px;
+}
+
+.anxiety-avoidance-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.anxiety-avoidance-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.anxiety-avoidance-content h2 {
+  margin-bottom: 20px;
+  color: #142b55;
+  font-size: 38px;
+}
+
+.anxiety-avoidance-content p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.anxiety-avoidance-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 25px;
+  padding: 25px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.anxiety-avoidance-highlight i {
+  color: #dca01d;
+  font-size: 29px;
+}
+
+/* =====================================================
+   SCHOOL SUPPORT
+===================================================== */
+
+.anxiety-school-support {
+  background-color: #eef6ff;
+  border-radius: 20px;
+}
+
+.anxiety-school-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.anxiety-school-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.anxiety-school-item i {
+  color: #4a9fd8;
+  font-size: 28px;
+}
+
+.anxiety-school-item p {
+  margin: 0;
+  color: #34445f;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.anxiety-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.anxiety-button {
+  padding: 13px 26px;
+  background-color: #3fb28f;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.anxiety-button:hover {
+  background-color: #339879;
+  color: #ffffff;
+}
+
+.anxiety-button.secondary {
+  background-color: #142b55;
+}
+
+/* =====================================================
+   COMMUNICATION
+===================================================== */
+
+.anxiety-example-box {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff8df;
+  border-radius: 20px;
+}
+
+.anxiety-example-box span {
+  display: block;
+  margin-bottom: 10px;
+  color: #d39a18;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.anxiety-example-box p {
+  margin: 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.anxiety-record-note {
+  max-width: 850px;
+  margin: 25px auto 0;
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+
+.anxiety-experience {
+  background-color: #fffaf2;
+  border-radius: 20px;
+}
+
+.anxiety-experience-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.anxiety-experience-box h2 {
+  margin-bottom: 22px;
+  color: #142b55;
+  font-size: 38px;
+}
+
+.anxiety-experience-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.anxiety-experience-box strong {
+  color: #142b55;
+}
+
+.anxiety-experience-note {
+  margin-top: 30px;
+  padding: 22px 25px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #6d6250;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   PROFESSIONAL HELP
+===================================================== */
+
+.anxiety-professional-help {
+  padding: 30px 0 50px;
+}
+
+.anxiety-professional-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 27px;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+}
+
+.anxiety-professional-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #f087a8;
+  font-size: 29px;
+}
+
+.anxiety-professional-box h2 {
+  margin-bottom: 15px;
+  color: #142b55;
+  font-size: 32px;
+}
+
+.anxiety-professional-box p {
+  color: #4f5f70;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+  .anxiety-hero-content {
+    gap: 35px;
+  }
+
+  .anxiety-causes-grid,
+  .anxiety-school-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anxiety-causes-image,
+  .anxiety-avoidance-image {
+    width: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .anxiety-container {
+    padding: 55px 25px;
+  }
+
+  .anxiety-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .anxiety-hero-image {
+    width: 280px;
+  }
+
+  .anxiety-hero h1 {
+    font-size: 40px;
+  }
+
+  .anxiety-signs-grid,
+  .anxiety-help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anxiety-causes-image,
+  .anxiety-meltdown-image,
+  .anxiety-avoidance-image {
+    float: none;
+    width: 260px;
+    margin: 0 auto 30px;
+  }
+
+  .anxiety-section-heading.left,
+  .anxiety-meltdown-content,
+  .anxiety-avoidance-content {
+    text-align: center;
+  }
+
+  .anxiety-section-heading.left p,
+  .anxiety-meltdown-content p,
+  .anxiety-avoidance-content p {
+    text-align: left;
+  }
+
+  .anxiety-highlight,
+  .anxiety-during-note,
+  .anxiety-professional-box {
+    flex-direction: column;
+  }
+
+  .anxiety-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .anxiety-container {
+    padding: 45px 20px;
+  }
+
+  .anxiety-hero h1 {
+    font-size: 34px;
+  }
+
+  .anxiety-section-heading h2,
+  .anxiety-meltdown-content h2,
+  .anxiety-avoidance-content h2,
+  .anxiety-experience-box h2 {
+    font-size: 30px;
+  }
+
+  .anxiety-section-heading p,
+  .anxiety-hero p,
+  .anxiety-sign-item span,
+  .anxiety-highlight p,
+  .anxiety-cause-card p,
+  .anxiety-meltdown-content p,
+  .shutdown-box p,
+  .anxiety-help-item p,
+  .anxiety-during-note p,
+  .anxiety-observation-flow div,
+  .anxiety-avoidance-content p,
+  .anxiety-school-item p,
+  .anxiety-example-box p,
+  .anxiety-record-note,
+  .anxiety-experience-box p,
+  .anxiety-professional-box p {
+    font-size: 18px;
+  }
+}
