@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./PSI.css";
 
 function PSI() {
+  const { t } = useTranslation();
+
   return (
     <main className="psi-page">
       {/* HERO */}
@@ -9,16 +12,11 @@ function PSI() {
         <div className="container psi-container">
           <div className="psi-hero-content">
             <div className="psi-hero-text">
-              <span className="psi-label">Direitos e apoios</span>
+              <span className="psi-label">{t("psi.hero.label")}</span>
 
-              <h1>PSI — Prestação Social para a Inclusão</h1>
+              <h1>{t("psi.hero.title")}</h1>
 
-              <p>
-                A Prestação Social para a Inclusão é um apoio destinado a
-                pessoas com deficiência ou incapacidade, com o objetivo de
-                promover a autonomia, a inclusão social e reforçar a proteção
-                económica em situações de maior vulnerabilidade.
-              </p>
+              <p>{t("psi.hero.description")}</p>
             </div>
 
             <div className="psi-hero-icon">
@@ -32,15 +30,13 @@ function PSI() {
       <section className="psi-eligibility">
         <div className="container psi-container">
           <div className="psi-section-heading">
-            <span className="psi-section-label">Começar pelo essencial</span>
+            <span className="psi-section-label">
+              {t("psi.eligibility.label")}
+            </span>
 
-            <h2>Quem pode ter direito?</h2>
+            <h2>{t("psi.eligibility.title")}</h2>
 
-            <p>
-              Em regra, a PSI destina-se a pessoas com residência legal em
-              Portugal e com um grau de incapacidade igual ou superior a 60%,
-              desde que estejam cumpridas as restantes condições previstas.
-            </p>
+            <p>{t("psi.eligibility.description")}</p>
           </div>
 
           <div className="psi-eligibility-grid">
@@ -49,12 +45,8 @@ function PSI() {
                 <i className="bi bi-file-earmark-medical"></i>
               </div>
 
-              <h3>Grau de incapacidade</h3>
-
-              <p>
-                É necessário comprovar o grau de incapacidade reconhecido,
-                normalmente através do AMIM.
-              </p>
+              <h3>{t("psi.eligibility.disability.title")}</h3>
+              <p>{t("psi.eligibility.disability.description")}</p>
             </article>
 
             <article className="psi-eligibility-card">
@@ -62,12 +54,8 @@ function PSI() {
                 <i className="bi bi-house-heart"></i>
               </div>
 
-              <h3>Residência</h3>
-
-              <p>
-                Existem condições relacionadas com a residência legal em
-                Portugal que devem ser verificadas no momento do pedido.
-              </p>
+              <h3>{t("psi.eligibility.residence.title")}</h3>
+              <p>{t("psi.eligibility.residence.description")}</p>
             </article>
 
             <article className="psi-eligibility-card">
@@ -75,23 +63,14 @@ function PSI() {
                 <i className="bi bi-clipboard-check"></i>
               </div>
 
-              <h3>Outras condições</h3>
-
-              <p>
-                A atribuição e o valor podem depender da idade, rendimentos e
-                situação concreta do beneficiário.
-              </p>
+              <h3>{t("psi.eligibility.conditions.title")}</h3>
+              <p>{t("psi.eligibility.conditions.description")}</p>
             </article>
           </div>
 
           <div className="psi-important-note">
             <i className="bi bi-info-circle"></i>
-
-            <p>
-              Ter um AMIM com incapacidade igual ou superior a 60% não significa
-              que todas as pessoas recebam exatamente o mesmo valor. Existem
-              regras diferentes para cada componente da prestação.
-            </p>
+            <p>{t("psi.eligibility.note")}</p>
           </div>
         </div>
       </section>
@@ -100,22 +79,17 @@ function PSI() {
       <section className="psi-components">
         <div className="container psi-container">
           <div className="psi-components-image">
-            <img
-              src="/images/benefit.png"
-              alt="Ilustração relacionada com benefícios e apoios sociais"
-            />
+            <img src="/images/benefit.png" alt={t("psi.components.imageAlt")} />
           </div>
 
           <div className="psi-section-heading left">
-            <span className="psi-section-label">Como funciona a prestação</span>
+            <span className="psi-section-label">
+              {t("psi.components.label")}
+            </span>
 
-            <h2>A PSI tem duas partes</h2>
+            <h2>{t("psi.components.title")}</h2>
 
-            <p>
-              Atualmente, a Prestação Social para a Inclusão inclui uma
-              componente base e um complemento. Cada uma tem uma finalidade e
-              regras próprias.
-            </p>
+            <p>{t("psi.components.description")}</p>
           </div>
 
           <div className="psi-components-grid">
@@ -124,24 +98,16 @@ function PSI() {
                 <i className="bi bi-wallet2"></i>
               </div>
 
-              <h3>Componente base</h3>
+              <h3>{t("psi.components.base.title")}</h3>
 
-              <p>
-                Destina-se a compensar encargos gerais acrescidos associados à
-                deficiência e a contribuir para a autonomia e inclusão social da
-                pessoa.
-              </p>
+              <p>{t("psi.components.base.description")}</p>
 
               <div className="psi-value-box">
-                <span>Valor de referência mensal em 2026</span>
+                <span>{t("psi.components.valueLabel")}</span>
                 <strong>333,64 €</strong>
               </div>
 
-              <p className="psi-small-note">
-                Este é um valor de referência. O valor efetivamente recebido
-                pode ser diferente consoante a situação e os rendimentos
-                considerados.
-              </p>
+              <p className="psi-small-note">{t("psi.components.base.note")}</p>
             </article>
 
             <article className="psi-component-card complement">
@@ -149,23 +115,17 @@ function PSI() {
                 <i className="bi bi-piggy-bank"></i>
               </div>
 
-              <h3>Complemento</h3>
+              <h3>{t("psi.components.complement.title")}</h3>
 
-              <p>
-                É um reforço dirigido a pessoas com deficiência que vivem
-                sozinhas ou pertencem a agregados familiares com insuficiência
-                de recursos.
-              </p>
+              <p>{t("psi.components.complement.description")}</p>
 
               <div className="psi-value-box">
-                <span>Valor de referência mensal em 2026</span>
+                <span>{t("psi.components.valueLabel")}</span>
                 <strong>670 €</strong>
               </div>
 
               <p className="psi-small-note">
-                O complemento depende da composição e dos rendimentos do
-                agregado familiar e não corresponde automaticamente ao valor
-                máximo de referência.
+                {t("psi.components.complement.note")}
               </p>
             </article>
           </div>
@@ -174,14 +134,8 @@ function PSI() {
             <i className="bi bi-exclamation-circle"></i>
 
             <div>
-              <h3>Os valores não devem ser simplesmente somados</h3>
-
-              <p>
-                Os valores de referência da componente base e do complemento não
-                significam que todas as pessoas possam receber automaticamente a
-                soma dos dois valores. O montante depende das regras aplicáveis
-                a cada componente.
-              </p>
+              <h3>{t("psi.components.warning.title")}</h3>
+              <p>{t("psi.components.warning.description")}</p>
             </div>
           </div>
         </div>
@@ -196,27 +150,17 @@ function PSI() {
             </div>
 
             <div>
-              <span className="psi-section-label">Crianças e jovens</span>
+              <span className="psi-section-label">
+                {t("psi.children.label")}
+              </span>
 
-              <h2>E no caso de uma criança?</h2>
+              <h2>{t("psi.children.title")}</h2>
 
-              <p>
-                Quando o beneficiário é menor de idade, o pedido pode ser
-                apresentado pelos pais ou pelo representante legal, de acordo
-                com as regras aplicáveis.
-              </p>
-
-              <p>
-                É importante perceber que a prestação pertence à criança ou ao
-                jovem com deficiência, mesmo quando são os pais que tratam do
-                pedido e recebem o pagamento em sua representação.
-              </p>
+              <p>{t("psi.children.paragraph1")}</p>
+              <p>{t("psi.children.paragraph2")}</p>
 
               <div className="psi-children-highlight">
-                <strong>
-                  A PSI não deve ser confundida com outros apoios destinados
-                  especificamente aos pais ou ao agregado familiar.
-                </strong>
+                <strong>{t("psi.children.highlight")}</strong>
               </div>
             </div>
           </div>
@@ -232,20 +176,14 @@ function PSI() {
             </div>
 
             <div className="psi-amim-content">
-              <span className="psi-section-label">
-                Comprovar a incapacidade
-              </span>
+              <span className="psi-section-label">{t("psi.amim.label")}</span>
 
-              <h2>Preciso do AMIM?</h2>
+              <h2>{t("psi.amim.title")}</h2>
 
-              <p>
-                Para pedir a PSI é necessário comprovar o grau de incapacidade
-                nos termos previstos. O AMIM é o documento habitualmente
-                utilizado para essa certificação.
-              </p>
+              <p>{t("psi.amim.description")}</p>
 
               <Link to="/amim" className="psi-button">
-                Saiba mais sobre o AMIM
+                {t("psi.amim.button")}
               </Link>
             </div>
           </div>
@@ -256,83 +194,26 @@ function PSI() {
       <section className="psi-request">
         <div className="container psi-container">
           <div className="psi-section-heading">
-            <span className="psi-section-label">Passo a passo</span>
+            <span className="psi-section-label">{t("psi.request.label")}</span>
 
-            <h2>Como pedir a PSI?</h2>
+            <h2>{t("psi.request.title")}</h2>
 
-            <p>
-              Antes de iniciar o pedido, vale a pena reunir os documentos
-              necessários e confirmar as condições aplicáveis à situação do
-              beneficiário.
-            </p>
+            <p>{t("psi.request.description")}</p>
           </div>
 
           <div className="psi-steps">
-            <article className="psi-step">
-              <span>1</span>
+            {t("psi.request.steps", { returnObjects: true }).map(
+              (step, index) => (
+                <article className="psi-step" key={step.title}>
+                  <span>{index + 1}</span>
 
-              <div>
-                <h3>Confirmar o grau de incapacidade</h3>
-
-                <p>
-                  Verifique se existe certificação válida do grau de
-                  incapacidade exigido para a prestação.
-                </p>
-              </div>
-            </article>
-
-            <article className="psi-step">
-              <span>2</span>
-
-              <div>
-                <h3>Reunir os dados necessários</h3>
-
-                <p>
-                  Tenha consigo os dados de identificação, informação sobre o
-                  grau de incapacidade e outros elementos que possam ser
-                  solicitados pela Segurança Social.
-                </p>
-              </div>
-            </article>
-
-            <article className="psi-step">
-              <span>3</span>
-
-              <div>
-                <h3>Apresentar o pedido</h3>
-
-                <p>
-                  O pedido é tratado através dos canais disponibilizados pela
-                  Segurança Social.
-                </p>
-              </div>
-            </article>
-
-            <article className="psi-step">
-              <span>4</span>
-
-              <div>
-                <h3>Aguardar a análise</h3>
-
-                <p>
-                  A Segurança Social analisa se estão reunidas as condições e
-                  calcula o valor aplicável à situação.
-                </p>
-              </div>
-            </article>
-
-            <article className="psi-step">
-              <span>5</span>
-
-              <div>
-                <h3>Comunicar alterações relevantes</h3>
-
-                <p>
-                  Mudanças de rendimentos, agregado familiar ou outras situações
-                  relevantes podem ter impacto na prestação.
-                </p>
-              </div>
-            </article>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </div>
+                </article>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -341,11 +222,11 @@ function PSI() {
       <section className="psi-income">
         <div className="container psi-container">
           <div className="psi-section-heading">
-            <span className="psi-section-label">Cálculo da prestação</span>
+            <span className="psi-section-label">{t("psi.income.label")}</span>
 
-            <h2>O rendimento da família conta?</h2>
+            <h2>{t("psi.income.title")}</h2>
 
-            <p>Depende da componente da PSI e da situação do beneficiário.</p>
+            <p>{t("psi.income.description")}</p>
           </div>
 
           <div className="psi-income-grid">
@@ -354,12 +235,8 @@ function PSI() {
                 <i className="bi bi-wallet"></i>
               </div>
 
-              <h3>Componente base</h3>
-
-              <p>
-                Existem regras próprias relativas aos rendimentos considerados e
-                à forma como estes podem influenciar o valor da componente base.
-              </p>
+              <h3>{t("psi.income.base.title")}</h3>
+              <p>{t("psi.income.base.description")}</p>
             </article>
 
             <article className="psi-income-card">
@@ -367,24 +244,14 @@ function PSI() {
                 <i className="bi bi-house"></i>
               </div>
 
-              <h3>Complemento</h3>
-
-              <p>
-                O complemento destina-se a combater situações de insuficiência
-                de recursos. Por isso, a composição e os rendimentos do agregado
-                familiar são particularmente relevantes.
-              </p>
+              <h3>{t("psi.income.complement.title")}</h3>
+              <p>{t("psi.income.complement.description")}</p>
             </article>
           </div>
 
           <div className="psi-income-note">
             <i className="bi bi-calculator"></i>
-
-            <p>
-              As regras de cálculo podem ser complexas e os valores são
-              atualizados. Para saber quanto poderá receber numa situação
-              concreta, confirme os critérios atuais junto da Segurança Social.
-            </p>
+            <p>{t("psi.income.note")}</p>
           </div>
         </div>
       </section>
@@ -398,31 +265,16 @@ function PSI() {
             </div>
 
             <div>
-              <span className="psi-section-label">PSI e emprego</span>
+              <span className="psi-section-label">{t("psi.work.label")}</span>
 
-              <h2>É possível trabalhar e receber PSI?</h2>
+              <h2>{t("psi.work.title")}</h2>
 
-              <p>
-                Receber a PSI não significa necessariamente que a pessoa esteja
-                impedida de trabalhar.
-              </p>
-
-              <p>
-                Existem regras que permitem a acumulação da componente base com
-                rendimentos de trabalho dentro dos limites previstos na
-                legislação.
-              </p>
+              <p>{t("psi.work.paragraph1")}</p>
+              <p>{t("psi.work.paragraph2")}</p>
 
               <div className="psi-work-highlight">
-                <strong>
-                  Começar a trabalhar não significa automaticamente perder a
-                  PSI.
-                </strong>
-                <p>
-                  No entanto, os rendimentos podem influenciar o valor recebido,
-                  pelo que alterações devem ser comunicadas e analisadas de
-                  acordo com as regras atuais.
-                </p>
+                <strong>{t("psi.work.highlightStrong")}</strong>
+                <p>{t("psi.work.highlight")}</p>
               </div>
             </div>
           </div>
@@ -433,9 +285,11 @@ function PSI() {
       <section className="psi-differences">
         <div className="container psi-container">
           <div className="psi-section-heading">
-            <span className="psi-section-label">Evitar confusões</span>
+            <span className="psi-section-label">
+              {t("psi.differences.label")}
+            </span>
 
-            <h2>A PSI não é o mesmo que...</h2>
+            <h2>{t("psi.differences.title")}</h2>
           </div>
 
           <div className="psi-differences-grid">
@@ -443,33 +297,21 @@ function PSI() {
               <i className="bi bi-file-earmark-medical"></i>
 
               <h3>AMIM</h3>
-
-              <p>
-                O AMIM certifica o grau de incapacidade. A PSI é uma prestação
-                financeira.
-              </p>
+              <p>{t("psi.differences.amim")}</p>
             </article>
 
             <article className="psi-difference-card">
               <i className="bi bi-mortarboard"></i>
 
-              <h3>Subsídio de Educação Especial</h3>
-
-              <p>
-                É um apoio diferente, com finalidade e condições de acesso
-                próprias.
-              </p>
+              <h3>{t("psi.differences.education.title")}</h3>
+              <p>{t("psi.differences.education.description")}</p>
             </article>
 
             <article className="psi-difference-card">
               <i className="bi bi-person-plus"></i>
 
-              <h3>Bonificação por deficiência</h3>
-
-              <p>
-                Também corresponde a outro apoio da Segurança Social, sujeito a
-                regras específicas.
-              </p>
+              <h3>{t("psi.differences.allowance.title")}</h3>
+              <p>{t("psi.differences.allowance.description")}</p>
             </article>
           </div>
         </div>
@@ -484,18 +326,11 @@ function PSI() {
             </div>
 
             <div className="psi-help-content">
-              <span className="psi-section-label">
-                Precisa de esclarecimentos?
-              </span>
+              <span className="psi-section-label">{t("psi.help.label")}</span>
 
               <h2>Balcão da Inclusão</h2>
 
-              <p>
-                O Balcão da Inclusão pode prestar informação sobre a Prestação
-                Social para a Inclusão, AMIM, benefícios fiscais, proteção
-                social e outros direitos relacionados com deficiência ou
-                incapacidade.
-              </p>
+              <p>{t("psi.help.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/balcao-da-inclusao"
@@ -503,7 +338,7 @@ function PSI() {
                 rel="noreferrer"
                 className="psi-button"
               >
-                Consultar o Balcão da Inclusão
+                {t("psi.help.button")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
@@ -518,15 +353,8 @@ function PSI() {
             <i className="bi bi-arrow-repeat"></i>
 
             <div>
-              <h2>Confirme sempre os valores atuais</h2>
-
-              <p>
-                Os valores de referência, limites de rendimentos e regras de
-                algumas prestações sociais podem ser atualizados. Antes de fazer
-                o pedido ou tomar uma decisão com base num determinado valor,
-                consulte a informação mais recente da Segurança Social ou do
-                gov.pt.
-              </p>
+              <h2>{t("psi.update.title")}</h2>
+              <p>{t("psi.update.description")}</p>
             </div>
           </div>
         </div>
@@ -536,9 +364,9 @@ function PSI() {
       <section className="psi-sources">
         <div className="container psi-container">
           <div className="psi-section-heading">
-            <span className="psi-section-label">Informação oficial</span>
+            <span className="psi-section-label">{t("psi.sources.label")}</span>
 
-            <h2>Fontes e recursos</h2>
+            <h2>{t("psi.sources.title")}</h2>
           </div>
 
           <article className="psi-source-card">
@@ -547,17 +375,14 @@ function PSI() {
             <div>
               <h3>gov.pt — Prestação Social para a Inclusão</h3>
 
-              <p>
-                Informação oficial sobre condições de acesso, pedido e
-                funcionamento da PSI.
-              </p>
+              <p>{t("psi.sources.psi.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/requerer-a-prestacao-social-para-a-inclusao"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("psi.sources.button")}
               </a>
             </div>
           </article>
@@ -568,17 +393,14 @@ function PSI() {
             <div>
               <h3>gov.pt — Balcão da Inclusão</h3>
 
-              <p>
-                Serviço de informação sobre deficiência, proteção social, AMIM,
-                PSI e outros direitos.
-              </p>
+              <p>{t("psi.sources.inclusion.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/balcao-da-inclusao"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("psi.sources.button")}
               </a>
             </div>
           </article>

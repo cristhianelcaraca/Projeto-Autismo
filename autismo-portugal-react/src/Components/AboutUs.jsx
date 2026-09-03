@@ -1,34 +1,27 @@
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 function AboutUs() {
+  const { t } = useTranslation();
+
   return (
-    <>
-      <section className="about-us">
-        <div className="container about-us-inner">
-          <div className="plant">
-            <img
-              src="/images/plant.png"
-              alt="Small green plant with a few leaves growing in a simple, clean scene, set against a light background. The image is calm and welcoming, suggesting growth, care, and a hopeful atmosphere."
-            />
-          </div>
-
-          <div className="about-text">
-            <h3>Informação é o primeiro passo para a inclusão</h3>
-            <p>
-              Esse portal reúne informação confiável de fontes oficiais e
-              instituições especializadas para apoiar você e sua família
-            </p>
-          </div>
-
-          <a
-            href="/"
-            className="btn-white"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sobre Nós
-          </a>
+    <section className="about-us">
+      <div className="container about-us-inner">
+        <div className="plant">
+          <img src="/images/plant.png" alt="" aria-hidden="true" />
         </div>
-      </section>
-    </>
+
+        <div className="about-text">
+          <h3>{t("aboutUs.title")}</h3>
+
+          <p>{t("aboutUs.description")}</p>
+        </div>
+
+        <Link to="/sobre-nos" className="btn-white">
+          {t("aboutUs.button")}
+        </Link>
+      </div>
+    </section>
   );
 }
 

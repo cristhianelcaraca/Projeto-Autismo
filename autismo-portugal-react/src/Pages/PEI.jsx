@@ -1,21 +1,20 @@
+import { useTranslation } from "react-i18next";
 import "./PEI.css";
 
 function PEI() {
+  const { t } = useTranslation();
+
   return (
     <main className="pei-page">
       {/* HERO */}
       <section className="pei-hero">
         <div className="container pei-container">
           <div className="pei-hero-content">
-            <span className="pei-label">Educação inclusiva</span>
+            <span className="pei-label">{t("pei.hero.label")}</span>
 
-            <h1>PEI — Programa Educativo Individual</h1>
+            <h1>{t("pei.hero.title")}</h1>
 
-            <p>
-              Entenda de forma simples quando um aluno pode precisar de PEI,
-              qual é a diferença entre PEI e RTP e como os pais podem pedir à
-              escola que as necessidades do filho sejam avaliadas.
-            </p>
+            <p>{t("pei.hero.description")}</p>
           </div>
         </div>
       </section>
@@ -24,15 +23,11 @@ function PEI() {
       <section className="pei-what">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">Começando pelo essencial</span>
+            <span className="pei-section-label">{t("pei.what.label")}</span>
 
-            <h2>O que é o PEI?</h2>
+            <h2>{t("pei.what.title")}</h2>
 
-            <p>
-              O PEI, ou Programa Educativo Individual, é um documento utilizado
-              quando o aluno necessita de adaptações curriculares
-              significativas.
-            </p>
+            <p>{t("pei.what.description")}</p>
           </div>
 
           <div className="pei-simple-box">
@@ -41,14 +36,9 @@ function PEI() {
             </div>
 
             <div>
-              <h3>Em palavras simples</h3>
+              <h3>{t("pei.what.simpleTitle")}</h3>
 
-              <p>
-                O PEI é necessário quando o aluno precisa que algumas das
-                aprendizagens previstas no currículo sejam significativamente
-                alteradas ou substituídas por objetivos mais adequados às suas
-                necessidades.
-              </p>
+              <p>{t("pei.what.simpleDescription")}</p>
             </div>
           </div>
         </div>
@@ -63,21 +53,13 @@ function PEI() {
             </div>
 
             <div>
-              <span>Importante</span>
+              <span>{t("pei.important.label")}</span>
 
-              <h2>Ter autismo não significa automaticamente precisar de PEI</h2>
+              <h2>{t("pei.important.title")}</h2>
 
-              <p>
-                O PEI não depende do diagnóstico nem do QI da criança. O que
-                importa é perceber se ela consegue acompanhar as aprendizagens
-                previstas no currículo ou se necessita de alterações
-                curriculares significativas.
-              </p>
+              <p>{t("pei.important.paragraph1")}</p>
 
-              <p>
-                Uma criança autista pode precisar de vários apoios na escola e,
-                mesmo assim, não precisar de PEI.
-              </p>
+              <p>{t("pei.important.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -88,16 +70,12 @@ function PEI() {
         <div className="container pei-container">
           <div className="pei-section-heading">
             <span className="pei-section-label">
-              A principal dúvida dos pais
+              {t("pei.howToKnow.label")}
             </span>
 
-            <h2>Como saber se o meu filho precisa de PEI?</h2>
+            <h2>{t("pei.howToKnow.title")}</h2>
 
-            <p>
-              Uma forma simples de pensar é perguntar se a dificuldade está em
-              aceder ao currículo ou se é necessário alterar de forma
-              significativa aquilo que o aluno vai aprender.
-            </p>
+            <p>{t("pei.howToKnow.description")}</p>
           </div>
 
           <div className="pei-comparison-grid">
@@ -106,15 +84,14 @@ function PEI() {
                 <i className="bi bi-check-circle"></i>
               </div>
 
-              <h3>Pode precisar de apoio sem precisar de PEI</h3>
+              <h3>{t("pei.howToKnow.noPei.title")}</h3>
 
               <ul>
-                <li>Precisa de antecipação das mudanças de rotina</li>
-                <li>Precisa de pausas em situações de sobrecarga</li>
-                <li>Precisa de instruções mais claras ou visuais</li>
-                <li>Precisa de adaptações na forma de realizar tarefas</li>
-                <li>Precisa de adaptações no processo de avaliação</li>
-                <li>Tem dificuldades sensoriais, sociais ou emocionais</li>
+                {t("pei.howToKnow.noPei.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </article>
 
@@ -123,28 +100,14 @@ function PEI() {
                 <i className="bi bi-file-earmark-check"></i>
               </div>
 
-              <h3>O PEI pode ser necessário quando...</h3>
+              <h3>{t("pei.howToKnow.yesPei.title")}</h3>
 
               <ul>
-                <li>
-                  As aprendizagens do currículo precisam de ser
-                  significativamente alteradas
-                </li>
-
-                <li>
-                  Algumas aprendizagens previstas precisam de ser substituídas
-                  por outras
-                </li>
-
-                <li>
-                  É necessário definir objetivos curriculares muito
-                  individualizados
-                </li>
-
-                <li>
-                  São propostas adaptações curriculares significativas pela
-                  equipa responsável
-                </li>
+                {t("pei.howToKnow.yesPei.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </article>
           </div>
@@ -153,35 +116,25 @@ function PEI() {
             <i className="bi bi-question-circle"></i>
 
             <div>
-              <strong>A pergunta mais útil é:</strong>
+              <strong>{t("pei.howToKnow.questionLabel")}</strong>
 
-              <p>
-                “O meu filho precisa de alterar significativamente o currículo
-                ou precisa sobretudo de apoios para conseguir participar,
-                aprender e estar bem na escola?”
-              </p>
+              <p>{t("pei.howToKnow.question")}</p>
             </div>
           </div>
         </div>
       </section>
+
       <br />
 
       {/* EMAEI */}
       <section className="pei-emaei">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">
-              Quem analisa as necessidades?
-            </span>
+            <span className="pei-section-label">{t("pei.emaei.label")}</span>
 
-            <h2>O que é a EMAEI?</h2>
+            <h2>{t("pei.emaei.title")}</h2>
 
-            <p>
-              A EMAEI é a Equipa Multidisciplinar de Apoio à Educação Inclusiva.
-              Existe nas escolas e agrupamentos para ajudar a identificar as
-              necessidades dos alunos e a decidir que medidas de suporte podem
-              ser necessárias.
-            </p>
+            <p>{t("pei.emaei.description")}</p>
           </div>
 
           <div className="pei-emaei-box">
@@ -190,18 +143,11 @@ function PEI() {
             </div>
 
             <div className="pei-emaei-content">
-              <h3>Em palavras simples</h3>
+              <h3>{t("pei.emaei.simpleTitle")}</h3>
 
-              <p>
-                Quando existem dificuldades que estão a afetar a aprendizagem,
-                participação ou inclusão de um aluno, a EMAEI pode analisar a
-                situação e ajudar a definir quais os apoios mais adequados.
-              </p>
+              <p>{t("pei.emaei.paragraph1")}</p>
 
-              <p>
-                A equipa pode reunir informação da escola, dos pais e de outros
-                profissionais que acompanham a criança ou jovem.
-              </p>
+              <p>{t("pei.emaei.paragraph2")}</p>
             </div>
           </div>
 
@@ -211,12 +157,9 @@ function PEI() {
                 <i className="bi bi-search"></i>
               </div>
 
-              <h3>Analisa as necessidades</h3>
+              <h3>{t("pei.emaei.needs.title")}</h3>
 
-              <p>
-                Procura perceber quais são as dificuldades, barreiras e
-                potencialidades do aluno.
-              </p>
+              <p>{t("pei.emaei.needs.description")}</p>
             </article>
 
             <article className="pei-emaei-card">
@@ -224,12 +167,9 @@ function PEI() {
                 <i className="bi bi-list-check"></i>
               </div>
 
-              <h3>Propõe medidas</h3>
+              <h3>{t("pei.emaei.measures.title")}</h3>
 
-              <p>
-                Ajuda a identificar quais medidas de suporte à aprendizagem e à
-                inclusão podem ser necessárias.
-              </p>
+              <p>{t("pei.emaei.measures.description")}</p>
             </article>
 
             <article className="pei-emaei-card">
@@ -237,12 +177,9 @@ function PEI() {
                 <i className="bi bi-arrow-repeat"></i>
               </div>
 
-              <h3>Acompanha os resultados</h3>
+              <h3>{t("pei.emaei.results.title")}</h3>
 
-              <p>
-                As medidas devem ser acompanhadas para perceber se estão
-                realmente a ajudar o aluno.
-              </p>
+              <p>{t("pei.emaei.results.description")}</p>
             </article>
           </div>
 
@@ -250,19 +187,11 @@ function PEI() {
             <i className="bi bi-person-heart"></i>
 
             <div>
-              <h3>E os pais?</h3>
+              <h3>{t("pei.emaei.parents.title")}</h3>
 
-              <p>
-                Os pais não ficam de fora deste processo. Devem ser ouvidos e
-                podem fornecer informação importante sobre as dificuldades,
-                necessidades e características do filho.
-              </p>
+              <p>{t("pei.emaei.parents.paragraph1")}</p>
 
-              <p>
-                Se tiver dúvidas sobre quem acompanha o caso do seu filho, pode
-                perguntar à escola ou ao diretor de turma como contactar a EMAEI
-                do agrupamento.
-              </p>
+              <p>{t("pei.emaei.parents.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -272,15 +201,11 @@ function PEI() {
       <section className="pei-rtp">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">Antes do PEI</span>
+            <span className="pei-section-label">{t("pei.rtp.label")}</span>
 
-            <h2>Primeiro, é importante entender o RTP</h2>
+            <h2>{t("pei.rtp.title")}</h2>
 
-            <p>
-              O RTP é o Relatório Técnico-Pedagógico. É o documento utilizado
-              para fundamentar medidas seletivas e/ou adicionais de suporte à
-              aprendizagem e à inclusão.
-            </p>
+            <p>{t("pei.rtp.description")}</p>
           </div>
 
           <div className="pei-rtp-box">
@@ -289,18 +214,11 @@ function PEI() {
             </div>
 
             <div>
-              <h3>O RTP explica quais são as necessidades e os apoios</h3>
+              <h3>{t("pei.rtp.boxTitle")}</h3>
 
-              <p>
-                Nele devem estar identificadas as dificuldades e os fatores que
-                influenciam a aprendizagem, as medidas que serão utilizadas,
-                como serão aplicadas, quem será responsável e como será avaliada
-                a sua eficácia.
-              </p>
+              <p>{t("pei.rtp.paragraph1")}</p>
 
-              <p>
-                Os pais devem ser ouvidos durante a elaboração deste relatório.
-              </p>
+              <p>{t("pei.rtp.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -310,9 +228,9 @@ function PEI() {
       <section className="pei-flow">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">RTP ou PEI?</span>
+            <span className="pei-section-label">{t("pei.flow.label")}</span>
 
-            <h2>Entenda o caminho de forma simples</h2>
+            <h2>{t("pei.flow.title")}</h2>
           </div>
 
           <div className="pei-flow-chart">
@@ -320,13 +238,9 @@ function PEI() {
               <span>1</span>
 
               <div>
-                <h3>Existem dificuldades ou barreiras na escola</h3>
+                <h3>{t("pei.flow.step1.title")}</h3>
 
-                <p>
-                  Podem estar relacionadas com aprendizagem, comunicação,
-                  comportamento, ansiedade, questões sensoriais, organização ou
-                  participação.
-                </p>
+                <p>{t("pei.flow.step1.description")}</p>
               </div>
             </div>
 
@@ -338,12 +252,9 @@ function PEI() {
               <span>2</span>
 
               <div>
-                <h3>A escola e a EMAEI analisam as necessidades</h3>
+                <h3>{t("pei.flow.step2.title")}</h3>
 
-                <p>
-                  A equipa avalia quais medidas são mais adequadas para aquele
-                  aluno.
-                </p>
+                <p>{t("pei.flow.step2.description")}</p>
               </div>
             </div>
 
@@ -353,15 +264,15 @@ function PEI() {
 
             <div className="pei-flow-options">
               <div className="pei-flow-option green">
-                <strong>Apenas medidas universais</strong>
+                <strong>{t("pei.flow.universal.title")}</strong>
 
-                <p>Não é necessário RTP.</p>
+                <p>{t("pei.flow.universal.description")}</p>
               </div>
 
               <div className="pei-flow-option blue">
-                <strong>Medidas seletivas e/ou adicionais</strong>
+                <strong>{t("pei.flow.selective.title")}</strong>
 
-                <p>É elaborado um RTP.</p>
+                <p>{t("pei.flow.selective.description")}</p>
               </div>
             </div>
 
@@ -370,14 +281,12 @@ function PEI() {
             </div>
 
             <div className="pei-flow-question">
-              <strong>
-                São necessárias adaptações curriculares significativas?
-              </strong>
+              <strong>{t("pei.flow.question")}</strong>
 
               <div className="pei-flow-answer">
-                <span className="answer-no">Não → RTP, sem PEI</span>
+                <span className="answer-no">{t("pei.flow.no")}</span>
 
-                <span className="answer-yes">Sim → RTP + PEI</span>
+                <span className="answer-yes">{t("pei.flow.yes")}</span>
               </div>
             </div>
           </div>
@@ -388,22 +297,17 @@ function PEI() {
       <section className="pei-contents">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">O documento</span>
+            <span className="pei-section-label">{t("pei.contents.label")}</span>
 
-            <h2>O que deve constar no PEI?</h2>
+            <h2>{t("pei.contents.title")}</h2>
 
-            <p>
-              O PEI deve explicar de forma concreta como serão feitas as
-              adaptações curriculares significativas daquele aluno.
-            </p>
+            <p>{t("pei.contents.description")}</p>
           </div>
 
           <ul className="pei-check-list">
-            <li>Competências e aprendizagens a desenvolver</li>
-            <li>Adaptações curriculares significativas necessárias</li>
-            <li>Estratégias de ensino</li>
-            <li>Adaptações no processo de avaliação</li>
-            <li>Outras medidas de suporte à inclusão, quando necessárias</li>
+            {t("pei.contents.items", { returnObjects: true }).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </section>
@@ -412,112 +316,42 @@ function PEI() {
       <section className="pei-request">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">Para os pais</span>
+            <span className="pei-section-label">{t("pei.request.label")}</span>
 
-            <h2>Como pedir à escola que avalie a necessidade de apoio?</h2>
+            <h2>{t("pei.request.title")}</h2>
 
-            <p>
-              Os pais não precisam de saber antecipadamente qual medida o filho
-              deve receber. Podem pedir à escola que avalie as necessidades da
-              criança ou jovem.
-            </p>
+            <p>{t("pei.request.description")}</p>
           </div>
 
           <div className="pei-request-highlight">
             <i className="bi bi-envelope-paper"></i>
 
             <div>
-              <h3>O pedido pode partir dos próprios pais</h3>
+              <h3>{t("pei.request.highlight.title")}</h3>
 
-              <p>
-                A legislação permite que os pais ou encarregados de educação
-                iniciem o processo de identificação da necessidade de medidas de
-                suporte.
-              </p>
+              <p>{t("pei.request.highlight.description")}</p>
             </div>
           </div>
 
           <div className="pei-request-steps">
-            <div className="pei-request-step">
-              <span>1</span>
+            {t("pei.request.steps", { returnObjects: true }).map(
+              (step, index) => (
+                <div className="pei-request-step" key={step.title}>
+                  <span>{index + 1}</span>
 
-              <div>
-                <h3>Escreva para a escola</h3>
-
-                <p>
-                  Dirija o pedido ao diretor do agrupamento ou da escola e
-                  explique que pretende que sejam avaliadas as necessidades de
-                  suporte à aprendizagem e à inclusão do seu filho.
-                </p>
-              </div>
-            </div>
-
-            <div className="pei-request-step">
-              <span>2</span>
-
-              <div>
-                <h3>Explique o que está a acontecer</h3>
-
-                <p>
-                  Descreva situações concretas. Por exemplo: dificuldade em
-                  acompanhar determinadas aprendizagens, crises frequentes,
-                  sobrecarga sensorial, dificuldade de comunicação, problemas de
-                  participação ou outras barreiras.
-                </p>
-              </div>
-            </div>
-
-            <div className="pei-request-step">
-              <span>3</span>
-
-              <div>
-                <h3>Junte informação relevante</h3>
-
-                <p>
-                  Pode anexar relatórios médicos, psicológicos, terapêuticos ou
-                  outros documentos que ajudem a compreender as necessidades da
-                  criança.
-                </p>
-              </div>
-            </div>
-
-            <div className="pei-request-step">
-              <span>4</span>
-
-              <div>
-                <h3>A escola encaminha o processo</h3>
-
-                <p>
-                  O diretor deve encaminhar a identificação para a EMAEI, que
-                  analisará quais medidas são necessárias.
-                </p>
-              </div>
-            </div>
-
-            <div className="pei-request-step">
-              <span>5</span>
-
-              <div>
-                <h3>Participe na decisão</h3>
-
-                <p>
-                  Os pais devem ser ouvidos durante a elaboração do RTP e podem
-                  colocar dúvidas sobre as medidas propostas.
-                </p>
-              </div>
-            </div>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </div>
+                </div>
+              ),
+            )}
           </div>
 
           <div className="pei-request-example">
-            <span>Exemplo simples de pedido</span>
+            <span>{t("pei.request.exampleLabel")}</span>
 
-            <p>
-              “Venho solicitar a avaliação das necessidades de suporte à
-              aprendizagem e à inclusão do meu filho, uma vez que tem
-              apresentado dificuldades que estão a afetar a sua participação e o
-              seu percurso escolar. Junto a documentação que considero relevante
-              e solicito que a situação seja analisada pela equipa responsável.”
-            </p>
+            <p>{t("pei.request.example")}</p>
           </div>
         </div>
       </section>
@@ -531,21 +365,15 @@ function PEI() {
             </div>
 
             <div>
-              <span className="pei-section-label">Se tiver dúvidas</span>
+              <span className="pei-section-label">
+                {t("pei.disagreement.label")}
+              </span>
 
-              <h2>E se eu não concordar com o RTP?</h2>
+              <h2>{t("pei.disagreement.title")}</h2>
 
-              <p>
-                O RTP é apresentado aos pais para aprovação. Se não concordar
-                com o conteúdo ou com as medidas propostas, pode fazer constar
-                em anexo ao relatório os motivos da sua discordância.
-              </p>
+              <p>{t("pei.disagreement.paragraph1")}</p>
 
-              <p>
-                Antes de assinar, leia o documento com atenção, peça
-                esclarecimentos e confirme que compreende as medidas que estão a
-                ser propostas.
-              </p>
+              <p>{t("pei.disagreement.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -558,49 +386,27 @@ function PEI() {
             <div className="pei-experience-image">
               <img
                 src="/images/support.png"
-                alt="Ilustração sobre apoio e inclusão escolar"
+                alt={t("pei.experience.imageAlt")}
               />
             </div>
 
             <div className="pei-experience-content">
-              <span className="pei-section-label">A nossa experiência</span>
+              <span className="pei-section-label">
+                {t("pei.experience.label")}
+              </span>
 
-              <h2>
-                Precisar de apoio não significa necessariamente precisar de PEI
-              </h2>
+              <h2>{t("pei.experience.title")}</h2>
 
-              <p>
-                Quando começámos a lidar com estas questões na escola, também
-                tivemos dúvidas sobre o PEI e sobre que tipo de apoio poderia
-                existir.
-              </p>
+              <p>{t("pei.experience.paragraph1")}</p>
 
-              <p>
-                No caso do nosso filho mais velho, apesar do diagnóstico de
-                autismo, ele sempre conseguiu acompanhar as aprendizagens
-                escolares e tem boas capacidades académicas. Por isso, não foi
-                necessário alterar significativamente o currículo que ele
-                seguia.
-              </p>
+              <p>{t("pei.experience.paragraph2")}</p>
 
-              <p>
-                Ao mesmo tempo, isso não significava que ele não tivesse
-                necessidades importantes no ambiente escolar. As maiores
-                dificuldades estavam relacionadas com ansiedade, crises de
-                pânico, frequência escolar e algumas situações que lhe causavam
-                um nível muito elevado de stress.
-              </p>
+              <p>{t("pei.experience.paragraph3")}</p>
 
-              <p>
-                Para nós, perceber esta diferença foi importante: uma criança
-                pode precisar de apoio e de adaptações para conseguir estar bem
-                e participar na escola, sem necessariamente precisar de um PEI.
-              </p>
+              <p>{t("pei.experience.paragraph4")}</p>
 
               <div className="pei-experience-note">
-                Esta é a nossa experiência pessoal. Cada criança tem
-                necessidades diferentes e a decisão sobre as medidas adequadas
-                deve ser feita individualmente.
+                {t("pei.experience.note")}
               </div>
             </div>
           </div>
@@ -611,22 +417,17 @@ function PEI() {
       <section className="pei-parent-checklist">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">Antes de concordar</span>
+            <span className="pei-section-label">
+              {t("pei.checklist.label")}
+            </span>
 
-            <h2>Checklist para os pais</h2>
+            <h2>{t("pei.checklist.title")}</h2>
           </div>
 
           <ul className="pei-parent-check-list">
-            <li>Compreendi quais necessidades foram identificadas?</li>
-            <li>Sei quais medidas serão utilizadas?</li>
-            <li>Sei quem será responsável por cada medida?</li>
-            <li>
-              Está claro como será avaliado se as medidas estão a funcionar?
-            </li>
-            <li>
-              Pude colocar as minhas dúvidas e explicar a situação do meu filho?
-            </li>
-            <li>Recebi ou pedi uma cópia dos documentos?</li>
+            {t("pei.checklist.items", { returnObjects: true }).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </section>
@@ -635,9 +436,9 @@ function PEI() {
       <section className="pei-sources">
         <div className="container pei-container">
           <div className="pei-section-heading">
-            <span className="pei-section-label">Fontes oficiais</span>
+            <span className="pei-section-label">{t("pei.sources.label")}</span>
 
-            <h2>Onde consultar a informação</h2>
+            <h2>{t("pei.sources.title")}</h2>
           </div>
 
           <div className="pei-source-card">
@@ -646,14 +447,14 @@ function PEI() {
             <div>
               <h3>Decreto-Lei n.º 54/2018</h3>
 
-              <p>Regime jurídico da educação inclusiva em Portugal.</p>
+              <p>{t("pei.sources.law.description")}</p>
 
               <a
                 href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/54-2018-115652961"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Consultar no Diário da República
+                {t("pei.sources.law.button")}
               </a>
             </div>
           </div>
@@ -662,19 +463,16 @@ function PEI() {
             <i className="bi bi-journal-text"></i>
 
             <div>
-              <h3>Direção-Geral da Educação</h3>
+              <h3>{t("pei.sources.dge.title")}</h3>
 
-              <p>
-                Perguntas frequentes sobre o Decreto-Lei n.º 54/2018 e educação
-                inclusiva.
-              </p>
+              <p>{t("pei.sources.dge.description")}</p>
 
               <a
                 href="https://www.dge.mec.pt/node/461"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Consultar a DGE
+                {t("pei.sources.dge.button")}
               </a>
             </div>
           </div>

@@ -1,45 +1,61 @@
+import { useTranslation } from "react-i18next";
+
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
       <footer className="footer">
         <div className="container footer-content">
           <div className="footer-item">
             <i className="bi bi-shield-check footer-icon"></i>
+
             <p>
-              Fontes confiáveis
-              <br />e atualizadas
+              {t("footer.reliableSources.line1")}
+              <br />
+              {t("footer.reliableSources.line2")}
             </p>
           </div>
 
           <div className="footer-item">
             <i className="bi bi-people footer-icon"></i>
+
             <p>
-              Linguagem simples
-              <br />e acessível
+              {t("footer.simpleLanguage.line1")}
+              <br />
+              {t("footer.simpleLanguage.line2")}
             </p>
           </div>
 
           <div className="footer-item">
             <i className="bi bi-lock footer-icon"></i>
+
             <p>
-              Privacidade e<br />
-              respeito sempre
+              {t("footer.privacy.line1")}
+              <br />
+              {t("footer.privacy.line2")}
             </p>
           </div>
         </div>
       </footer>
+
       <div className="credits-item">
         <small>
-          {" "}
-          Criado por{" "}
-          <a href="https://www.linkedin.com/in/cris-cara%C3%A7a/">
-            {" "}
-            Cristhiane Caraça{" "}
+          {t("footer.createdBy")}{" "}
+          <a
+            href="https://www.linkedin.com/in/cris-cara%C3%A7a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cristhiane Caraça
           </a>{" "}
-          and open sourced on{" "}
-          <a href="https://github.com/cristhianelcaraca/Projeto-Autismo">
-            {" "}
-            Github ✌️
+          {t("footer.openSource")}{" "}
+          <a
+            href="https://github.com/cristhianelcaraca/Projeto-Autismo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </small>
       </div>

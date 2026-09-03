@@ -1,11 +1,20 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  function changeLanguage(language) {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+    document.documentElement.lang = language;
+  }
+
   return (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container">
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="/">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src="/images/autismo_portugal_logo.png"
             alt="Autismo Portugal"
@@ -18,7 +27,7 @@ function Navbar() {
             <br />
             <small>PORTUGAL</small>
           </span>
-        </a>
+        </Link>
 
         {/* Botão mobile */}
         <button
@@ -28,7 +37,7 @@ function Navbar() {
           data-bs-target="#mainNavbar"
           aria-controls="mainNavbar"
           aria-expanded="false"
-          aria-label="Abrir menu"
+          aria-label={t("navbar.openMenu")}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -36,46 +45,46 @@ function Navbar() {
         {/* Menu */}
         <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className="navbar-nav ms-auto align-items-lg-center">
+            {/* Início */}
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Início
-              </a>
+              <Link className="nav-link" to="/">
+                {t("navbar.home")}
+              </Link>
             </li>
 
             {/* Diagnóstico */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle navbar-dropdown-button"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Diagnóstico
-              </a>
+                {t("navbar.diagnosis")}
+              </button>
 
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/suspeita">
-                    Suspeita de autismo
+                    {t("navbar.suspicion")}
                   </Link>
                 </li>
 
                 <li>
                   <Link className="dropdown-item" to="/avaliacao">
-                    Avaliação
+                    {t("navbar.evaluation")}
                   </Link>
                 </li>
 
                 <li>
                   <Link className="dropdown-item" to="/diagnostico">
-                    Diagnóstico
+                    {t("navbar.diagnosis")}
                   </Link>
                 </li>
 
                 <li>
                   <Link className="dropdown-item" to="/depois-diagnostico">
-                    Depois do diagnóstico
+                    {t("navbar.afterDiagnosis")}
                   </Link>
                 </li>
               </ul>
@@ -83,102 +92,117 @@ function Navbar() {
 
             {/* Escola */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle navbar-dropdown-button"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Escola
-              </a>
+                {t("navbar.school")}
+              </button>
 
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/direitos-escola">
-                    Direitos
-                  </a>
+                  <Link className="dropdown-item" to="/direitos-escola">
+                    {t("navbar.schoolRights")}
+                  </Link>
                 </li>
 
-                <Link to="/medidas-suporte" className="dropdown-item">
-                  Medidas de suporte
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/medidas-suporte">
+                    {t("navbar.supportMeasures")}
+                  </Link>
+                </li>
 
-                <Link to="/PEI" className="dropdown-item">
-                  PEI
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/PEI">
+                    {t("navbar.pei")}
+                  </Link>
+                </li>
 
-                <Link to="/ansiedade-crises" className="dropdown-item">
-                  Ansiedade e crises
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/ansiedade-crises">
+                    {t("navbar.anxietyCrises")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
             {/* Direitos e Apoios */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle navbar-dropdown-button"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Direitos e Apoios
-              </a>
+                {t("navbar.rightsSupport")}
+              </button>
 
               <ul className="dropdown-menu">
-                <Link to="/amim" className="dropdown-item">
-                  AMIM
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/amim">
+                    AMIM
+                  </Link>
+                </li>
 
-                <Link to="/psi" className="dropdown-item">
-                  Prestação Social para a Inclusão
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/psi">
+                    {t("navbar.psi")}
+                  </Link>
+                </li>
 
-                <Link to="/benefits" className="dropdown-item">
-                  Benefícios e apoios
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/benefits">
+                    {t("navbar.benefits")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
             {/* Vida diária */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle navbar-dropdown-button"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Vida diária
-              </a>
+                {t("navbar.dailyLife")}
+              </button>
 
               <ul className="dropdown-menu">
-                <Link to="/crises-sobrecarga" className="dropdown-item">
-                  Crises e sobrecarga
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/crises-sobrecarga">
+                    {t("navbar.overloadCrises")}
+                  </Link>
+                </li>
 
-                <Link to="/ansiedade" className="dropdown-item">
-                  Ansiedade
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/ansiedade">
+                    {t("navbar.anxiety")}
+                  </Link>
+                </li>
 
-                <Link to="/rotina-organizacao" className="dropdown-item">
-                  Rotina e organização
-                </Link>
+                <li>
+                  <Link className="dropdown-item" to="/rotina-organizacao">
+                    {t("navbar.routine")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
             {/* Recursos */}
             <li className="nav-item">
               <Link className="nav-link" to="/recursos">
-                Recursos
+                {t("navbar.resources")}
               </Link>
             </li>
 
             {/* Sobre */}
             <li className="nav-item">
               <Link className="nav-link" to="/sobre-nos">
-                Sobre nós
+                {t("navbar.about")}
               </Link>
             </li>
 
@@ -187,13 +211,21 @@ function Navbar() {
               <div className="lang-toggle">
                 <button
                   type="button"
-                  className="lang-option active"
-                  data-lang="pt"
+                  className={`lang-option ${
+                    i18n.language === "pt" ? "active" : ""
+                  }`}
+                  onClick={() => changeLanguage("pt")}
                 >
                   PT
                 </button>
 
-                <button type="button" className="lang-option" data-lang="en">
+                <button
+                  type="button"
+                  className={`lang-option ${
+                    i18n.language === "en" ? "active" : ""
+                  }`}
+                  onClick={() => changeLanguage("en")}
+                >
                   EN
                 </button>
               </div>

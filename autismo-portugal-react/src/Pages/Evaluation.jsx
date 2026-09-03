@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Evaluation.css";
 
 function Evaluation() {
+  const { t } = useTranslation();
+
   return (
     <main className="evaluation-page">
       {/* HERO */}
@@ -11,20 +14,18 @@ function Evaluation() {
             <div className="evaluation-hero-image">
               <img
                 src="/images/evaluation.png"
-                alt="Ilustração relacionada com a avaliação do autismo"
+                alt={t("evaluation.hero.imageAlt")}
               />
             </div>
 
             <div className="evaluation-hero-text">
-              <span className="evaluation-label">Processo de avaliação</span>
+              <span className="evaluation-label">
+                {t("evaluation.hero.label")}
+              </span>
 
-              <h1>Avaliação</h1>
+              <h1>{t("evaluation.hero.title")}</h1>
 
-              <p>
-                A avaliação ajuda a compreender o desenvolvimento, as
-                características, as dificuldades e as necessidades da criança de
-                forma mais completa.
-              </p>
+              <p>{t("evaluation.hero.description")}</p>
             </div>
           </div>
         </div>
@@ -34,13 +35,9 @@ function Evaluation() {
       <section className="evaluation-start">
         <div className="container evaluation-container">
           <div className="section-heading">
-            <h2>Como começar uma avaliação?</h2>
+            <h2>{t("evaluation.start.title")}</h2>
 
-            <p>
-              Quando existem preocupações relacionadas com o desenvolvimento,
-              comunicação, interação social, comportamento ou processamento
-              sensorial, o primeiro passo é procurar orientação profissional.
-            </p>
+            <p>{t("evaluation.start.description")}</p>
           </div>
 
           <div className="evaluation-paths">
@@ -50,19 +47,11 @@ function Evaluation() {
                 <i className="bi bi-hospital"></i>
               </div>
 
-              <h3>Pelo SNS</h3>
+              <h3>{t("evaluation.start.sns.title")}</h3>
 
-              <p>
-                Pode começar por conversar com o médico de família ou pediatra,
-                explicando as características e dificuldades que têm levantado
-                preocupação.
-              </p>
+              <p>{t("evaluation.start.sns.paragraph1")}</p>
 
-              <p>
-                Quando necessário, poderá ser feito o encaminhamento para
-                consultas ou serviços especializados, de acordo com a idade e
-                com as necessidades da criança.
-              </p>
+              <p>{t("evaluation.start.sns.paragraph2")}</p>
             </div>
 
             {/* PRIVADO */}
@@ -71,19 +60,11 @@ function Evaluation() {
                 <i className="bi bi-heart-pulse"></i>
               </div>
 
-              <h3>No setor privado</h3>
+              <h3>{t("evaluation.start.private.title")}</h3>
 
-              <p>
-                Também é possível procurar diretamente uma clínica ou
-                profissional com experiência na avaliação do autismo e do
-                desenvolvimento infantil.
-              </p>
+              <p>{t("evaluation.start.private.paragraph1")}</p>
 
-              <p>
-                O profissional poderá realizar uma primeira avaliação e indicar
-                quais as etapas, instrumentos ou especialidades adicionais que
-                poderão ser necessárias.
-              </p>
+              <p>{t("evaluation.start.private.paragraph2")}</p>
             </div>
           </div>
 
@@ -93,14 +74,9 @@ function Evaluation() {
             </div>
 
             <div>
-              <h3>O processo pode variar</h3>
+              <h3>{t("evaluation.start.note.title")}</h3>
 
-              <p>
-                Não existe necessariamente um percurso igual para todas as
-                crianças. A equipa envolvida e as etapas da avaliação podem
-                variar de acordo com a idade, as características apresentadas e
-                as necessidades identificadas.
-              </p>
+              <p>{t("evaluation.start.note.description")}</p>
             </div>
           </div>
         </div>
@@ -110,12 +86,9 @@ function Evaluation() {
       <section className="evaluation-process">
         <div className="container evaluation-container">
           <div className="section-heading">
-            <h2>O que acontece durante a avaliação?</h2>
+            <h2>{t("evaluation.process.title")}</h2>
 
-            <p>
-              O processo pode incluir diferentes etapas para compreender o
-              desenvolvimento e o funcionamento da criança em várias áreas.
-            </p>
+            <p>{t("evaluation.process.description")}</p>
           </div>
 
           <div className="evaluation-steps">
@@ -123,13 +96,9 @@ function Evaluation() {
               <span>1</span>
 
               <div>
-                <h3>Conversa inicial</h3>
+                <h3>{t("evaluation.process.step1.title")}</h3>
 
-                <p>
-                  Os pais ou cuidadores podem ser convidados a explicar as
-                  principais preocupações, características observadas e
-                  dificuldades no dia a dia.
-                </p>
+                <p>{t("evaluation.process.step1.description")}</p>
               </div>
             </div>
 
@@ -137,13 +106,9 @@ function Evaluation() {
               <span>2</span>
 
               <div>
-                <h3>História do desenvolvimento</h3>
+                <h3>{t("evaluation.process.step2.title")}</h3>
 
-                <p>
-                  São recolhidas informações sobre o desenvolvimento da criança,
-                  incluindo comunicação, brincadeira, interação social,
-                  comportamento, autonomia e percurso escolar.
-                </p>
+                <p>{t("evaluation.process.step2.description")}</p>
               </div>
             </div>
 
@@ -151,13 +116,9 @@ function Evaluation() {
               <span>3</span>
 
               <div>
-                <h3>Observação e avaliação</h3>
+                <h3>{t("evaluation.process.step3.title")}</h3>
 
-                <p>
-                  Dependendo da idade e da situação, os profissionais podem
-                  observar a forma como a criança comunica, interage, brinca e
-                  responde a diferentes situações.
-                </p>
+                <p>{t("evaluation.process.step3.description")}</p>
               </div>
             </div>
 
@@ -165,12 +126,9 @@ function Evaluation() {
               <span>4</span>
 
               <div>
-                <h3>Questionários e instrumentos</h3>
+                <h3>{t("evaluation.process.step4.title")}</h3>
 
-                <p>
-                  Podem ser utilizados questionários, entrevistas estruturadas e
-                  outros instrumentos de avaliação adequados ao contexto.
-                </p>
+                <p>{t("evaluation.process.step4.description")}</p>
               </div>
             </div>
 
@@ -178,13 +136,9 @@ function Evaluation() {
               <span>5</span>
 
               <div>
-                <h3>Avaliações complementares</h3>
+                <h3>{t("evaluation.process.step5.title")}</h3>
 
-                <p>
-                  Quando necessário, podem ser recomendadas avaliações
-                  adicionais noutras áreas para compreender melhor as
-                  necessidades da criança.
-                </p>
+                <p>{t("evaluation.process.step5.description")}</p>
               </div>
             </div>
           </div>
@@ -198,33 +152,20 @@ function Evaluation() {
             <div className="evaluation-school-icon">
               <img
                 src="/images/school.png"
-                alt="Ilustração relacionada com a escola"
+                alt={t("evaluation.school.imageAlt")}
               />
             </div>
 
             <div className="evaluation-school-content">
-              <span>Informação de outros contextos</span>
+              <span>{t("evaluation.school.label")}</span>
 
-              <h2>A escola também pode participar</h2>
+              <h2>{t("evaluation.school.title")}</h2>
 
-              <p>
-                Durante o processo de avaliação, pode ser necessário recolher
-                informação sobre o comportamento e o desenvolvimento da criança
-                noutros contextos além de casa.
-              </p>
+              <p>{t("evaluation.school.paragraph1")}</p>
 
-              <p>
-                A educadora de infância, o diretor de turma ou outros
-                profissionais da escola podem ser convidados a preencher
-                questionários ou a fornecer informações sobre interação social,
-                comunicação, comportamento, atenção, autonomia e adaptação às
-                rotinas.
-              </p>
+              <p>{t("evaluation.school.paragraph2")}</p>
 
-              <p>
-                Esta informação pode ajudar os profissionais a compreender como
-                determinadas características aparecem em ambientes diferentes.
-              </p>
+              <p>{t("evaluation.school.paragraph3")}</p>
             </div>
           </div>
         </div>
@@ -234,12 +175,9 @@ function Evaluation() {
       <section className="evaluation-after">
         <div className="container evaluation-container">
           <div className="section-heading">
-            <h2>Depois da avaliação</h2>
+            <h2>{t("evaluation.after.title")}</h2>
 
-            <p>
-              No final do processo, os profissionais explicam os resultados e
-              podem indicar os próximos passos.
-            </p>
+            <p>{t("evaluation.after.description")}</p>
           </div>
 
           <div className="evaluation-after-grid">
@@ -248,12 +186,9 @@ function Evaluation() {
                 <i className="bi bi-chat-square-text"></i>
               </div>
 
-              <h3>Devolução dos resultados</h3>
+              <h3>{t("evaluation.after.results.title")}</h3>
 
-              <p>
-                Os resultados da avaliação são discutidos com a família e são
-                esclarecidas as principais conclusões.
-              </p>
+              <p>{t("evaluation.after.results.description")}</p>
             </div>
 
             <div className="evaluation-after-card">
@@ -261,12 +196,9 @@ function Evaluation() {
                 <i className="bi bi-file-earmark-text"></i>
               </div>
 
-              <h3>Relatório</h3>
+              <h3>{t("evaluation.after.report.title")}</h3>
 
-              <p>
-                Dependendo do serviço, poderá ser entregue um relatório com os
-                resultados, conclusões e recomendações.
-              </p>
+              <p>{t("evaluation.after.report.description")}</p>
             </div>
 
             <div className="evaluation-after-card">
@@ -274,12 +206,9 @@ function Evaluation() {
                 <i className="bi bi-signpost-split"></i>
               </div>
 
-              <h3>Próximos passos</h3>
+              <h3>{t("evaluation.after.nextSteps.title")}</h3>
 
-              <p>
-                Quando aplicável, podem ser discutidos diagnóstico,
-                acompanhamento, intervenções ou outras recomendações.
-              </p>
+              <p>{t("evaluation.after.nextSteps.description")}</p>
             </div>
           </div>
         </div>
@@ -290,30 +219,22 @@ function Evaluation() {
         <div className="container evaluation-container">
           <div className="evaluation-experience-box">
             <div className="evaluation-experience-image">
-              <img src="/images/family.png" alt="Ilustração de uma família" />
+              <img
+                src="/images/family.png"
+                alt={t("evaluation.experience.imageAlt")}
+              />
             </div>
 
             <div className="evaluation-experience-content">
-              <span>A nossa experiência</span>
+              <span>{t("evaluation.experience.label")}</span>
 
-              <h2>A participação da escola fez parte do processo</h2>
+              <h2>{t("evaluation.experience.title")}</h2>
 
-              <p>
-                Na nossa experiência, a escola também participou na avaliação
-                dos nossos filhos.
-              </p>
+              <p>{t("evaluation.experience.paragraph1")}</p>
 
-              <p>
-                No caso da nossa filha, que frequentava a educação pré-escolar,
-                a educadora preencheu um questionário. No caso do nosso filho
-                mais velho, essa informação foi fornecida pelo diretor de turma.
-              </p>
+              <p>{t("evaluation.experience.paragraph2")}</p>
 
-              <p>
-                Cada processo pode ser diferente, mas esta recolha de informação
-                ajudou a complementar aquilo que era observado em casa e durante
-                as consultas.
-              </p>
+              <p>{t("evaluation.experience.paragraph3")}</p>
             </div>
           </div>
         </div>
@@ -322,18 +243,16 @@ function Evaluation() {
       {/* PRÓXIMO PASSO */}
       <section className="evaluation-next">
         <div className="container evaluation-container">
-          <span className="evaluation-next-label">Próximo passo</span>
+          <span className="evaluation-next-label">
+            {t("evaluation.next.label")}
+          </span>
 
-          <h2>E depois da avaliação?</h2>
+          <h2>{t("evaluation.next.title")}</h2>
 
-          <p>
-            Se a avaliação identificar características compatíveis com autismo,
-            o processo poderá avançar para a definição ou confirmação do
-            diagnóstico e para a discussão dos apoios necessários.
-          </p>
+          <p>{t("evaluation.next.description")}</p>
 
           <Link to="/diagnostico" className="evaluation-link">
-            Ver como funciona o diagnóstico
+            {t("evaluation.next.button")}
             <i className="bi bi-arrow-right"></i>
           </Link>
         </div>

@@ -1,22 +1,32 @@
+import { useTranslation } from "react-i18next";
 import "./SupportMeasures.css";
 
 function SupportMeasures() {
+  const { t } = useTranslation();
+
+  const universalItems = t("supportMeasures.universal.items", {
+    returnObjects: true,
+  });
+
+  const selectiveItems = t("supportMeasures.selective.items", {
+    returnObjects: true,
+  });
+
+  const additionalItems = t("supportMeasures.additional.items", {
+    returnObjects: true,
+  });
+
   return (
     <section className="support-measures">
       <div className="container support-measures-container">
         <div className="support-measures-heading">
           <span className="support-measures-label">
-            Medidas de suporte à aprendizagem
+            {t("supportMeasures.hero.label")}
           </span>
 
-          <h2>Três níveis de medidas</h2>
+          <h2>{t("supportMeasures.hero.title")}</h2>
 
-          <p>
-            O Decreto-Lei n.º 54/2018 prevê diferentes níveis de medidas de
-            suporte à aprendizagem e à inclusão. A resposta deve ser ajustada às
-            necessidades de cada aluno e pode ser revista ao longo do percurso
-            escolar.
-          </p>
+          <p>{t("supportMeasures.hero.description")}</p>
         </div>
 
         <div className="support-measures-intro">
@@ -24,12 +34,7 @@ function SupportMeasures() {
             <i className="bi bi-lightbulb"></i>
           </div>
 
-          <p>
-            As medidas não dependem simplesmente de um diagnóstico. A escola
-            deve considerar as barreiras à aprendizagem e à participação, as
-            potencialidades do aluno e a eficácia das respostas que já foram
-            implementadas.
-          </p>
+          <p>{t("supportMeasures.intro")}</p>
         </div>
 
         <div className="support-measures-grid">
@@ -41,70 +46,34 @@ function SupportMeasures() {
               </div>
 
               <div>
-                <span className="support-measure-level">Nível 1</span>
-                <h3>Medidas universais</h3>
+                <span className="support-measure-level">
+                  {t("supportMeasures.universal.level")}
+                </span>
+
+                <h3>{t("supportMeasures.universal.title")}</h3>
               </div>
             </div>
 
             <p className="support-measure-description">
-              São respostas educativas disponíveis para todos os alunos e
-              destinam-se a promover a participação e a melhoria das
-              aprendizagens.
+              {t("supportMeasures.universal.description")}
             </p>
 
             <ul className="support-measure-list">
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
+              {universalItems.map((item) => (
+                <li key={item}>
+                  <span className="measure-check">
+                    <i className="bi bi-check-lg"></i>
+                  </span>
 
-                <span>Diferenciação pedagógica</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Acomodações curriculares</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Enriquecimento curricular</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Promoção do comportamento pró-social</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>
-                  Intervenção com foco académico ou comportamental em pequenos
-                  grupos
-                </span>
-              </li>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
 
             <div className="support-measure-example">
-              <strong>Na prática</strong>
+              <strong>{t("supportMeasures.universal.example.title")}</strong>
 
-              <p>
-                Podem incluir mudanças na forma de ensinar, organizar a sala,
-                apresentar instruções ou permitir diferentes formas de realizar
-                determinadas tarefas.
-              </p>
+              <p>{t("supportMeasures.universal.example.description")}</p>
             </div>
           </article>
 
@@ -116,66 +85,34 @@ function SupportMeasures() {
               </div>
 
               <div>
-                <span className="support-measure-level">Nível 2</span>
-                <h3>Medidas seletivas</h3>
+                <span className="support-measure-level">
+                  {t("supportMeasures.selective.level")}
+                </span>
+
+                <h3>{t("supportMeasures.selective.title")}</h3>
               </div>
             </div>
 
             <p className="support-measure-description">
-              São utilizadas quando as medidas universais não são suficientes
-              para responder às necessidades de suporte à aprendizagem e à
-              inclusão do aluno.
+              {t("supportMeasures.selective.description")}
             </p>
 
             <ul className="support-measure-list">
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
+              {selectiveItems.map((item) => (
+                <li key={item}>
+                  <span className="measure-check">
+                    <i className="bi bi-check-lg"></i>
+                  </span>
 
-                <span>Percursos curriculares diferenciados</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Adaptações curriculares não significativas</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Apoio psicopedagógico</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Antecipação e reforço das aprendizagens</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Apoio tutorial</span>
-              </li>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
 
             <div className="support-measure-example">
-              <strong>Quando podem ser necessárias?</strong>
+              <strong>{t("supportMeasures.selective.example.title")}</strong>
 
-              <p>
-                Quando existem dificuldades que persistem apesar das respostas
-                utilizadas no contexto das medidas universais.
-              </p>
+              <p>{t("supportMeasures.selective.example.description")}</p>
             </div>
           </article>
 
@@ -187,70 +124,34 @@ function SupportMeasures() {
               </div>
 
               <div>
-                <span className="support-measure-level">Nível 3</span>
-                <h3>Medidas adicionais</h3>
+                <span className="support-measure-level">
+                  {t("supportMeasures.additional.level")}
+                </span>
+
+                <h3>{t("supportMeasures.additional.title")}</h3>
               </div>
             </div>
 
             <p className="support-measure-description">
-              Procuram responder a dificuldades acentuadas e persistentes ao
-              nível da comunicação, interação, cognição ou aprendizagem que
-              exigem recursos especializados de apoio.
+              {t("supportMeasures.additional.description")}
             </p>
 
             <ul className="support-measure-list">
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
+              {additionalItems.map((item) => (
+                <li key={item}>
+                  <span className="measure-check">
+                    <i className="bi bi-check-lg"></i>
+                  </span>
 
-                <span>Frequência do ano de escolaridade por disciplinas</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Adaptações curriculares significativas</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>Plano individual de transição</span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>
-                  Desenvolvimento de metodologias de ensino estruturado
-                </span>
-              </li>
-
-              <li>
-                <span className="measure-check">
-                  <i className="bi bi-check-lg"></i>
-                </span>
-
-                <span>
-                  Desenvolvimento de competências de autonomia pessoal e social
-                </span>
-              </li>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
 
             <div className="support-measure-example">
-              <strong>Uma resposta mais individualizada</strong>
+              <strong>{t("supportMeasures.additional.example.title")}</strong>
 
-              <p>
-                Estas medidas destinam-se a situações em que são necessárias
-                respostas educativas mais intensivas e especializadas.
-              </p>
+              <p>{t("supportMeasures.additional.example.description")}</p>
             </div>
           </article>
         </div>
@@ -261,13 +162,9 @@ function SupportMeasures() {
           </div>
 
           <div>
-            <h3>As medidas podem ser revistas</h3>
+            <h3>{t("supportMeasures.note.title")}</h3>
 
-            <p>
-              As necessidades de uma criança ou jovem podem mudar. A eficácia
-              das medidas deve ser acompanhada e as respostas podem ser
-              ajustadas sempre que necessário.
-            </p>
+            <p>{t("supportMeasures.note.description")}</p>
           </div>
         </div>
       </div>

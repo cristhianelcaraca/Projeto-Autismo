@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import "./Diagnosis.css";
 
 function Diagnosis() {
+  const { t } = useTranslation();
+
   return (
     <main className="diagnosis-page">
       {/* HERO */}
@@ -8,21 +11,17 @@ function Diagnosis() {
         <div className="container">
           <div className="diagnosis-hero-content">
             <div className="diagnosis-hero-image">
-              <img
-                src="/images/brain.png"
-                alt="Ilustração de um cérebro a ler um livro"
-              />
+              <img src="/images/brain.png" alt={t("diagnosis.hero.imageAlt")} />
             </div>
 
             <div className="diagnosis-hero-text">
-              <span className="diagnosis-label">Por onde começar?</span>
+              <span className="diagnosis-label">
+                {t("diagnosis.hero.label")}
+              </span>
 
-              <h1>Diagnóstico</h1>
+              <h1>{t("diagnosis.hero.title")}</h1>
 
-              <p>
-                Se existe uma suspeita de autismo, compreender o processo de
-                avaliação pode ajudar a tornar este caminho mais simples.
-              </p>
+              <p>{t("diagnosis.hero.description")}</p>
             </div>
           </div>
         </div>
@@ -31,18 +30,11 @@ function Diagnosis() {
       {/* INTRODUÇÃO */}
       <section className="diagnosis-intro">
         <div className="container diagnosis-container">
-          <h2>Como é feita a avaliação?</h2>
+          <h2>{t("diagnosis.intro.title")}</h2>
 
-          <p>
-            O diagnóstico da Perturbação do Espetro do Autismo (PEA) baseia-se
-            numa avaliação clínica que considera o desenvolvimento, o
-            comportamento, a comunicação e a interação social da pessoa.
-          </p>
+          <p>{t("diagnosis.intro.paragraph1")}</p>
 
-          <p>
-            Podem estar envolvidos diferentes profissionais de saúde, dependendo
-            da idade e das necessidades de cada pessoa.
-          </p>
+          <p>{t("diagnosis.intro.paragraph2")}</p>
 
           <div className="evaluation-cards">
             <div className="evaluation-card">
@@ -50,12 +42,9 @@ function Diagnosis() {
                 <i className="bi bi-chat-left-text"></i>
               </div>
 
-              <h3>Entrevista clínica</h3>
+              <h3>{t("diagnosis.intro.interview.title")}</h3>
 
-              <p>
-                Recolha de informação sobre desenvolvimento, comportamento,
-                comunicação e dificuldades identificadas.
-              </p>
+              <p>{t("diagnosis.intro.interview.description")}</p>
             </div>
 
             <div className="evaluation-card">
@@ -63,12 +52,9 @@ function Diagnosis() {
                 <i className="bi bi-clipboard2-check"></i>
               </div>
 
-              <h3>Avaliação</h3>
+              <h3>{t("diagnosis.intro.assessment.title")}</h3>
 
-              <p>
-                Pode incluir observação, instrumentos específicos de avaliação e
-                análise do historial clínico e do desenvolvimento.
-              </p>
+              <p>{t("diagnosis.intro.assessment.description")}</p>
             </div>
 
             <div className="evaluation-card">
@@ -76,12 +62,9 @@ function Diagnosis() {
                 <i className="bi bi-people"></i>
               </div>
 
-              <h3>Equipa especializada</h3>
+              <h3>{t("diagnosis.intro.team.title")}</h3>
 
-              <p>
-                A avaliação pode envolver profissionais de diferentes áreas, de
-                acordo com cada situação.
-              </p>
+              <p>{t("diagnosis.intro.team.description")}</p>
             </div>
           </div>
         </div>
@@ -91,12 +74,9 @@ function Diagnosis() {
       <section className="diagnosis-paths">
         <div className="container diagnosis-container">
           <div className="section-heading">
-            <h2>Que caminho posso seguir?</h2>
+            <h2>{t("diagnosis.paths.title")}</h2>
 
-            <p>
-              Em Portugal, é possível iniciar o processo através do SNS ou
-              procurar serviços no setor privado.
-            </p>
+            <p>{t("diagnosis.paths.description")}</p>
           </div>
 
           <div className="row g-4">
@@ -109,8 +89,11 @@ function Diagnosis() {
                   </div>
 
                   <div>
-                    <span className="path-small-title">Serviço público</span>
-                    <h3>Pelo SNS</h3>
+                    <span className="path-small-title">
+                      {t("diagnosis.paths.sns.label")}
+                    </span>
+
+                    <h3>{t("diagnosis.paths.sns.title")}</h3>
                   </div>
                 </div>
 
@@ -118,11 +101,9 @@ function Diagnosis() {
                   <span>1</span>
 
                   <div>
-                    <h4>Primeiro contacto</h4>
-                    <p>
-                      Procure os cuidados de saúde e explique as preocupações ou
-                      sinais que motivaram a suspeita de autismo.
-                    </p>
+                    <h4>{t("diagnosis.paths.sns.step1.title")}</h4>
+
+                    <p>{t("diagnosis.paths.sns.step1.description")}</p>
                   </div>
                 </div>
 
@@ -130,11 +111,9 @@ function Diagnosis() {
                   <span>2</span>
 
                   <div>
-                    <h4>Encaminhamento</h4>
-                    <p>
-                      Quando necessário, poderá ser feito o encaminhamento para
-                      serviços ou consultas especializadas.
-                    </p>
+                    <h4>{t("diagnosis.paths.sns.step2.title")}</h4>
+
+                    <p>{t("diagnosis.paths.sns.step2.description")}</p>
                   </div>
                 </div>
 
@@ -142,12 +121,9 @@ function Diagnosis() {
                   <span>3</span>
 
                   <div>
-                    <h4>Avaliação especializada</h4>
-                    <p>
-                      A equipa recolhe informação clínica e do desenvolvimento e
-                      realiza a avaliação necessária para confirmar ou excluir o
-                      diagnóstico.
-                    </p>
+                    <h4>{t("diagnosis.paths.sns.step3.title")}</h4>
+
+                    <p>{t("diagnosis.paths.sns.step3.description")}</p>
                   </div>
                 </div>
               </div>
@@ -163,9 +139,10 @@ function Diagnosis() {
 
                   <div>
                     <span className="path-small-title">
-                      Outra possibilidade
+                      {t("diagnosis.paths.private.label")}
                     </span>
-                    <h3>Setor privado</h3>
+
+                    <h3>{t("diagnosis.paths.private.title")}</h3>
                   </div>
                 </div>
 
@@ -173,11 +150,9 @@ function Diagnosis() {
                   <span>1</span>
 
                   <div>
-                    <h4>Procurar um serviço especializado</h4>
-                    <p>
-                      É possível contactar diretamente clínicas ou profissionais
-                      com experiência na avaliação do autismo.
-                    </p>
+                    <h4>{t("diagnosis.paths.private.step1.title")}</h4>
+
+                    <p>{t("diagnosis.paths.private.step1.description")}</p>
                   </div>
                 </div>
 
@@ -185,11 +160,9 @@ function Diagnosis() {
                   <span>2</span>
 
                   <div>
-                    <h4>Avaliação inicial</h4>
-                    <p>
-                      O profissional analisa a situação e determina quais
-                      avaliações e especialidades poderão ser necessárias.
-                    </p>
+                    <h4>{t("diagnosis.paths.private.step2.title")}</h4>
+
+                    <p>{t("diagnosis.paths.private.step2.description")}</p>
                   </div>
                 </div>
 
@@ -197,12 +170,9 @@ function Diagnosis() {
                   <span>3</span>
 
                   <div>
-                    <h4>Avaliação diagnóstica</h4>
-                    <p>
-                      O processo pode incluir entrevistas, observação,
-                      instrumentos de avaliação e recolha da história do
-                      desenvolvimento.
-                    </p>
+                    <h4>{t("diagnosis.paths.private.step3.title")}</h4>
+
+                    <p>{t("diagnosis.paths.private.step3.description")}</p>
                   </div>
                 </div>
               </div>
@@ -216,34 +186,31 @@ function Diagnosis() {
         <div className="container diagnosis-container">
           <div className="adult-box">
             <div>
-              <h2>E no caso dos adultos?</h2>
+              <h2>{t("diagnosis.adults.title")}</h2>
 
-              <p>
-                Na avaliação de adultos, a história do desenvolvimento também é
-                importante. Quando possível, podem ser recolhidas informações
-                junto de familiares ou outras pessoas que conheceram a pessoa
-                durante a infância.
-              </p>
+              <p>{t("diagnosis.adults.paragraph1")}</p>
 
-              <p>
-                Fotografias, relatórios escolares ou outros documentos antigos
-                também podem ajudar a reconstruir essa história quando forem
-                relevantes para a avaliação.
-              </p>
+              <p>{t("diagnosis.adults.paragraph2")}</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* NOSSA EXPERIÊNCIA */}
       <section className="our-experience">
         <div className="experience-card">
           <div className="experience-title-row">
             <div className="experience-image">
-              <img src="/images/family.png" alt="Ilustração de uma família" />
+              <img
+                src="/images/family.png"
+                alt={t("diagnosis.experience.imageAlt")}
+              />
             </div>
 
             <div className="experience-headings">
-              <h2 className="experience-title">A nossa experiência</h2>
+              <h2 className="experience-title">
+                {t("diagnosis.experience.title")}
+              </h2>
 
               <h3 className="experience-subtitle">
                 PIN – Partners in Neuroscience
@@ -252,16 +219,9 @@ function Diagnosis() {
           </div>
 
           <div className="experience-content">
-            <p>
-              Na nossa família, optámos por realizar a avaliação no setor
-              privado, no PIN – Partners in Neuroscience.
-            </p>
+            <p>{t("diagnosis.experience.paragraph1")}</p>
 
-            <p>
-              Partilhamos esta informação apenas como referência da nossa
-              experiência pessoal. Existem outras clínicas e profissionais
-              especializados em Portugal.
-            </p>
+            <p>{t("diagnosis.experience.paragraph2")}</p>
 
             <a
               href="https://pin.com.pt/"
@@ -269,16 +229,17 @@ function Diagnosis() {
               rel="noopener noreferrer"
               className="experience-button"
             >
-              Conhecer o PIN
+              {t("diagnosis.experience.button")}
               <i className="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
         </div>
       </section>
+
       {/* FONTES */}
       <section className="diagnosis-sources">
         <div className="container diagnosis-container">
-          <h2>Fontes e informação adicional</h2>
+          <h2>{t("diagnosis.sources.title")}</h2>
 
           <div className="source-card">
             <div className="source-icon">
@@ -286,12 +247,9 @@ function Diagnosis() {
             </div>
 
             <div>
-              <h3>Direção-Geral da Saúde</h3>
+              <h3>{t("diagnosis.sources.dgs.title")}</h3>
 
-              <p>
-                Consulte a informação oficial sobre abordagem diagnóstica e
-                intervenção na Perturbação do Espetro do Autismo.
-              </p>
+              <p>{t("diagnosis.sources.dgs.description")}</p>
             </div>
           </div>
         </div>

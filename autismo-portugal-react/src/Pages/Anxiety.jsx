@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Anxiety.css";
 
 function Anxiety() {
+  const { t } = useTranslation();
+
   return (
     <main className="daily-anxiety-page">
       {/* HERO */}
@@ -9,20 +12,14 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-hero-content">
             <div className="daily-anxiety-hero-text">
-              <span className="daily-anxiety-label">Vida diária</span>
+              <span className="daily-anxiety-label">
+                {t("anxiety.hero.label")}
+              </span>
 
-              <h1>Ansiedade e autismo</h1>
+              <h1>{t("anxiety.hero.title")}</h1>
 
-              <p>
-                A ansiedade pode fazer parte da vida de qualquer pessoa, mas é
-                particularmente frequente entre pessoas autistas.
-              </p>
-
-              <p>
-                Sensibilidade sensorial, imprevisibilidade, situações sociais,
-                mudanças e o esforço constante para lidar com ambientes pouco
-                acessíveis podem contribuir para níveis elevados de ansiedade.
-              </p>
+              <p>{t("anxiety.hero.paragraph1")}</p>
+              <p>{t("anxiety.hero.paragraph2")}</p>
             </div>
 
             <div className="daily-anxiety-hero-symbol">
@@ -37,30 +34,20 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Uma distinção importante
+              {t("anxiety.notAutism.label")}
             </span>
 
-            <h2>Ansiedade não é autismo</h2>
+            <h2>{t("anxiety.notAutism.title")}</h2>
 
-            <p>
-              A ansiedade não faz parte dos critérios necessários para um
-              diagnóstico de autismo e nem todas as pessoas autistas têm uma
-              perturbação de ansiedade.
-            </p>
+            <p>{t("anxiety.notAutism.description")}</p>
           </div>
 
           <div className="daily-anxiety-important">
             <i className="bi bi-info-circle"></i>
 
             <div>
-              <h3>Autismo e ansiedade podem coexistir</h3>
-
-              <p>
-                As perturbações de ansiedade são frequentes entre pessoas
-                autistas, mas devem ser compreendidas como uma condição
-                coexistente, e não simplesmente como uma característica
-                inevitável do autismo.
-              </p>
+              <h3>{t("anxiety.notAutism.box.title")}</h3>
+              <p>{t("anxiety.notAutism.box.description")}</p>
             </div>
           </div>
         </div>
@@ -70,24 +57,17 @@ function Anxiety() {
       <section className="daily-anxiety-causes">
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-causes-image">
-            <img
-              src="/images/crises.png"
-              alt="Ilustração sobre ansiedade e sobrecarga"
-            />
+            <img src="/images/crises.png" alt={t("anxiety.causes.imageAlt")} />
           </div>
 
           <div className="daily-anxiety-section-heading daily-anxiety-heading-left">
             <span className="daily-anxiety-section-label">
-              Nem sempre existe uma única causa
+              {t("anxiety.causes.label")}
             </span>
 
-            <h2>Por que a ansiedade pode ser tão frequente?</h2>
+            <h2>{t("anxiety.causes.title")}</h2>
 
-            <p>
-              Cada pessoa é diferente. Ainda assim, alguns aspetos da vida
-              quotidiana podem tornar o mundo particularmente imprevisível,
-              exigente ou cansativo para uma pessoa autista.
-            </p>
+            <p>{t("anxiety.causes.description")}</p>
           </div>
 
           <div className="daily-anxiety-causes-grid">
@@ -96,12 +76,8 @@ function Anxiety() {
                 <i className="bi bi-volume-up"></i>
               </div>
 
-              <h3>Sobrecarga sensorial</h3>
-
-              <p>
-                Barulho, luz, cheiros, toque, multidões ou vários estímulos ao
-                mesmo tempo podem tornar determinados ambientes difíceis.
-              </p>
+              <h3>{t("anxiety.causes.sensory.title")}</h3>
+              <p>{t("anxiety.causes.sensory.description")}</p>
             </article>
 
             <article className="daily-anxiety-cause-card uncertainty">
@@ -109,12 +85,8 @@ function Anxiety() {
                 <i className="bi bi-question-circle"></i>
               </div>
 
-              <h3>Incerteza</h3>
-
-              <p>
-                Não saber o que vai acontecer, enfrentar situações novas ou
-                lidar com mudanças inesperadas pode aumentar a ansiedade.
-              </p>
+              <h3>{t("anxiety.causes.uncertainty.title")}</h3>
+              <p>{t("anxiety.causes.uncertainty.description")}</p>
             </article>
 
             <article className="daily-anxiety-cause-card social">
@@ -122,13 +94,8 @@ function Anxiety() {
                 <i className="bi bi-people"></i>
               </div>
 
-              <h3>Situações sociais</h3>
-
-              <p>
-                Interpretar comportamentos, perceber expectativas ou
-                preocupar-se com cometer um erro pode exigir um esforço
-                significativo.
-              </p>
+              <h3>{t("anxiety.causes.social.title")}</h3>
+              <p>{t("anxiety.causes.social.description")}</p>
             </article>
 
             <article className="daily-anxiety-cause-card masking">
@@ -136,12 +103,8 @@ function Anxiety() {
                 <i className="bi bi-mask"></i>
               </div>
 
-              <h3>Masking</h3>
-
-              <p>
-                Esconder características autistas e tentar corresponder
-                constantemente às expectativas sociais pode ser desgastante.
-              </p>
+              <h3>{t("anxiety.causes.masking.title")}</h3>
+              <p>{t("anxiety.causes.masking.description")}</p>
             </article>
 
             <article className="daily-anxiety-cause-card emotions">
@@ -149,13 +112,8 @@ function Anxiety() {
                 <i className="bi bi-heart"></i>
               </div>
 
-              <h3>Identificar emoções</h3>
-
-              <p>
-                Algumas pessoas sentem primeiro os efeitos físicos da ansiedade
-                e têm dificuldade em identificar ou explicar o que estão a
-                sentir.
-              </p>
+              <h3>{t("anxiety.causes.emotions.title")}</h3>
+              <p>{t("anxiety.causes.emotions.description")}</p>
             </article>
 
             <article className="daily-anxiety-cause-card experiences">
@@ -163,13 +121,8 @@ function Anxiety() {
                 <i className="bi bi-shield-exclamation"></i>
               </div>
 
-              <h3>Experiências anteriores</h3>
-
-              <p>
-                Bullying, exclusão, conflitos ou experiências negativas podem
-                fazer com que situações semelhantes passem a ser antecipadas com
-                medo.
-              </p>
+              <h3>{t("anxiety.causes.experiences.title")}</h3>
+              <p>{t("anxiety.causes.experiences.description")}</p>
             </article>
           </div>
         </div>
@@ -179,68 +132,27 @@ function Anxiety() {
       <section className="daily-anxiety-signs">
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-signs-image">
-            <img
-              src="/images/cry.png"
-              alt="Ilustração de uma pessoa a sentir ansiedade"
-            />
+            <img src="/images/cry.png" alt={t("anxiety.signs.imageAlt")} />
           </div>
 
           <div className="daily-anxiety-signs-content">
             <span className="daily-anxiety-section-label">
-              Nem sempre é fácil reconhecer
+              {t("anxiety.signs.label")}
             </span>
 
-            <h2>A ansiedade nem sempre parece ansiedade</h2>
+            <h2>{t("anxiety.signs.title")}</h2>
 
-            <p>
-              Nem todas as pessoas conseguem dizer diretamente “estou ansioso”.
-              Por vezes, a ansiedade aparece através de mudanças no
-              comportamento, no corpo ou na capacidade de lidar com situações
-              habituais.
-            </p>
+            <p>{t("anxiety.signs.description")}</p>
 
             <div className="daily-anxiety-sign-list">
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>irritabilidade ou maior sensibilidade</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>perguntas repetitivas ou procura de confirmação</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>maior necessidade de rotina e previsibilidade</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>problemas de sono</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>
-                  dores de barriga, náuseas ou outros sintomas físicos
-                </span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>evitar lugares, pessoas ou atividades</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>maior necessidade de stimming ou autorregulação</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>choro, shutdown, meltdown ou ataques de pânico</span>
-              </div>
+              {t("anxiety.signs.items", {
+                returnObjects: true,
+              }).map((item) => (
+                <div key={item}>
+                  <i className="bi bi-check-circle-fill"></i>
+                  <span>{item}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -248,13 +160,8 @@ function Anxiety() {
             <i className="bi bi-chat-square-heart"></i>
 
             <div>
-              <h3>Uma mudança de comportamento pode estar a comunicar algo</h3>
-
-              <p>
-                Recusar, fugir, ficar mais rígido ou deixar de participar numa
-                atividade pode, em algumas situações, ser uma forma de mostrar
-                que algo se tornou demasiado difícil.
-              </p>
+              <h3>{t("anxiety.signs.behaviour.title")}</h3>
+              <p>{t("anxiety.signs.behaviour.description")}</p>
             </div>
           </div>
         </div>
@@ -265,61 +172,42 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Quando o sofrimento começa antes
+              {t("anxiety.anticipatory.label")}
             </span>
 
-            <h2>Ansiedade antecipatória</h2>
+            <h2>{t("anxiety.anticipatory.title")}</h2>
 
-            <p>
-              Por vezes, o acontecimento ainda nem começou e a pessoa já está a
-              viver mentalmente tudo o que poderá correr mal.
-            </p>
+            <p>{t("anxiety.anticipatory.description")}</p>
           </div>
 
           <div className="daily-anxiety-thoughts">
-            <span>“E se o plano mudar?”</span>
-            <span>“E se eu errar?”</span>
-            <span>“E se estiver demasiado barulho?”</span>
-            <span>“E se eu não souber o que fazer?”</span>
+            {t("anxiety.anticipatory.thoughts", {
+              returnObjects: true,
+            }).map((thought) => (
+              <span key={thought}>{thought}</span>
+            ))}
           </div>
 
           <div className="daily-anxiety-cycle">
-            <article>
-              <span>1</span>
-              <h3>Situação futura</h3>
-            </article>
+            {t("anxiety.anticipatory.cycle", {
+              returnObjects: true,
+            }).map((item, index, array) => (
+              <span key={item}>
+                <article>
+                  <span>{index + 1}</span>
+                  <h3>{item}</h3>
+                </article>
 
-            <i className="bi bi-arrow-right"></i>
-
-            <article>
-              <span>2</span>
-              <h3>Preocupação</h3>
-            </article>
-
-            <i className="bi bi-arrow-right"></i>
-
-            <article>
-              <span>3</span>
-              <h3>Sintomas físicos</h3>
-            </article>
-
-            <i className="bi bi-arrow-right"></i>
-
-            <article>
-              <span>4</span>
-              <h3>Evitamento</h3>
-            </article>
+                {index < array.length - 1 && (
+                  <i className="bi bi-arrow-right"></i>
+                )}
+              </span>
+            ))}
           </div>
 
           <div className="daily-anxiety-cycle-note">
             <i className="bi bi-info-circle"></i>
-
-            <p>
-              Evitar uma situação pode trazer alívio imediato. No entanto,
-              quando o evitamento se torna a única estratégia disponível, a
-              ansiedade pode continuar a limitar progressivamente a vida da
-              pessoa.
-            </p>
+            <p>{t("anxiety.anticipatory.note")}</p>
           </div>
         </div>
       </section>
@@ -334,34 +222,24 @@ function Anxiety() {
 
             <div>
               <span className="daily-anxiety-section-label">
-                Procurar previsibilidade
+                {t("anxiety.control.label")}
               </span>
 
-              <h2>Ansiedade e necessidade de controlo</h2>
+              <h2>{t("anxiety.control.title")}</h2>
 
-              <p>
-                Alguns comportamentos interpretados como uma necessidade de
-                “controlar tudo” podem, em determinadas situações, ser uma
-                tentativa de tornar o ambiente mais previsível.
-              </p>
+              <p>{t("anxiety.control.description")}</p>
 
               <ul>
-                <li>perguntar repetidamente a que horas algo vai acontecer;</li>
-                <li>precisar de saber quem estará presente;</li>
-                <li>querer conhecer antecipadamente todos os passos;</li>
-                <li>preferir sempre o mesmo percurso;</li>
-                <li>ter dificuldade com alterações de última hora.</li>
+                {t("anxiety.control.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
 
               <div className="daily-anxiety-control-note">
-                <strong>
-                  Nem toda a necessidade de rotina significa ansiedade.
-                </strong>
-
-                <p>
-                  O mais útil é tentar perceber o que aquela previsibilidade
-                  está a proporcionar à pessoa naquele momento.
-                </p>
+                <strong>{t("anxiety.control.noteStrong")}</strong>
+                <p>{t("anxiety.control.noteText")}</p>
               </div>
             </div>
           </div>
@@ -373,16 +251,12 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Quando procurar apoio
+              {t("anxiety.impact.label")}
             </span>
 
-            <h2>Quando a ansiedade começa a limitar a vida</h2>
+            <h2>{t("anxiety.impact.title")}</h2>
 
-            <p>
-              Ansiedade ocasional é comum. É particularmente importante procurar
-              ajuda quando começa a provocar sofrimento significativo ou a
-              impedir atividades importantes do quotidiano.
-            </p>
+            <p>{t("anxiety.impact.description")}</p>
           </div>
 
           <div className="daily-anxiety-impact-grid">
@@ -390,44 +264,32 @@ function Anxiety() {
               <div className="daily-anxiety-impact-icon school">
                 <i className="bi bi-backpack"></i>
               </div>
-              <h3>Escola</h3>
-              <p>
-                Crises antes de sair, faltas frequentes ou dificuldade em entrar
-                e permanecer na escola.
-              </p>
+              <h3>{t("anxiety.impact.school.title")}</h3>
+              <p>{t("anxiety.impact.school.description")}</p>
             </article>
 
             <article>
               <div className="daily-anxiety-impact-icon social">
                 <i className="bi bi-people"></i>
               </div>
-              <h3>Vida social</h3>
-              <p>
-                Evitar progressivamente outras pessoas ou deixar de participar
-                em atividades anteriormente importantes.
-              </p>
+              <h3>{t("anxiety.impact.social.title")}</h3>
+              <p>{t("anxiety.impact.social.description")}</p>
             </article>
 
             <article>
               <div className="daily-anxiety-impact-icon independence">
                 <i className="bi bi-signpost-split"></i>
               </div>
-              <h3>Autonomia</h3>
-              <p>
-                Deixar de conseguir realizar atividades habituais devido ao medo
-                ou à necessidade constante de confirmação.
-              </p>
+              <h3>{t("anxiety.impact.independence.title")}</h3>
+              <p>{t("anxiety.impact.independence.description")}</p>
             </article>
 
             <article>
               <div className="daily-anxiety-impact-icon health">
                 <i className="bi bi-heart-pulse"></i>
               </div>
-              <h3>Bem-estar</h3>
-              <p>
-                Sono muito afetado, ataques de pânico ou sofrimento emocional
-                intenso e persistente.
-              </p>
+              <h3>{t("anxiety.impact.wellbeing.title")}</h3>
+              <p>{t("anxiety.impact.wellbeing.description")}</p>
             </article>
           </div>
         </div>
@@ -438,78 +300,32 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Tornar o quotidiano mais sustentável
+              {t("anxiety.help.label")}
             </span>
 
-            <h2>O que pode ajudar?</h2>
+            <h2>{t("anxiety.help.title")}</h2>
 
-            <p>
-              O objetivo não deve ser eliminar toda a ansiedade, mas perceber o
-              que está por trás dela e aumentar a capacidade da pessoa para
-              lidar com situações difíceis de forma segura.
-            </p>
+            <p>{t("anxiety.help.description")}</p>
           </div>
 
           <div className="daily-anxiety-help-grid">
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>antecipar mudanças sempre que possível</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>dar informação clara sobre o que vai acontecer</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>usar apoio visual quando for útil</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>reduzir estímulos sensoriais desnecessários</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>permitir pausas e tempo de recuperação</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>identificar os primeiros sinais de ansiedade</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>ensinar formas de pedir ajuda ou uma pausa</span>
-            </div>
-
-            <div className="daily-anxiety-help-item">
-              <i className="bi bi-check-circle-fill"></i>
-              <span>respeitar estratégias de autorregulação</span>
-            </div>
+            {t("anxiety.help.items", {
+              returnObjects: true,
+            }).map((item) => (
+              <div className="daily-anxiety-help-item" key={item}>
+                <i className="bi bi-check-circle-fill"></i>
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
 
           <div className="daily-anxiety-professional">
             <i className="bi bi-person-heart"></i>
 
             <div>
-              <h3>Apoio profissional</h3>
-
-              <p>
-                Quando a ansiedade causa sofrimento significativo, pode ser
-                importante procurar apoio psicológico ou médico. A intervenção
-                deve considerar as necessidades de comunicação, sensoriais e
-                cognitivas da pessoa autista.
-              </p>
-
-              <p>
-                Algumas intervenções psicológicas, incluindo formas adaptadas de
-                terapia cognitivo-comportamental, podem ser utilizadas no
-                tratamento da ansiedade em pessoas autistas.
-              </p>
+              <h3>{t("anxiety.help.professional.title")}</h3>
+              <p>{t("anxiety.help.professional.paragraph1")}</p>
+              <p>{t("anxiety.help.professional.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -525,20 +341,15 @@ function Anxiety() {
 
             <div>
               <span className="daily-anxiety-section-label">
-                Quando a ansiedade ultrapassa o limite
+                {t("anxiety.overload.label")}
               </span>
 
-              <h2>Ansiedade, meltdown e shutdown</h2>
+              <h2>{t("anxiety.overload.title")}</h2>
 
-              <p>
-                Ansiedade e sobrecarga não são exatamente a mesma coisa. No
-                entanto, períodos intensos ou prolongados de ansiedade podem
-                contribuir para sobrecarga e, em algumas pessoas, culminar num
-                meltdown ou shutdown.
-              </p>
+              <p>{t("anxiety.overload.description")}</p>
 
               <Link to="/crises-sobrecarga" className="daily-anxiety-button">
-                Crises e sobrecarga
+                {t("anxiety.overload.button")}
                 <i className="bi bi-arrow-right"></i>
               </Link>
             </div>
@@ -551,35 +362,23 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Crianças e adolescentes
+              {t("anxiety.childhood.label")}
             </span>
 
-            <h2>Uma criança pode estar bem na escola e não estar bem</h2>
+            <h2>{t("anxiety.childhood.title")}</h2>
 
-            <p>
-              Bom desempenho académico não significa necessariamente ausência de
-              ansiedade. Algumas crianças conseguem cumprir as exigências
-              escolares enquanto fazem um esforço muito grande para manter esse
-              desempenho.
-            </p>
+            <p>{t("anxiety.childhood.description")}</p>
           </div>
 
           <div className="daily-anxiety-childhood-box">
             <i className="bi bi-lightbulb"></i>
 
             <div>
-              <p>
-                Uma criança pode ter boas notas, comportar-se bem na sala de
-                aula e ainda assim chegar a casa completamente exausta,
-                irritável ou emocionalmente sobrecarregada.
-              </p>
+              <p>{t("anxiety.childhood.paragraph1")}</p>
 
               <p>
-                Por isso, pode ser útil considerar não apenas aquilo que a
-                criança consegue fazer, mas também{" "}
-                <strong>
-                  quanto esforço é necessário para conseguir fazê-lo.
-                </strong>
+                {t("anxiety.childhood.paragraph2Before")}{" "}
+                <strong>{t("anxiety.childhood.strong")}</strong>
               </p>
             </div>
           </div>
@@ -590,77 +389,34 @@ function Anxiety() {
       <section className="daily-anxiety-adults">
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-adults-image">
-            <img
-              src="/images/adult.png"
-              alt="Ilustração de uma pessoa adulta"
-            />
+            <img src="/images/adult.png" alt={t("anxiety.adults.imageAlt")} />
           </div>
 
           <div className="daily-anxiety-adults-content">
             <span className="daily-anxiety-section-label">
-              A ansiedade não termina na infância
+              {t("anxiety.adults.label")}
             </span>
 
-            <h2>Ansiedade em adultos</h2>
+            <h2>{t("anxiety.adults.title")}</h2>
 
-            <p>
-              Para adultos autistas, situações aparentemente comuns podem exigir
-              uma quantidade considerável de preparação, processamento e
-              recuperação.
-            </p>
+            <p>{t("anxiety.adults.description")}</p>
 
             <div className="daily-anxiety-adults-list">
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>entrevistas de emprego e ambiente profissional</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>telefonemas ou contacto com serviços</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>consultas e compromissos</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>transportes e locais desconhecidos</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>mudanças inesperadas de rotina</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>interações sociais prolongadas</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>preocupação intensa com cometer erros</span>
-              </div>
-
-              <div>
-                <i className="bi bi-check-circle-fill"></i>
-                <span>masking e exaustão após situações sociais</span>
-              </div>
+              {t("anxiety.adults.items", {
+                returnObjects: true,
+              }).map((item) => (
+                <div key={item}>
+                  <i className="bi bi-check-circle-fill"></i>
+                  <span>{item}</span>
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="daily-anxiety-adults-note">
             <i className="bi bi-bar-chart"></i>
 
-            <p>
-              Estudos indicam taxas elevadas de perturbações de ansiedade entre
-              adultos autistas. As estimativas variam significativamente entre
-              estudos e populações, por isso estes números devem ser
-              interpretados com cautela.
-            </p>
+            <p>{t("anxiety.adults.note")}</p>
           </div>
         </div>
       </section>
@@ -670,41 +426,41 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Conhecer os próprios padrões
+              {t("anxiety.observe.label")}
             </span>
 
-            <h2>O que costuma acontecer antes da ansiedade aumentar?</h2>
+            <h2>{t("anxiety.observe.title")}</h2>
           </div>
 
           <div className="daily-anxiety-observe-grid">
             <article>
               <i className="bi bi-calendar-event"></i>
-              <span>Há alguma mudança ou acontecimento próximo?</span>
+              <span>{t("anxiety.observe.change")}</span>
             </article>
 
             <article>
               <i className="bi bi-volume-up"></i>
-              <span>O ambiente está sensorialmente difícil?</span>
+              <span>{t("anxiety.observe.sensory")}</span>
             </article>
 
             <article>
               <i className="bi bi-moon-stars"></i>
-              <span>Existe cansaço ou falta de sono?</span>
+              <span>{t("anxiety.observe.sleep")}</span>
             </article>
 
             <article>
               <i className="bi bi-people"></i>
-              <span>Houve muitas exigências sociais?</span>
+              <span>{t("anxiety.observe.social")}</span>
             </article>
 
             <article>
               <i className="bi bi-list-task"></i>
-              <span>Existem demasiadas tarefas ou decisões?</span>
+              <span>{t("anxiety.observe.tasks")}</span>
             </article>
 
             <article>
               <i className="bi bi-shield-exclamation"></i>
-              <span>Algo semelhante correu mal anteriormente?</span>
+              <span>{t("anxiety.observe.previous")}</span>
             </article>
           </div>
         </div>
@@ -717,13 +473,9 @@ function Anxiety() {
             <i className="bi bi-exclamation-triangle"></i>
 
             <div>
-              <h2>Quando é necessária ajuda imediata?</h2>
+              <h2>{t("anxiety.urgent.title")}</h2>
 
-              <p>
-                Se a pessoa estiver em risco imediato de se magoar, de magoar
-                outra pessoa ou apresentar uma situação de emergência médica,
-                procure assistência de emergência.
-              </p>
+              <p>{t("anxiety.urgent.description")}</p>
             </div>
           </div>
         </div>
@@ -734,29 +486,25 @@ function Anxiety() {
         <div className="container daily-anxiety-container">
           <div className="daily-anxiety-section-heading">
             <span className="daily-anxiety-section-label">
-              Informação e investigação
+              {t("anxiety.sources.label")}
             </span>
 
-            <h2>Fontes e recursos</h2>
+            <h2>{t("anxiety.sources.title")}</h2>
           </div>
 
           <article className="daily-anxiety-source-card">
             <i className="bi bi-book"></i>
 
             <div>
-              <h3>National Autistic Society — Anxiety</h3>
-
-              <p>
-                Informação sobre ansiedade em pessoas autistas, fatores que
-                podem contribuir e estratégias de apoio.
-              </p>
+              <h3>{t("anxiety.sources.nas.title")}</h3>
+              <p>{t("anxiety.sources.nas.description")}</p>
 
               <a
                 href="https://www.autism.org.uk/advice-and-guidance/mental-health/anxiety"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("anxiety.sources.sourceButton")}
               </a>
             </div>
           </article>
@@ -765,20 +513,15 @@ function Anxiety() {
             <i className="bi bi-building"></i>
 
             <div>
-              <h3>NICE — Autism spectrum disorder in adults</h3>
-
-              <p>
-                Orientações clínicas sobre autismo em adultos, incluindo
-                condições de saúde mental coexistentes e adaptação das
-                intervenções.
-              </p>
+              <h3>{t("anxiety.sources.nice.title")}</h3>
+              <p>{t("anxiety.sources.nice.description")}</p>
 
               <a
                 href="https://www.nice.org.uk/guidance/cg142"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("anxiety.sources.sourceButton")}
               </a>
             </div>
           </article>
@@ -787,19 +530,15 @@ function Anxiety() {
             <i className="bi bi-journal-medical"></i>
 
             <div>
-              <h3>PubMed — Ansiedade em adultos autistas</h3>
-
-              <p>
-                Meta-análise sobre a prevalência de perturbações de ansiedade em
-                adultos no espetro do autismo.
-              </p>
+              <h3>{t("anxiety.sources.pubmedAdults.title")}</h3>
+              <p>{t("anxiety.sources.pubmedAdults.description")}</p>
 
               <a
                 href="https://pubmed.ncbi.nlm.nih.gov/30178724/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar estudo
+                {t("anxiety.sources.studyButton")}
               </a>
             </div>
           </article>
@@ -808,20 +547,15 @@ function Anxiety() {
             <i className="bi bi-journal-check"></i>
 
             <div>
-              <h3>PubMed — Terapia cognitivo-comportamental</h3>
-
-              <p>
-                Revisão de estudos sobre intervenções de terapia
-                cognitivo-comportamental para ansiedade em crianças e jovens
-                autistas.
-              </p>
+              <h3>{t("anxiety.sources.cbt.title")}</h3>
+              <p>{t("anxiety.sources.cbt.description")}</p>
 
               <a
                 href="https://pubmed.ncbi.nlm.nih.gov/34598734/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar estudo
+                {t("anxiety.sources.studyButton")}
               </a>
             </div>
           </article>

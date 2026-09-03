@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Benefits.css";
 
 function Benefits() {
+  const { t } = useTranslation();
+
   return (
     <main className="benefits-page">
       {/* HERO */}
@@ -9,28 +12,17 @@ function Benefits() {
         <div className="container benefits-container">
           <div className="benefits-hero-content">
             <div className="benefits-hero-text">
-              <span className="benefits-label">Direitos e apoios</span>
+              <span className="benefits-label">{t("benefits.hero.label")}</span>
 
-              <h1>Benefícios e apoios</h1>
+              <h1>{t("benefits.hero.title")}</h1>
 
-              <p>
-                Em Portugal existem diferentes prestações sociais, benefícios
-                fiscais, direitos e apoios destinados a pessoas com deficiência
-                ou incapacidade.
-              </p>
+              <p>{t("benefits.hero.paragraph1")}</p>
 
-              <p>
-                Cada medida tem condições próprias. Ter um diagnóstico ou um
-                AMIM não significa ter automaticamente acesso a todos os
-                benefícios.
-              </p>
+              <p>{t("benefits.hero.paragraph2")}</p>
             </div>
 
             <div className="benefits-hero-image">
-              <img
-                src="/images/social.png"
-                alt="Ilustração sobre benefícios e apoios sociais"
-              />
+              <img src="/images/social.png" alt={t("benefits.hero.imageAlt")} />
             </div>
           </div>
         </div>
@@ -41,27 +33,22 @@ function Benefits() {
         <div className="container benefits-container">
           <div className="benefits-section-heading">
             <span className="benefits-section-label">
-              Orientar-se entre os apoios
+              {t("benefits.start.label")}
             </span>
 
-            <h2>Por onde começar?</h2>
+            <h2>{t("benefits.start.title")}</h2>
 
-            <p>
-              Nem todos os direitos dependem dos mesmos critérios. Um primeiro
-              passo pode ser perceber quais documentos já possui e quais apoios
-              se aplicam à sua situação.
-            </p>
+            <p>{t("benefits.start.description")}</p>
           </div>
 
           <div className="benefits-flow">
             <article className="benefits-flow-card">
               <span>1</span>
               <i className="bi bi-clipboard2-pulse"></i>
-              <h3>Existe um diagnóstico?</h3>
-              <p>
-                O diagnóstico identifica a condição clínica, mas não determina
-                sozinho os benefícios disponíveis.
-              </p>
+
+              <h3>{t("benefits.start.diagnosis.title")}</h3>
+
+              <p>{t("benefits.start.diagnosis.description")}</p>
             </article>
 
             <div className="benefits-flow-arrow">
@@ -71,11 +58,10 @@ function Benefits() {
             <article className="benefits-flow-card">
               <span>2</span>
               <i className="bi bi-file-earmark-medical"></i>
-              <h3>Existe AMIM?</h3>
-              <p>
-                Muitos direitos utilizam o grau de incapacidade certificado no
-                AMIM como um dos critérios de acesso.
-              </p>
+
+              <h3>{t("benefits.start.amim.title")}</h3>
+
+              <p>{t("benefits.start.amim.description")}</p>
             </article>
 
             <div className="benefits-flow-arrow">
@@ -85,11 +71,10 @@ function Benefits() {
             <article className="benefits-flow-card">
               <span>3</span>
               <i className="bi bi-search-heart"></i>
-              <h3>Que apoios se aplicam?</h3>
-              <p>
-                Depois é necessário verificar individualmente os requisitos de
-                cada prestação ou benefício.
-              </p>
+
+              <h3>{t("benefits.start.support.title")}</h3>
+
+              <p>{t("benefits.start.support.description")}</p>
             </article>
           </div>
 
@@ -97,9 +82,8 @@ function Benefits() {
             <i className="bi bi-info-circle"></i>
 
             <p>
-              <strong>Não existe um único “pacote de benefícios”.</strong> Cada
-              apoio tem regras próprias relativas a incapacidade, idade,
-              rendimentos, residência ou outras condições.
+              <strong>{t("benefits.start.noteStrong")}</strong>{" "}
+              {t("benefits.start.note")}
             </p>
           </div>
         </div>
@@ -109,14 +93,13 @@ function Benefits() {
       <section className="benefits-main">
         <div className="container benefits-container">
           <div className="benefits-section-heading">
-            <span className="benefits-section-label">Guia rápido</span>
+            <span className="benefits-section-label">
+              {t("benefits.main.label")}
+            </span>
 
-            <h2>Principais benefícios e apoios</h2>
+            <h2>{t("benefits.main.title")}</h2>
 
-            <p>
-              Estes são alguns dos direitos e apoios que podem ser relevantes
-              para pessoas com deficiência e respetivas famílias.
-            </p>
+            <p>{t("benefits.main.description")}</p>
           </div>
 
           <div className="benefits-grid">
@@ -126,16 +109,12 @@ function Benefits() {
                 <i className="bi bi-wallet2"></i>
               </div>
 
-              <h3>Prestação Social para a Inclusão</h3>
+              <h3>{t("benefits.main.psi.title")}</h3>
 
-              <p>
-                Prestação destinada a pessoas com deficiência da qual resulte,
-                em regra, um grau de incapacidade igual ou superior a 60%,
-                sujeita às respetivas condições.
-              </p>
+              <p>{t("benefits.main.psi.description")}</p>
 
               <Link to="/psi" className="benefits-card-link">
-                Saiba mais sobre a PSI
+                {t("benefits.main.psi.link")}
                 <i className="bi bi-arrow-right"></i>
               </Link>
             </article>
@@ -146,13 +125,9 @@ function Benefits() {
                 <i className="bi bi-receipt"></i>
               </div>
 
-              <h3>Benefícios fiscais</h3>
+              <h3>{t("benefits.main.tax.title")}</h3>
 
-              <p>
-                Pessoas com deficiência fiscalmente relevante podem beneficiar
-                de medidas específicas em impostos como IRS, IUC, ISV e IVA,
-                conforme as condições aplicáveis.
-              </p>
+              <p>{t("benefits.main.tax.description")}</p>
 
               <a
                 href="https://info.portaldasfinancas.gov.pt/pt/apoio_ao_contribuinte/Cidadaos/Dados_pessoais_familia/Dados_pessoais/Deficiencia_fiscalmente_relevante/Paginas/default.aspx"
@@ -160,7 +135,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar Autoridade Tributária
+                {t("benefits.main.tax.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -171,13 +146,9 @@ function Benefits() {
                 <i className="bi bi-person-check"></i>
               </div>
 
-              <h3>Atendimento prioritário</h3>
+              <h3>{t("benefits.main.priority.title")}</h3>
 
-              <p>
-                Pessoas com incapacidade igual ou superior a 60%, comprovada por
-                AMIM, podem pedir atendimento prioritário nos serviços
-                presenciais abrangidos pela legislação.
-              </p>
+              <p>{t("benefits.main.priority.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/atendimento-prioritario"
@@ -185,7 +156,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar informação oficial
+                {t("benefits.main.priority.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -196,13 +167,9 @@ function Benefits() {
                 <i className="bi bi-p-square"></i>
               </div>
 
-              <h3>Cartão de estacionamento</h3>
+              <h3>{t("benefits.main.parking.title")}</h3>
 
-              <p>
-                Pessoas com Perturbação do Espetro do Autismo e grau de
-                incapacidade igual ou superior a 60% estão entre as pessoas que
-                podem pedir o cartão de estacionamento.
-              </p>
+              <p>{t("benefits.main.parking.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/pedir-o-cartao-de-estacionamento-para-pessoas-com-deficiencia"
@@ -210,7 +177,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar condições
+                {t("benefits.main.parking.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -221,13 +188,9 @@ function Benefits() {
                 <i className="bi bi-mortarboard"></i>
               </div>
 
-              <h3>Subsídio de Educação Especial</h3>
+              <h3>{t("benefits.main.education.title")}</h3>
 
-              <p>
-                Apoio destinado a determinadas situações em que crianças ou
-                jovens com deficiência necessitam de apoio especializado,
-                sujeito a condições próprias.
-              </p>
+              <p>{t("benefits.main.education.description")}</p>
 
               <a
                 href="https://www.gov.pt/guias/prestacoes-e-beneficios-sociais-e-de-saude"
@@ -235,7 +198,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar informação oficial
+                {t("benefits.main.education.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -246,13 +209,9 @@ function Benefits() {
                 <i className="bi bi-people"></i>
               </div>
 
-              <h3>Bonificação por deficiência</h3>
+              <h3>{t("benefits.main.allowance.title")}</h3>
 
-              <p>
-                Acréscimo ao abono de família disponível em situações
-                específicas para crianças e jovens com deficiência, de acordo
-                com as regras e limites de idade aplicáveis.
-              </p>
+              <p>{t("benefits.main.allowance.description")}</p>
 
               <a
                 href="https://www.gov.pt/guias/prestacoes-e-beneficios-sociais-e-de-saude"
@@ -260,7 +219,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar condições
+                {t("benefits.main.allowance.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -271,13 +230,9 @@ function Benefits() {
                 <i className="bi bi-universal-access"></i>
               </div>
 
-              <h3>Produtos de apoio</h3>
+              <h3>{t("benefits.main.products.title")}</h3>
 
-              <p>
-                Existem produtos, equipamentos ou dispositivos destinados a
-                facilitar a autonomia, participação e funcionalidade das pessoas
-                com deficiência ou incapacidade.
-              </p>
+              <p>{t("benefits.main.products.description")}</p>
 
               <a
                 href="https://www.gov.pt/guias/apoio-a-familia/pessoas-com-deficiencia"
@@ -285,7 +240,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar apoios
+                {t("benefits.main.products.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -296,13 +251,9 @@ function Benefits() {
                 <i className="bi bi-house-heart"></i>
               </div>
 
-              <h3>Respostas e apoios sociais</h3>
+              <h3>{t("benefits.main.social.title")}</h3>
 
-              <p>
-                Pessoas em situação de dependência, vulnerabilidade ou
-                desigualdade socioeconómica podem ter acesso a diferentes
-                respostas sociais e serviços de acompanhamento.
-              </p>
+              <p>{t("benefits.main.social.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/requerer-apoios-sociais-para-pessoas-com-deficiencia"
@@ -310,7 +261,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-card-link"
               >
-                Consultar respostas sociais
+                {t("benefits.main.social.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </article>
@@ -322,48 +273,34 @@ function Benefits() {
       <section className="benefits-tax">
         <div className="container benefits-container">
           <div className="benefits-section-heading">
-            <span className="benefits-section-label">Fiscalidade</span>
+            <span className="benefits-section-label">
+              {t("benefits.tax.label")}
+            </span>
 
-            <h2>Benefícios fiscais</h2>
+            <h2>{t("benefits.tax.title")}</h2>
 
-            <p>
-              Em termos fiscais, considera-se deficiência fiscalmente relevante
-              aquela que corresponda a um grau de incapacidade igual ou superior
-              a 60%, devidamente comprovado através do AMIM.
-            </p>
+            <p>{t("benefits.tax.description")}</p>
           </div>
 
           <div className="benefits-tax-grid">
             <article className="benefits-tax-card">
               <span>IRS</span>
-              <p>
-                Existem regras específicas relativas à tributação e deduções das
-                pessoas com deficiência fiscalmente relevante.
-              </p>
+              <p>{t("benefits.tax.irs")}</p>
             </article>
 
             <article className="benefits-tax-card">
               <span>IUC</span>
-              <p>
-                Podem existir benefícios relacionados com o Imposto Único de
-                Circulação, quando estejam preenchidas as condições legais.
-              </p>
+              <p>{t("benefits.tax.iuc")}</p>
             </article>
 
             <article className="benefits-tax-card">
               <span>ISV</span>
-              <p>
-                Existem situações em que pode ser aplicável benefício no Imposto
-                Sobre Veículos.
-              </p>
+              <p>{t("benefits.tax.isv")}</p>
             </article>
 
             <article className="benefits-tax-card">
               <span>IVA</span>
-              <p>
-                Alguns bens ou operações relacionados com deficiência podem
-                beneficiar das regras específicas previstas para IVA.
-              </p>
+              <p>{t("benefits.tax.iva")}</p>
             </article>
           </div>
 
@@ -371,13 +308,9 @@ function Benefits() {
             <i className="bi bi-file-earmark-check"></i>
 
             <div>
-              <h3>É necessário comunicar o AMIM às Finanças</h3>
+              <h3>{t("benefits.tax.communication.title")}</h3>
 
-              <p>
-                Para beneficiar do regime fiscal aplicável às pessoas com
-                deficiência fiscalmente relevante, a incapacidade deve ser
-                comunicada à Autoridade Tributária.
-              </p>
+              <p>{t("benefits.tax.communication.description")}</p>
 
               <a
                 href="https://info.portaldasfinancas.gov.pt/pt/apoio_ao_contribuinte/Cidadaos/Dados_pessoais_familia/Dados_pessoais/Deficiencia_fiscalmente_relevante/Paginas/default.aspx"
@@ -385,7 +318,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-button"
               >
-                Ver informação nas Finanças
+                {t("benefits.tax.communication.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
@@ -403,33 +336,19 @@ function Benefits() {
 
             <div className="benefits-parking-content">
               <span className="benefits-section-label">
-                Uma informação importante para famílias
+                {t("benefits.parking.label")}
               </span>
 
-              <h2>Cartão de estacionamento e autismo</h2>
+              <h2>{t("benefits.parking.title")}</h2>
 
-              <p>
-                A Perturbação do Espetro do Autismo aparece expressamente entre
-                as situações que podem dar acesso ao cartão de estacionamento,
-                quando existe um grau de incapacidade igual ou superior a 60%.
-              </p>
+              <p>{t("benefits.parking.paragraph1")}</p>
 
-              <p>
-                O cartão é atribuído à pessoa com deficiência e não a um
-                automóvel específico. Por isso, pode ser utilizado no veículo
-                que estiver a transportar a pessoa titular.
-              </p>
+              <p>{t("benefits.parking.paragraph2")}</p>
 
               <div className="benefits-parking-highlight">
-                <strong>
-                  O cartão não significa simplesmente poder estacionar em
-                  qualquer lugar.
-                </strong>
+                <strong>{t("benefits.parking.highlightStrong")}</strong>
 
-                <p>
-                  Existem regras próprias sobre os locais e circunstâncias em
-                  que pode ser utilizado.
-                </p>
+                <p>{t("benefits.parking.highlight")}</p>
               </div>
 
               <a
@@ -438,7 +357,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-button"
               >
-                Ver como pedir o cartão
+                {t("benefits.parking.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
@@ -451,62 +370,51 @@ function Benefits() {
         <div className="container benefits-container">
           <div className="benefits-section-heading">
             <span className="benefits-section-label">
-              Documentos e benefícios diferentes
+              {t("benefits.differences.label")}
             </span>
 
-            <h2>Não são todos a mesma coisa</h2>
+            <h2>{t("benefits.differences.title")}</h2>
 
-            <p>
-              É fácil confundir os diferentes documentos, prestações e direitos.
-              Cada um tem uma função diferente.
-            </p>
+            <p>{t("benefits.differences.description")}</p>
           </div>
 
           <div className="benefits-difference-list">
             <article>
               <div className="benefits-difference-name">AMIM</div>
-              <p>Comprova oficialmente o grau de incapacidade.</p>
+              <p>{t("benefits.differences.amim")}</p>
             </article>
 
             <article>
               <div className="benefits-difference-name">PSI</div>
-              <p>É uma prestação financeira da Segurança Social.</p>
-            </article>
-
-            <article>
-              <div className="benefits-difference-name">Benefícios fiscais</div>
-              <p>
-                Correspondem a regimes, deduções ou isenções previstas na
-                legislação fiscal.
-              </p>
+              <p>{t("benefits.differences.psi")}</p>
             </article>
 
             <article>
               <div className="benefits-difference-name">
-                Atendimento prioritário
+                {t("benefits.differences.taxTitle")}
               </div>
-              <p>
-                Permite solicitar prioridade no atendimento presencial abrangido
-                pela legislação.
-              </p>
+              <p>{t("benefits.differences.tax")}</p>
             </article>
 
             <article>
               <div className="benefits-difference-name">
-                Cartão de estacionamento
+                {t("benefits.differences.priorityTitle")}
               </div>
-              <p>
-                Permite utilizar os lugares e condições de estacionamento
-                previstos para pessoas com deficiência.
-              </p>
+              <p>{t("benefits.differences.priority")}</p>
             </article>
 
             <article>
-              <div className="benefits-difference-name">Produtos de apoio</div>
-              <p>
-                São equipamentos ou dispositivos destinados a apoiar
-                funcionalidade, autonomia e participação.
-              </p>
+              <div className="benefits-difference-name">
+                {t("benefits.differences.parkingTitle")}
+              </div>
+              <p>{t("benefits.differences.parking")}</p>
+            </article>
+
+            <article>
+              <div className="benefits-difference-name">
+                {t("benefits.differences.productsTitle")}
+              </div>
+              <p>{t("benefits.differences.products")}</p>
             </article>
           </div>
         </div>
@@ -522,33 +430,25 @@ function Benefits() {
 
             <div>
               <span className="benefits-section-label">
-                Crianças e famílias
+                {t("benefits.family.label")}
               </span>
 
-              <h2>Existem apoios diferentes para situações diferentes</h2>
+              <h2>{t("benefits.family.title")}</h2>
 
-              <p>
-                No caso das crianças e jovens, podem existir vários apoios
-                relacionados com deficiência, educação, cuidados e proteção
-                social.
-              </p>
+              <p>{t("benefits.family.description")}</p>
 
               <ul className="benefits-family-list">
-                <li>Prestação Social para a Inclusão, quando aplicável</li>
-                <li>Bonificação por deficiência</li>
-                <li>Subsídio de Educação Especial</li>
-                <li>Produtos de apoio</li>
-                <li>Respostas e serviços sociais</li>
+                <li>{t("benefits.family.items.psi")}</li>
+                <li>{t("benefits.family.items.allowance")}</li>
+                <li>{t("benefits.family.items.education")}</li>
+                <li>{t("benefits.family.items.products")}</li>
+                <li>{t("benefits.family.items.social")}</li>
               </ul>
 
               <div className="benefits-family-note">
                 <i className="bi bi-info-circle"></i>
 
-                <p>
-                  A existência de um diagnóstico de autismo não significa que
-                  todos estes apoios sejam automaticamente atribuídos. Cada
-                  prestação tem critérios próprios.
-                </p>
+                <p>{t("benefits.family.note")}</p>
               </div>
             </div>
           </div>
@@ -565,17 +465,12 @@ function Benefits() {
 
             <div className="benefits-help-content">
               <span className="benefits-section-label">
-                Não sabe qual apoio procurar?
+                {t("benefits.help.label")}
               </span>
 
-              <h2>Balcão da Inclusão</h2>
+              <h2>{t("benefits.help.title")}</h2>
 
-              <p>
-                O Balcão da Inclusão presta informação sobre deficiência e
-                incapacidade e pode ajudar a esclarecer dúvidas relacionadas com
-                AMIM, proteção social, benefícios fiscais, educação, emprego,
-                estacionamento e outros direitos.
-              </p>
+              <p>{t("benefits.help.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/balcao-da-inclusao"
@@ -583,7 +478,7 @@ function Benefits() {
                 rel="noreferrer"
                 className="benefits-button"
               >
-                Consultar o Balcão da Inclusão
+                {t("benefits.help.link")}
                 <i className="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
@@ -598,13 +493,9 @@ function Benefits() {
             <i className="bi bi-arrow-repeat"></i>
 
             <div>
-              <h2>Os critérios podem mudar</h2>
+              <h2>{t("benefits.update.title")}</h2>
 
-              <p>
-                Valores, limites de rendimentos, requisitos e procedimentos
-                podem ser atualizados. Antes de fazer um pedido, confirme sempre
-                as condições atuais no serviço oficial responsável.
-              </p>
+              <p>{t("benefits.update.description")}</p>
             </div>
           </div>
         </div>
@@ -614,28 +505,27 @@ function Benefits() {
       <section className="benefits-sources">
         <div className="container benefits-container">
           <div className="benefits-section-heading">
-            <span className="benefits-section-label">Informação oficial</span>
+            <span className="benefits-section-label">
+              {t("benefits.sources.label")}
+            </span>
 
-            <h2>Fontes e recursos</h2>
+            <h2>{t("benefits.sources.title")}</h2>
           </div>
 
           <article className="benefits-source-card">
             <i className="bi bi-building"></i>
 
             <div>
-              <h3>gov.pt — Pessoas com deficiência</h3>
+              <h3>{t("benefits.sources.gov.title")}</h3>
 
-              <p>
-                Guia oficial sobre prestações, apoio às famílias, produtos de
-                apoio e outras respostas.
-              </p>
+              <p>{t("benefits.sources.gov.description")}</p>
 
               <a
                 href="https://www.gov.pt/guias/apoio-a-familia/pessoas-com-deficiencia"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("benefits.sources.link")}
               </a>
             </div>
           </article>
@@ -644,19 +534,16 @@ function Benefits() {
             <i className="bi bi-receipt"></i>
 
             <div>
-              <h3>Autoridade Tributária — Deficiência fiscalmente relevante</h3>
+              <h3>{t("benefits.sources.tax.title")}</h3>
 
-              <p>
-                Informação oficial sobre benefícios fiscais e comunicação do
-                grau de incapacidade às Finanças.
-              </p>
+              <p>{t("benefits.sources.tax.description")}</p>
 
               <a
                 href="https://info.portaldasfinancas.gov.pt/pt/apoio_ao_contribuinte/Cidadaos/Dados_pessoais_familia/Dados_pessoais/Deficiencia_fiscalmente_relevante/Paginas/default.aspx"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("benefits.sources.link")}
               </a>
             </div>
           </article>
@@ -665,19 +552,16 @@ function Benefits() {
             <i className="bi bi-p-square"></i>
 
             <div>
-              <h3>gov.pt — Cartão de estacionamento</h3>
+              <h3>{t("benefits.sources.parking.title")}</h3>
 
-              <p>
-                Condições de acesso ao cartão de estacionamento para pessoas com
-                deficiência.
-              </p>
+              <p>{t("benefits.sources.parking.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/pedir-o-cartao-de-estacionamento-para-pessoas-com-deficiencia"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("benefits.sources.link")}
               </a>
             </div>
           </article>
@@ -686,19 +570,16 @@ function Benefits() {
             <i className="bi bi-person-check"></i>
 
             <div>
-              <h3>gov.pt — Atendimento prioritário</h3>
+              <h3>{t("benefits.sources.priority.title")}</h3>
 
-              <p>
-                Informação oficial sobre quem pode solicitar atendimento
-                prioritário e onde este direito se aplica.
-              </p>
+              <p>{t("benefits.sources.priority.description")}</p>
 
               <a
                 href="https://www.gov.pt/servicos/atendimento-prioritario"
                 target="_blank"
                 rel="noreferrer"
               >
-                Consultar fonte
+                {t("benefits.sources.link")}
               </a>
             </div>
           </article>

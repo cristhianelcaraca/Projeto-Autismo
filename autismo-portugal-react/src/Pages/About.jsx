@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import "./About.css";
 
 function About() {
+  const { t } = useTranslation();
+
   const technologies = [
     "React",
     "Vite",
@@ -12,27 +15,20 @@ function About() {
 
   return (
     <main className="about-page">
-      {/* =====================================================
-          HERO
-      ===================================================== */}
+      {/* HERO */}
       <section className="about-hero">
         <div className="container about-container">
           <div className="about-hero-content">
             <div className="about-hero-text">
-              <span className="about-label">Sobre nós</span>
+              <span className="about-label">{t("about.hero.label")}</span>
 
-              <h1>Sobre o Autismo Portugal</h1>
+              <h1>{t("about.hero.title")}</h1>
 
               <p className="about-hero-highlight">
-                Informação para compreender. Recursos para apoiar. Espaço para
-                incluir.
+                {t("about.hero.highlight")}
               </p>
 
-              <p>
-                O Autismo Portugal nasceu com o objetivo de reunir, num único
-                lugar, informação clara e acessível sobre autismo e sobre alguns
-                dos caminhos, direitos e recursos disponíveis em Portugal.
-              </p>
+              <p>{t("about.hero.description")}</p>
             </div>
 
             <div className="about-hero-icon">
@@ -42,9 +38,7 @@ function About() {
         </div>
       </section>
 
-      {/* =====================================================
-          WHY
-      ===================================================== */}
+      {/* WHY */}
       <section className="about-why">
         <div className="container about-container">
           <div className="about-why-box">
@@ -53,106 +47,61 @@ function About() {
             </div>
 
             <div className="about-why-content">
-              <span className="about-section-label">Como tudo começou</span>
+              <span className="about-section-label">
+                {t("about.why.label")}
+              </span>
 
-              <h2>Por que este projeto nasceu?</h2>
+              <h2>{t("about.why.title")}</h2>
 
-              <p>
-                Quando procuramos informação sobre autismo, encontramos muitas
-                respostas — mas nem sempre no mesmo lugar.
-              </p>
-
-              <p>
-                Informação sobre diagnóstico pode estar numa página, direitos
-                escolares noutra, apoios sociais em diferentes serviços e
-                legislação importante dentro de documentos que nem sempre são
-                fáceis de interpretar.
-              </p>
-
-              <p>
-                Para quem está a começar esse caminho, perceber onde procurar, o
-                que perguntar e qual poderá ser o próximo passo pode tornar-se
-                uma tarefa difícil.
-              </p>
+              <p>{t("about.why.paragraph1")}</p>
+              <p>{t("about.why.paragraph2")}</p>
+              <p>{t("about.why.paragraph3")}</p>
 
               <div className="about-why-highlight">
                 <i className="bi bi-lightbulb"></i>
-
-                <p>
-                  O Autismo Portugal nasceu da vontade de reunir parte dessa
-                  informação e tornar o caminho um pouco mais simples.
-                </p>
+                <p>{t("about.why.highlight")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          WHO IS BEHIND THE PROJECT
-      ===================================================== */}
+      {/* WHO IS BEHIND THE PROJECT */}
       <section className="about-me">
         <div className="container about-container">
           <div className="about-section-heading">
-            <span className="about-section-label">Por trás do projeto</span>
+            <span className="about-section-label">{t("about.me.label")}</span>
 
-            <h2>Quem criou o Autismo Portugal?</h2>
+            <h2>{t("about.me.title")}</h2>
           </div>
 
           <div className="about-me-box">
             <div className="after-wrap-image me-image">
-              <img src="/images/Cris.png" alt="Imagem Cristhiane" />
+              <img src="/images/Cris.png" alt={t("about.me.imageAlt")} />
             </div>
 
             <div className="about-me-content">
-              <h3>Olá, sou a Cris.</h3>
+              <h3>{t("about.me.greeting")}</h3>
 
-              <p>
-                Sou brasileira, vivo em Portugal e sou uma mulher autista e mãe
-                de duas crianças autistas.
-              </p>
-
-              <p>
-                A minha experiência com o autismo não começou apenas através de
-                livros, estudos ou artigos. O autismo faz parte da nossa vida
-                familiar e, ao longo do caminho, levou-me a procurar respostas
-                sobre diagnóstico, escola, direitos, apoios e muitos dos
-                desafios do quotidiano.
-              </p>
-
-              <p>
-                Durante a minha transição profissional para a área da
-                tecnologia, decidi transformar aquilo que estava a aprender em
-                programação num projeto que também pudesse ser útil para outras
-                pessoas.
-              </p>
-
-              <p>
-                Assim nasceu o Autismo Portugal: da união entre experiência
-                vivida, pesquisa e desenvolvimento web.
-              </p>
+              <p>{t("about.me.paragraph1")}</p>
+              <p>{t("about.me.paragraph2")}</p>
+              <p>{t("about.me.paragraph3")}</p>
+              <p>{t("about.me.paragraph4")}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          EXPERIENCE TO CODE
-      ===================================================== */}
+      {/* EXPERIENCE TO CODE */}
       <section className="about-project">
         <div className="container about-container">
           <div className="about-section-heading">
             <span className="about-section-label">
-              Da experiência para o código
+              {t("about.project.label")}
             </span>
 
-            <h2>Um projeto que junta duas áreas importantes</h2>
-
-            <p>
-              O Autismo Portugal combina experiência vivida, pesquisa de
-              informação e tecnologia para construir um espaço simples,
-              organizado e acessível.
-            </p>
+            <h2>{t("about.project.title")}</h2>
+            <p>{t("about.project.description")}</p>
           </div>
 
           <div className="about-project-grid">
@@ -161,13 +110,8 @@ function About() {
                 <i className="bi bi-heart"></i>
               </div>
 
-              <h3>Experiência vivida</h3>
-
-              <p>
-                A perspetiva de uma pessoa autista e de uma família
-                neurodivergente está presente na origem e no desenvolvimento do
-                projeto.
-              </p>
+              <h3>{t("about.project.experience.title")}</h3>
+              <p>{t("about.project.experience.description")}</p>
             </article>
 
             <article className="about-project-card research">
@@ -175,12 +119,8 @@ function About() {
                 <i className="bi bi-search"></i>
               </div>
 
-              <h3>Pesquisa</h3>
-
-              <p>
-                Sempre que possível, os conteúdos procuram apoiar-se em fontes
-                oficiais, investigação científica e organizações reconhecidas.
-              </p>
+              <h3>{t("about.project.research.title")}</h3>
+              <p>{t("about.project.research.description")}</p>
             </article>
 
             <article className="about-project-card technology">
@@ -188,84 +128,58 @@ function About() {
                 <i className="bi bi-code-slash"></i>
               </div>
 
-              <h3>Tecnologia</h3>
-
-              <p>
-                O projeto é desenvolvido com tecnologias web modernas, com
-                atenção à navegação, responsividade e clareza da informação.
-              </p>
+              <h3>{t("about.project.technology.title")}</h3>
+              <p>{t("about.project.technology.description")}</p>
             </article>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          PURPOSE
-      ===================================================== */}
+      {/* PURPOSE */}
       <section className="about-purpose">
         <div className="container about-container">
           <div className="about-section-heading">
-            <span className="about-section-label">O nosso propósito</span>
+            <span className="about-section-label">
+              {t("about.purpose.label")}
+            </span>
 
-            <h2>O que queremos fazer</h2>
-
-            <p>
-              Não pretendemos ter todas as respostas. Queremos ajudar a tornar
-              algumas delas mais fáceis de encontrar e compreender.
-            </p>
+            <h2>{t("about.purpose.title")}</h2>
+            <p>{t("about.purpose.description")}</p>
           </div>
 
           <div className="about-purpose-grid">
             <article className="about-purpose-card green">
               <i className="bi bi-chat-left-text"></i>
 
-              <h3>Informação clara</h3>
-
-              <p>
-                Apresentar temas complexos numa linguagem mais simples,
-                organizada e acessível.
-              </p>
+              <h3>{t("about.purpose.clear.title")}</h3>
+              <p>{t("about.purpose.clear.description")}</p>
             </article>
 
             <article className="about-purpose-card blue">
               <i className="bi bi-journal-check"></i>
 
-              <h3>Fontes confiáveis</h3>
-
-              <p>
-                Dar preferência a fontes oficiais, investigação científica e
-                organizações especializadas.
-              </p>
+              <h3>{t("about.purpose.sources.title")}</h3>
+              <p>{t("about.purpose.sources.description")}</p>
             </article>
 
             <article className="about-purpose-card purple">
               <i className="bi bi-people"></i>
 
-              <h3>Respeito pela diversidade</h3>
-
-              <p>
-                Reconhecer que não existe uma única forma de ser autista e que
-                necessidades e experiências podem ser muito diferentes.
-              </p>
+              <h3>{t("about.purpose.diversity.title")}</h3>
+              <p>{t("about.purpose.diversity.description")}</p>
             </article>
 
             <article className="about-purpose-card yellow">
               <i className="bi bi-signpost-split"></i>
 
-              <h3>Utilidade prática</h3>
-
-              <p>
-                Ir além da explicação de conceitos e ajudar quem procura
-                informação a perceber possíveis próximos passos.
-              </p>
+              <h3>{t("about.purpose.practical.title")}</h3>
+              <p>{t("about.purpose.practical.description")}</p>
             </article>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          PERSONAL EXPERIENCE
-      ===================================================== */}
+      {/* PERSONAL EXPERIENCE */}
       <section className="about-experience">
         <div className="container about-container">
           <div className="about-experience-box">
@@ -274,40 +188,29 @@ function About() {
             </div>
 
             <div className="about-experience-content">
-              <span className="about-section-label">Experiência pessoal</span>
+              <span className="about-section-label">
+                {t("about.experience.label")}
+              </span>
 
-              <h2>Uma experiência não representa todas</h2>
+              <h2>{t("about.experience.title")}</h2>
 
-              <p>
-                Algumas páginas deste site incluem experiências pessoais e
-                situações que fizeram parte do nosso próprio caminho.
-              </p>
-
-              <p>
-                Esses relatos são partilhados como exemplos e não como uma
-                descrição daquilo que acontece com todas as pessoas autistas ou
-                com todas as famílias.
-              </p>
-
-              <p>
-                O autismo é um espetro amplo e duas pessoas com o mesmo
-                diagnóstico podem ter capacidades, dificuldades, necessidades e
-                experiências muito diferentes.
-              </p>
+              <p>{t("about.experience.paragraph1")}</p>
+              <p>{t("about.experience.paragraph2")}</p>
+              <p>{t("about.experience.paragraph3")}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          WHAT THE SITE IS NOT
-      ===================================================== */}
+      {/* DISCLAIMER */}
       <section className="about-disclaimer">
         <div className="container about-container">
           <div className="about-section-heading">
-            <span className="about-section-label">Importante</span>
+            <span className="about-section-label">
+              {t("about.disclaimer.label")}
+            </span>
 
-            <h2>O que este site não é</h2>
+            <h2>{t("about.disclaimer.title")}</h2>
           </div>
 
           <div className="about-disclaimer-box">
@@ -316,60 +219,36 @@ function About() {
             </div>
 
             <div className="about-disclaimer-content">
-              <h3>O Autismo Portugal é um projeto informativo.</h3>
+              <h3>{t("about.disclaimer.subtitle")}</h3>
 
-              <p>
-                A informação disponibilizada neste site não substitui avaliação
-                ou aconselhamento médico, psicológico, jurídico, educativo ou
-                social individualizado.
-              </p>
-
-              <p>
-                Sempre que possível, indicamos as fontes utilizadas para que
-                cada pessoa possa consultar a informação original e aprofundar o
-                tema.
-              </p>
-
-              <p>
-                O Autismo Portugal é um projeto independente e não representa
-                nenhuma entidade pública, serviço de saúde, instituição de
-                ensino ou organização oficial portuguesa.
-              </p>
+              <p>{t("about.disclaimer.paragraph1")}</p>
+              <p>{t("about.disclaimer.paragraph2")}</p>
+              <p>{t("about.disclaimer.paragraph3")}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          GROWING PROJECT
-      ===================================================== */}
+      {/* GROWING PROJECT */}
       <section className="about-growing">
         <div className="container about-container">
           <div className="about-growing-content">
             <div className="about-growing-text">
               <span className="about-section-label">
-                Um projeto em evolução
+                {t("about.growing.label")}
               </span>
 
-              <h2>Este espaço continua a crescer</h2>
+              <h2>{t("about.growing.title")}</h2>
 
-              <p>
-                O Autismo Portugal continuará a receber novos conteúdos,
-                recursos e melhorias à medida que o projeto evolui.
-              </p>
-
-              <p>
-                A informação também pode mudar ao longo do tempo, especialmente
-                quando envolve legislação, serviços públicos e apoios. Por isso,
-                procuramos rever e atualizar os conteúdos sempre que necessário.
-              </p>
+              <p>{t("about.growing.paragraph1")}</p>
+              <p>{t("about.growing.paragraph2")}</p>
 
               <div className="about-topics">
-                <span>Diagnóstico</span>
-                <span>Escola</span>
-                <span>Direitos</span>
-                <span>Vida diária</span>
-                <span>Recursos</span>
+                <span>{t("about.growing.topics.diagnosis")}</span>
+                <span>{t("about.growing.topics.school")}</span>
+                <span>{t("about.growing.topics.rights")}</span>
+                <span>{t("about.growing.topics.dailyLife")}</span>
+                <span>{t("about.growing.topics.resources")}</span>
               </div>
             </div>
 
@@ -380,20 +259,16 @@ function About() {
         </div>
       </section>
 
-      {/* =====================================================
-          TECHNOLOGIES
-      ===================================================== */}
+      {/* TECHNOLOGIES */}
       <section className="about-technology">
         <div className="container about-container">
           <div className="about-section-heading">
-            <span className="about-section-label">Por trás do site</span>
+            <span className="about-section-label">
+              {t("about.technology.label")}
+            </span>
 
-            <h2>Construído com tecnologia</h2>
-
-            <p>
-              Para além do seu propósito informativo, o Autismo Portugal é
-              também um projeto de desenvolvimento web.
-            </p>
+            <h2>{t("about.technology.title")}</h2>
+            <p>{t("about.technology.description")}</p>
           </div>
 
           <div className="about-tech-list">
@@ -403,14 +278,12 @@ function About() {
           </div>
 
           <p className="about-development-credit">
-            Design e desenvolvimento por <strong>Cris Caraça</strong>.
+            {t("about.technology.credit")} <strong>Cris Caraça</strong>.
           </p>
         </div>
       </section>
 
-      {/* =====================================================
-          CONTACT
-      ===================================================== */}
+      {/* CONTACT */}
       <section className="about-contact">
         <div className="container about-container">
           <div className="about-contact-box">
@@ -419,23 +292,20 @@ function About() {
             </div>
 
             <div className="about-contact-content">
-              <span className="about-section-label">Entre em contacto</span>
+              <span className="about-section-label">
+                {t("about.contact.label")}
+              </span>
 
-              <h2>Quer falar connosco?</h2>
+              <h2>{t("about.contact.title")}</h2>
 
-              <p>
-                Se encontrou alguma informação que precisa de ser atualizada,
-                conhece um recurso que poderia ser acrescentado ou simplesmente
-                quer partilhar uma sugestão sobre o projeto, pode entrar em
-                contacto por email.
-              </p>
+              <p>{t("about.contact.description")}</p>
 
               <a
                 href="mailto:cristhianelcaraca@gmail.com"
                 className="about-contact-button"
               >
                 <i className="bi bi-envelope"></i>
-                Enviar email
+                {t("about.contact.button")}
               </a>
 
               <p className="about-contact-email">cristhianelcaraca@gmail.com</p>
@@ -444,18 +314,12 @@ function About() {
         </div>
       </section>
 
-      {/* =====================================================
-          FINAL MESSAGE
-      ===================================================== */}
+      {/* FINAL MESSAGE */}
       <section className="about-final">
         <div className="container about-container">
           <div className="about-final-box">
             <i className="bi bi-heart-fill"></i>
-
-            <p>
-              Se este espaço tornar o caminho de uma pessoa ou de uma família um
-              pouco menos confuso, então já cumpriu parte do seu propósito.
-            </p>
+            <p>{t("about.final")}</p>
           </div>
         </div>
       </section>

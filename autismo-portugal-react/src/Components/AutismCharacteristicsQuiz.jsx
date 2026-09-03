@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function AutismCharacteristicsQuiz() {
+  const { t } = useTranslation();
+
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
@@ -10,121 +13,121 @@ function AutismCharacteristicsQuiz() {
     {
       id: 1,
       category: "social",
-      text: "A criança tem dificuldade em estabelecer ou manter contacto visual durante as interações?",
+      translationKey: "autismQuiz.questions.1",
       characteristicAnswer: "sim",
     },
     {
       id: 2,
       category: "social",
-      text: "A criança nem sempre responde quando é chamada pelo nome, mesmo quando não existem dificuldades auditivas conhecidas?",
+      translationKey: "autismQuiz.questions.2",
       characteristicAnswer: "sim",
     },
     {
       id: 3,
       category: "social",
-      text: "A criança raramente aponta para mostrar algo interessante apenas para partilhar esse interesse com outra pessoa?",
+      translationKey: "autismQuiz.questions.3",
       characteristicAnswer: "sim",
     },
     {
       id: 4,
       category: "social",
-      text: "A criança tem dificuldade em seguir o olhar ou o gesto de outra pessoa para perceber o que ela está a observar?",
+      translationKey: "autismQuiz.questions.4",
       characteristicAnswer: "sim",
     },
     {
       id: 5,
       category: "social",
-      text: "A criança demonstra dificuldade em interpretar ou utilizar expressões faciais durante as interações?",
+      translationKey: "autismQuiz.questions.5",
       characteristicAnswer: "sim",
     },
     {
       id: 6,
       category: "social",
-      text: "A criança demonstra pouco interesse em iniciar ou manter brincadeiras com outras crianças da mesma idade?",
+      translationKey: "autismQuiz.questions.6",
       characteristicAnswer: "sim",
     },
     {
       id: 7,
       category: "social",
-      text: "A criança apresenta dificuldade em imitar espontaneamente gestos ou ações de outras pessoas?",
+      translationKey: "autismQuiz.questions.7",
       characteristicAnswer: "sim",
     },
     {
       id: 8,
       category: "social",
-      text: "A criança raramente procura partilhar espontaneamente interesses, conquistas ou experiências com outras pessoas?",
+      translationKey: "autismQuiz.questions.8",
       characteristicAnswer: "sim",
     },
     {
       id: 9,
       category: "behavior",
-      text: "A criança demonstra pouca ou nenhuma brincadeira imaginativa ou de faz de conta?",
+      translationKey: "autismQuiz.questions.9",
       characteristicAnswer: "sim",
     },
     {
       id: 10,
       category: "behavior",
-      text: "A criança utiliza brinquedos ou objetos de formas repetitivas ou concentra-se especialmente em determinadas partes deles?",
+      translationKey: "autismQuiz.questions.10",
       characteristicAnswer: "sim",
     },
     {
       id: 11,
       category: "behavior",
-      text: "A criança gosta de alinhar ou organizar objetos de uma forma específica e fica incomodada quando essa organização é alterada?",
+      translationKey: "autismQuiz.questions.11",
       characteristicAnswer: "sim",
     },
     {
       id: 12,
       category: "behavior",
-      text: "A criança apresenta movimentos repetitivos, como abanar as mãos, balançar o corpo ou outros movimentos semelhantes?",
+      translationKey: "autismQuiz.questions.12",
       characteristicAnswer: "sim",
     },
     {
       id: 13,
       category: "behavior",
-      text: "Pequenas alterações na rotina podem provocar um nível elevado de desconforto ou ansiedade?",
+      translationKey: "autismQuiz.questions.13",
       characteristicAnswer: "sim",
     },
     {
       id: 14,
       category: "behavior",
-      text: "A criança apresenta interesses particularmente intensos ou muito específicos, aos quais dedica bastante tempo e atenção?",
+      translationKey: "autismQuiz.questions.14",
       characteristicAnswer: "sim",
     },
     {
       id: 15,
       category: "behavior",
-      text: "A criança demonstra um apego particularmente intenso a determinados objetos, incluindo objetos que habitualmente não são usados como brinquedos?",
+      translationKey: "autismQuiz.questions.15",
       characteristicAnswer: "sim",
     },
     {
       id: 16,
       category: "sensory",
-      text: "A criança reage de forma muito intensa a determinados sons do quotidiano?",
+      translationKey: "autismQuiz.questions.16",
       characteristicAnswer: "sim",
     },
     {
       id: 17,
       category: "sensory",
-      text: "A criança demonstra forte desconforto com determinadas texturas, roupas, etiquetas ou materiais?",
+      translationKey: "autismQuiz.questions.17",
       characteristicAnswer: "sim",
     },
     {
       id: 18,
       category: "sensory",
-      text: "A criança apresenta seletividade alimentar significativa relacionada com textura, cheiro, temperatura ou aparência dos alimentos?",
+      translationKey: "autismQuiz.questions.18",
       characteristicAnswer: "sim",
     },
     {
       id: 19,
       category: "sensory",
-      text: "A criança demonstra interesse particularmente intenso por estímulos visuais, como objetos que giram, reflexos ou luzes?",
+      translationKey: "autismQuiz.questions.19",
       characteristicAnswer: "sim",
     },
     {
       id: 20,
       category: "sensory",
-      text: "A criança parece reagir à dor, temperatura ou outros estímulos físicos de forma muito mais intensa ou muito menos intensa do que seria esperado?",
+      translationKey: "autismQuiz.questions.20",
       characteristicAnswer: "sim",
     },
   ];
@@ -194,48 +197,35 @@ function AutismCharacteristicsQuiz() {
   function getResultMessage(total) {
     if (total <= 2) {
       return {
-        title: "Poucas características foram assinaladas",
-        text: `As suas respostas indicam poucas ou nenhuma das características
-        incluídas neste questionário. Isto não permite excluir autismo, uma vez
-        que as características podem manifestar-se de formas muito diferentes
-        entre pessoas e ao longo do desenvolvimento.`,
+        title: t("autismQuiz.results.few.title"),
+        text: t("autismQuiz.results.few.text"),
       };
     }
 
     if (total <= 6) {
       return {
-        title: "Algumas características foram assinaladas",
-        text: `As suas respostas indicam a presença de algumas características
-        que também podem ser observadas em pessoas autistas. Isoladamente,
-        estas características não permitem determinar se uma criança é ou não
-        autista.`,
+        title: t("autismQuiz.results.some.title"),
+        text: t("autismQuiz.results.some.text"),
       };
     }
 
     return {
-      title: "Foram assinaladas várias características",
-      text: `As suas respostas indicam a presença de várias das características
-      abordadas neste questionário. Isto não significa necessariamente que a
-      criança seja autista, mas pode ser útil observar se estas características
-      são persistentes, aparecem em diferentes contextos ou têm impacto
-      significativo no dia a dia.`,
+      title: t("autismQuiz.results.several.title"),
+      text: t("autismQuiz.results.several.text"),
     };
   }
 
   if (!started) {
     return (
       <div className="quiz-start">
-        <p className="quiz-warning">
-          Este questionário é apenas informativo. Não é um instrumento clínico
-          validado e não permite diagnosticar ou excluir autismo.
-        </p>
+        <p className="quiz-warning">{t("autismQuiz.start.warning")}</p>
 
         <button
           type="button"
           className="screening-button"
           onClick={() => setStarted(true)}
         >
-          Iniciar questionário
+          {t("autismQuiz.start.button")}
         </button>
       </div>
     );
@@ -252,39 +242,37 @@ function AutismCharacteristicsQuiz() {
 
     return (
       <div className="quiz-result">
-        <h3>Questionário concluído</h3>
+        <h3>{t("autismQuiz.completed.title")}</h3>
 
         <p className="quiz-result-number">
-          Assinalou {totalCharacteristics} de {questions.length}{" "}
-          características.
+          {t("autismQuiz.completed.total", {
+            selected: totalCharacteristics,
+            total: questions.length,
+          })}
         </p>
 
         <div className="quiz-result-message">
           <h4>{resultMessage.title}</h4>
-
           <p>{resultMessage.text}</p>
         </div>
 
         <div className="quiz-result-categories">
           <div>
-            <strong>Comunicação e interação social</strong>
-
+            <strong>{t("autismQuiz.categories.social")}</strong>
             <span>
               {social.selected} / {social.total}
             </span>
           </div>
 
           <div>
-            <strong>Comportamentos e interesses</strong>
-
+            <strong>{t("autismQuiz.categories.behavior")}</strong>
             <span>
               {behavior.selected} / {behavior.total}
             </span>
           </div>
 
           <div>
-            <strong>Processamento sensorial</strong>
-
+            <strong>{t("autismQuiz.categories.sensory")}</strong>
             <span>
               {sensory.selected} / {sensory.total}
             </span>
@@ -293,15 +281,12 @@ function AutismCharacteristicsQuiz() {
 
         {totalCharacteristics > 2 && (
           <p className="quiz-result-info">
-            Se estas características são persistentes, aparecem em diferentes
-            contextos ou têm impacto significativo no dia a dia da criança,
-            considere conversar com um profissional de saúde.
+            {t("autismQuiz.completed.recommendation")}
           </p>
         )}
 
         <p className="quiz-result-disclaimer">
-          Este resultado é apenas informativo e não permite diagnosticar ou
-          excluir autismo.
+          {t("autismQuiz.completed.disclaimer")}
         </p>
 
         <button
@@ -309,7 +294,7 @@ function AutismCharacteristicsQuiz() {
           className="screening-button"
           onClick={handleRestart}
         >
-          Recomeçar
+          {t("autismQuiz.completed.restart")}
         </button>
       </div>
     );
@@ -318,7 +303,10 @@ function AutismCharacteristicsQuiz() {
   return (
     <div className="autism-quiz">
       <p className="quiz-progress-text">
-        Pergunta {currentQuestion + 1} de {questions.length}
+        {t("autismQuiz.progress", {
+          current: currentQuestion + 1,
+          total: questions.length,
+        })}
       </p>
 
       <div className="progress-bar-container">
@@ -328,7 +316,7 @@ function AutismCharacteristicsQuiz() {
         ></div>
       </div>
 
-      <h3>{questions[currentQuestion].text}</h3>
+      <h3>{t(questions[currentQuestion].translationKey)}</h3>
 
       <div className="quiz-options">
         <button
@@ -340,7 +328,7 @@ function AutismCharacteristicsQuiz() {
           }
           onClick={() => handleAnswer("sim")}
         >
-          Sim
+          {t("autismQuiz.answers.yes")}
         </button>
 
         <button
@@ -352,7 +340,7 @@ function AutismCharacteristicsQuiz() {
           }
           onClick={() => handleAnswer("nao")}
         >
-          Não
+          {t("autismQuiz.answers.no")}
         </button>
       </div>
 
@@ -362,7 +350,7 @@ function AutismCharacteristicsQuiz() {
           className="quiz-previous"
           onClick={handlePrevious}
         >
-          ← Anterior
+          ← {t("autismQuiz.previous")}
         </button>
       )}
     </div>

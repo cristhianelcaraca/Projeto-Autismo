@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./RoutineOrganization.css";
 
 function RoutineOrganization() {
+  const { t } = useTranslation();
+
   return (
     <main className="routine-page">
       {/* HERO */}
@@ -9,21 +12,15 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-hero-content">
             <div className="routine-hero-text">
-              <span className="routine-label">Vida diária</span>
+              <span className="routine-label">
+                {t("routineOrganization.hero.label")}
+              </span>
 
-              <h1>Rotina e organização</h1>
+              <h1>{t("routineOrganization.hero.title")}</h1>
 
-              <p>
-                Para muitas pessoas autistas, saber o que vai acontecer e em que
-                ordem pode reduzir a incerteza, facilitar transições e tornar o
-                dia mais previsível.
-              </p>
+              <p>{t("routineOrganization.hero.paragraph1")}</p>
 
-              <p>
-                Ter rotina não significa viver de forma rígida. O objetivo é
-                criar estrutura suficiente para tornar o quotidiano mais
-                compreensível e sustentável.
-              </p>
+              <p>{t("routineOrganization.hero.paragraph2")}</p>
             </div>
 
             <div className="routine-hero-icon">
@@ -38,51 +35,56 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Tornar o dia mais previsível
+              {t("routineOrganization.predictability.label")}
             </span>
 
-            <h2>Por que a previsibilidade pode ajudar?</h2>
+            <h2>{t("routineOrganization.predictability.title")}</h2>
 
-            <p>
-              Algumas pessoas autistas beneficiam particularmente de estrutura,
-              antecipação e informação clara sobre aquilo que vai acontecer.
-            </p>
+            <p>{t("routineOrganization.predictability.description")}</p>
           </div>
 
           <div className="routine-benefits-grid">
             <article className="routine-benefit-card blue">
               <i className="bi bi-question-circle"></i>
-              <h3>Menos incerteza</h3>
+              <h3>
+                {t("routineOrganization.predictability.uncertainty.title")}
+              </h3>
               <p>
-                Saber o que vai acontecer pode reduzir o esforço de tentar
-                antecipar constantemente diferentes possibilidades.
+                {t(
+                  "routineOrganization.predictability.uncertainty.description",
+                )}
               </p>
             </article>
 
             <article className="routine-benefit-card green">
               <i className="bi bi-arrow-left-right"></i>
-              <h3>Transições mais claras</h3>
+              <h3>
+                {t("routineOrganization.predictability.transitions.title")}
+              </h3>
               <p>
-                Conhecer o que termina e o que vem a seguir pode facilitar a
-                mudança entre atividades.
+                {t(
+                  "routineOrganization.predictability.transitions.description",
+                )}
               </p>
             </article>
 
             <article className="routine-benefit-card purple">
               <i className="bi bi-list-check"></i>
-              <h3>Menos decisões</h3>
+              <h3>{t("routineOrganization.predictability.decisions.title")}</h3>
               <p>
-                Uma rotina pode reduzir a quantidade de pequenas decisões que
-                precisam de ser tomadas ao longo do dia.
+                {t("routineOrganization.predictability.decisions.description")}
               </p>
             </article>
 
             <article className="routine-benefit-card yellow">
               <i className="bi bi-clock-history"></i>
-              <h3>Preparação antecipada</h3>
+              <h3>
+                {t("routineOrganization.predictability.preparation.title")}
+              </h3>
               <p>
-                Saber quando algo vai acontecer permite organizar mentalmente
-                tempo, energia e estratégias de apoio.
+                {t(
+                  "routineOrganization.predictability.preparation.description",
+                )}
               </p>
             </article>
           </div>
@@ -94,10 +96,10 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Estrutura sem transformar tudo numa regra
+              {t("routineOrganization.flexibility.label")}
             </span>
 
-            <h2>Rotina não é o mesmo que rigidez</h2>
+            <h2>{t("routineOrganization.flexibility.title")}</h2>
           </div>
 
           <div className="routine-compare-grid">
@@ -106,14 +108,14 @@ function RoutineOrganization() {
                 <i className="bi bi-check-circle"></i>
               </div>
 
-              <h3>Quando a rotina ajuda</h3>
+              <h3>{t("routineOrganization.flexibility.helpful.title")}</h3>
 
               <ul>
-                <li>deixa claro o que vai acontecer;</li>
-                <li>reduz esforço mental;</li>
-                <li>facilita a preparação;</li>
-                <li>permite alguma flexibilidade;</li>
-                <li>pode ser adaptada quando necessário.</li>
+                {t("routineOrganization.flexibility.helpful.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </article>
 
@@ -122,25 +124,21 @@ function RoutineOrganization() {
                 <i className="bi bi-exclamation-circle"></i>
               </div>
 
-              <h3>Quando começa a gerar sofrimento</h3>
+              <h3>{t("routineOrganization.flexibility.difficult.title")}</h3>
 
               <ul>
-                <li>qualquer mudança provoca sofrimento muito intenso;</li>
-                <li>a pessoa sente que não consegue sair da sequência;</li>
-                <li>a rotina começa a impedir atividades importantes;</li>
-                <li>a necessidade de controlo aumenta progressivamente;</li>
-                <li>a ansiedade domina a organização do dia.</li>
+                {t("routineOrganization.flexibility.difficult.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </article>
           </div>
 
           <div className="routine-flexibility-note">
             <i className="bi bi-info-circle"></i>
-            <p>
-              Se uma rotina está a funcionar como estratégia de segurança
-              perante ansiedade intensa, retirá-la de forma abrupta pode tornar
-              a situação mais difícil.
-            </p>
+            <p>{t("routineOrganization.flexibility.note")}</p>
           </div>
         </div>
       </section>
@@ -150,58 +148,52 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Colocar a informação fora da cabeça
+              {t("routineOrganization.visual.label")}
             </span>
 
-            <h2>Organizar o dia visualmente</h2>
+            <h2>{t("routineOrganization.visual.title")}</h2>
 
-            <p>
-              Não existe um sistema universal. Algumas pessoas preferem uma
-              agenda em papel, outras funcionam melhor com o telemóvel,
-              pictogramas, alarmes ou listas simples.
-            </p>
+            <p>{t("routineOrganization.visual.description")}</p>
           </div>
 
           <div className="routine-tools-grid">
             <article>
               <i className="bi bi-calendar3"></i>
-              <span>Calendário</span>
+              <span>{t("routineOrganization.visual.tools.calendar")}</span>
             </article>
 
             <article>
               <i className="bi bi-card-checklist"></i>
-              <span>Checklist</span>
+              <span>{t("routineOrganization.visual.tools.checklist")}</span>
             </article>
 
             <article>
               <i className="bi bi-grid-3x3-gap"></i>
-              <span>Quadro semanal</span>
+              <span>{t("routineOrganization.visual.tools.weeklyBoard")}</span>
             </article>
 
             <article>
               <i className="bi bi-alarm"></i>
-              <span>Alarmes</span>
+              <span>{t("routineOrganization.visual.tools.alarms")}</span>
             </article>
 
             <article>
               <i className="bi bi-phone"></i>
-              <span>Aplicações</span>
+              <span>{t("routineOrganization.visual.tools.apps")}</span>
             </article>
 
             <article>
               <i className="bi bi-sticky"></i>
-              <span>Post-its</span>
+              <span>{t("routineOrganization.visual.tools.postIts")}</span>
             </article>
           </div>
 
           <div className="routine-visual-highlight">
             <i className="bi bi-lightbulb"></i>
+
             <p>
-              <strong>
-                O melhor sistema não é necessariamente o mais bonito ou
-                completo.
-              </strong>{" "}
-              É aquele que a pessoa realmente consegue consultar e utilizar.
+              <strong>{t("routineOrganization.visual.highlightStrong")}</strong>{" "}
+              {t("routineOrganization.visual.highlight")}
             </p>
           </div>
         </div>
@@ -212,46 +204,42 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Tornar tarefas abstratas mais concretas
+              {t("routineOrganization.steps.label")}
             </span>
 
-            <h2>Dividir tarefas grandes em passos pequenos</h2>
+            <h2>{t("routineOrganization.steps.title")}</h2>
 
-            <p>
-              Instruções como “arruma o quarto” ou “trata dos documentos” podem
-              envolver muitas decisões escondidas dentro de uma única frase.
-            </p>
+            <p>{t("routineOrganization.steps.description")}</p>
           </div>
 
           <div className="routine-example-grid">
             <article className="routine-example-card">
               <div className="routine-example-heading">
                 <i className="bi bi-house"></i>
-                <h3>Em vez de “arrumar o quarto”</h3>
+                <h3>{t("routineOrganization.steps.room.title")}</h3>
               </div>
 
               <ol>
-                <li>colocar roupa suja no cesto;</li>
-                <li>guardar roupa limpa;</li>
-                <li>colocar lixo no caixote;</li>
-                <li>arrumar objetos da secretária;</li>
-                <li>fazer a cama.</li>
+                {t("routineOrganization.steps.room.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ol>
             </article>
 
             <article className="routine-example-card">
               <div className="routine-example-heading">
                 <i className="bi bi-folder2-open"></i>
-                <h3>Em vez de “tratar dos documentos”</h3>
+                <h3>{t("routineOrganization.steps.documents.title")}</h3>
               </div>
 
               <ol>
-                <li>encontrar o documento;</li>
-                <li>verificar o prazo;</li>
-                <li>abrir o site necessário;</li>
-                <li>preencher o formulário;</li>
-                <li>anexar os ficheiros;</li>
-                <li>guardar o comprovativo.</li>
+                {t("routineOrganization.steps.documents.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ol>
             </article>
           </div>
@@ -268,30 +256,23 @@ function RoutineOrganization() {
 
             <div>
               <span className="routine-section-label">
-                Quando saber o que fazer não é suficiente
+                {t("routineOrganization.initiation.label")}
               </span>
 
-              <h2>Começar uma tarefa também pode ser difícil</h2>
+              <h2>{t("routineOrganization.initiation.title")}</h2>
 
-              <p>
-                Uma pessoa pode compreender perfeitamente o que precisa fazer e
-                ainda assim ter dificuldade em iniciar a tarefa.
-              </p>
+              <p>{t("routineOrganization.initiation.description")}</p>
 
               <ul>
-                <li>não saber por onde começar;</li>
-                <li>ter dificuldade em escolher entre várias opções;</li>
-                <li>não conseguir mudar da atividade atual para outra;</li>
-                <li>ter dificuldade em estimar quanto tempo vai demorar;</li>
-                <li>
-                  não conseguir retomar facilmente depois de uma interrupção.
-                </li>
+                {t("routineOrganization.initiation.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
 
               <div className="routine-initiation-highlight">
-                <strong>
-                  Saber fazer e conseguir começar não são a mesma coisa.
-                </strong>
+                <strong>{t("routineOrganization.initiation.highlight")}</strong>
               </div>
             </div>
           </div>
@@ -303,46 +284,39 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Passar de uma atividade para outra
+              {t("routineOrganization.transitions.label")}
             </span>
 
-            <h2>As transições também exigem energia</h2>
+            <h2>{t("routineOrganization.transitions.title")}</h2>
 
-            <p>
-              Interromper uma atividade, mudar de ambiente ou começar algo novo
-              pode exigir mais preparação do que parece.
-            </p>
+            <p>{t("routineOrganization.transitions.description")}</p>
           </div>
 
           <div className="routine-transition-examples">
-            <span>parar um jogo para tomar banho</span>
-            <span>sair de casa</span>
-            <span>mudar de sala</span>
-            <span>terminar o fim de semana</span>
-            <span>começar uma obrigação</span>
-            <span>interromper uma atividade preferida</span>
+            {t("routineOrganization.transitions.examples", {
+              returnObjects: true,
+            }).map((item) => (
+              <span key={item}>{item}</span>
+            ))}
           </div>
 
           <div className="routine-transition-help">
             <article>
               <i className="bi bi-bell"></i>
-              <h3>Avisar antes</h3>
-              <p>
-                Antecipar que uma atividade vai terminar pode tornar a mudança
-                menos abrupta.
-              </p>
+              <h3>{t("routineOrganization.transitions.warning.title")}</h3>
+              <p>{t("routineOrganization.transitions.warning.description")}</p>
             </article>
 
             <article>
               <i className="bi bi-hourglass-split"></i>
-              <h3>Usar temporizadores</h3>
-              <p>Um timer pode tornar mais visível quanto tempo ainda falta.</p>
+              <h3>{t("routineOrganization.transitions.timer.title")}</h3>
+              <p>{t("routineOrganization.transitions.timer.description")}</p>
             </article>
 
             <article>
               <i className="bi bi-arrow-right-circle"></i>
-              <h3>Mostrar o que vem depois</h3>
-              <p>Explicar a próxima etapa torna a transição mais previsível.</p>
+              <h3>{t("routineOrganization.transitions.next.title")}</h3>
+              <p>{t("routineOrganization.transitions.next.description")}</p>
             </article>
           </div>
         </div>
@@ -358,35 +332,30 @@ function RoutineOrganization() {
 
             <div>
               <span className="routine-section-label">
-                Tornar o tempo mais concreto
+                {t("routineOrganization.time.label")}
               </span>
 
-              <h2>“Daqui a pouco” pode ser demasiado vago</h2>
+              <h2>{t("routineOrganization.time.title")}</h2>
 
-              <p>
-                Para algumas pessoas, expressões imprecisas como “mais tarde”,
-                “já vamos” ou “daqui a pouco” dão pouca informação sobre quanto
-                tempo realmente falta.
-              </p>
+              <p>{t("routineOrganization.time.paragraph1")}</p>
 
               <div className="routine-time-examples">
                 <div>
                   <span className="routine-time-bad">
-                    “Saímos daqui a pouco.”
+                    {t("routineOrganization.time.vague")}
                   </span>
                 </div>
 
                 <i className="bi bi-arrow-right"></i>
 
                 <div>
-                  <span className="routine-time-good">“Saímos às 15:30.”</span>
+                  <span className="routine-time-good">
+                    {t("routineOrganization.time.specific")}
+                  </span>
                 </div>
               </div>
 
-              <p>
-                Relógios, temporizadores, alarmes e horários concretos podem
-                ajudar a tornar a passagem do tempo mais visível.
-              </p>
+              <p>{t("routineOrganization.time.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -397,30 +366,30 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Quando o plano deixa de ser o plano
+              {t("routineOrganization.changes.label")}
             </span>
 
-            <h2>O que fazer quando alguma coisa muda?</h2>
+            <h2>{t("routineOrganization.changes.title")}</h2>
           </div>
 
           <div className="routine-change-flow">
             <article>
-              <span>Plano A</span>
-              <h3>Consulta às 14:00</h3>
+              <span>{t("routineOrganization.changes.planA.label")}</span>
+              <h3>{t("routineOrganization.changes.planA.text")}</h3>
             </article>
 
             <i className="bi bi-arrow-right"></i>
 
             <article>
-              <span>Mudança</span>
-              <h3>A consulta atrasou 40 minutos</h3>
+              <span>{t("routineOrganization.changes.change.label")}</span>
+              <h3>{t("routineOrganization.changes.change.text")}</h3>
             </article>
 
             <i className="bi bi-arrow-right"></i>
 
             <article>
-              <span>Novo plano</span>
-              <h3>Consulta prevista para as 14:40</h3>
+              <span>{t("routineOrganization.changes.newPlan.label")}</span>
+              <h3>{t("routineOrganization.changes.newPlan.text")}</h3>
             </article>
           </div>
 
@@ -428,9 +397,10 @@ function RoutineOrganization() {
             <i className="bi bi-info-circle"></i>
 
             <p>
-              Quando algo muda, pode ajudar explicar não apenas{" "}
-              <strong>o que mudou</strong>, mas também{" "}
-              <strong>o que continua igual</strong>.
+              {t("routineOrganization.changes.highlightBefore")}{" "}
+              <strong>{t("routineOrganization.changes.whatChanged")}</strong>,{" "}
+              {t("routineOrganization.changes.highlightMiddle")}{" "}
+              <strong>{t("routineOrganization.changes.whatStayed")}</strong>.
             </p>
           </div>
         </div>
@@ -441,57 +411,52 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Organização também envolve recuperação
+              {t("routineOrganization.energy.label")}
             </span>
 
-            <h2>Energia também faz parte do planeamento</h2>
+            <h2>{t("routineOrganization.energy.title")}</h2>
 
-            <p>
-              Duas atividades com a mesma duração podem consumir quantidades de
-              energia completamente diferentes.
-            </p>
+            <p>{t("routineOrganization.energy.description")}</p>
           </div>
 
           <div className="routine-energy-grid">
             <article>
               <i className="bi bi-briefcase"></i>
-              <span>trabalho ou escola</span>
+              <span>{t("routineOrganization.energy.items.workSchool")}</span>
             </article>
 
             <article>
               <i className="bi bi-person-vcard"></i>
-              <span>consultas</span>
+              <span>{t("routineOrganization.energy.items.appointments")}</span>
             </article>
 
             <article>
               <i className="bi bi-people"></i>
-              <span>eventos sociais</span>
+              <span>{t("routineOrganization.energy.items.socialEvents")}</span>
             </article>
 
             <article>
               <i className="bi bi-bus-front"></i>
-              <span>deslocações</span>
+              <span>{t("routineOrganization.energy.items.travel")}</span>
             </article>
 
             <article>
               <i className="bi bi-volume-up"></i>
-              <span>ambientes sensorialmente intensos</span>
+              <span>{t("routineOrganization.energy.items.sensory")}</span>
             </article>
 
             <article>
               <i className="bi bi-chat-dots"></i>
-              <span>interação social prolongada</span>
+              <span>
+                {t("routineOrganization.energy.items.socialInteraction")}
+              </span>
             </article>
           </div>
 
           <div className="routine-energy-note">
             <i className="bi bi-battery-half"></i>
 
-            <p>
-              Um calendário aparentemente vazio não significa necessariamente
-              que a pessoa tenha energia disponível. Descanso e recuperação
-              também podem precisar de espaço na rotina.
-            </p>
+            <p>{t("routineOrganization.energy.note")}</p>
           </div>
         </div>
       </section>
@@ -501,52 +466,47 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Crianças e adolescentes
+              {t("routineOrganization.children.label")}
             </span>
 
-            <h2>Rotinas simples podem tornar o dia mais claro</h2>
+            <h2>{t("routineOrganization.children.title")}</h2>
           </div>
 
           <div className="routine-child-grid">
             <article className="routine-child-card morning">
               <div className="routine-child-heading">
                 <i className="bi bi-sun"></i>
-                <h3>Rotina da manhã</h3>
+                <h3>{t("routineOrganization.children.morning.title")}</h3>
               </div>
 
               <ol>
-                <li>acordar</li>
-                <li>vestir</li>
-                <li>tomar o pequeno-almoço</li>
-                <li>lavar os dentes</li>
-                <li>pegar na mochila</li>
-                <li>sair</li>
+                {t("routineOrganization.children.morning.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ol>
             </article>
 
             <article className="routine-child-card afternoon">
               <div className="routine-child-heading">
                 <i className="bi bi-house-heart"></i>
-                <h3>Depois da escola</h3>
+                <h3>{t("routineOrganization.children.afterSchool.title")}</h3>
               </div>
 
               <ol>
-                <li>chegar a casa</li>
-                <li>tempo de descompressão</li>
-                <li>lanche</li>
-                <li>tarefas necessárias</li>
-                <li>atividade livre</li>
-                <li>jantar</li>
+                {t("routineOrganization.children.afterSchool.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ol>
             </article>
           </div>
 
           <div className="routine-child-note">
             <i className="bi bi-heart"></i>
-            <p>
-              Algumas crianças precisam de um período de recuperação depois da
-              escola antes de conseguirem lidar com novas exigências.
-            </p>
+            <p>{t("routineOrganization.children.note")}</p>
           </div>
         </div>
       </section>
@@ -555,40 +515,35 @@ function RoutineOrganization() {
       <section className="routine-adults">
         <div className="container routine-container">
           <div className="routine-section-heading">
-            <span className="routine-section-label">Vida adulta</span>
+            <span className="routine-section-label">
+              {t("routineOrganization.adults.label")}
+            </span>
 
-            <h2>Organização não termina quando crescemos</h2>
+            <h2>{t("routineOrganization.adults.title")}</h2>
 
-            <p>
-              Trabalho, refeições, contas, compras, consultas, tarefas
-              domésticas e descanso competem pela mesma quantidade de tempo e
-              energia.
-            </p>
+            <p>{t("routineOrganization.adults.description")}</p>
           </div>
 
           <div className="routine-priority-grid">
             <article className="today">
-              <span>Hoje</span>
-              <p>O que realmente precisa de acontecer hoje?</p>
+              <span>{t("routineOrganization.adults.today.label")}</span>
+              <p>{t("routineOrganization.adults.today.text")}</p>
             </article>
 
             <article className="week">
-              <span>Esta semana</span>
-              <p>O que pode ser distribuído pelos próximos dias?</p>
+              <span>{t("routineOrganization.adults.week.label")}</span>
+              <p>{t("routineOrganization.adults.week.text")}</p>
             </article>
 
             <article className="later">
-              <span>Depois</span>
-              <p>O que não precisa de ocupar espaço mental agora?</p>
+              <span>{t("routineOrganization.adults.later.label")}</span>
+              <p>{t("routineOrganization.adults.later.text")}</p>
             </article>
           </div>
 
           <div className="routine-adult-note">
             <i className="bi bi-list-ul"></i>
-            <p>
-              Separar tarefas por prioridade pode ser menos sobrecarregante do
-              que manter uma única lista enorme de tudo o que está por fazer.
-            </p>
+            <p>{t("routineOrganization.adults.note")}</p>
           </div>
         </div>
       </section>
@@ -603,31 +558,23 @@ function RoutineOrganization() {
 
             <div>
               <span className="routine-section-label">
-                Não depender apenas da memória
+                {t("routineOrganization.memory.label")}
               </span>
 
-              <h2>Externalizar a memória</h2>
+              <h2>{t("routineOrganization.memory.title")}</h2>
 
-              <p>
-                Em vez de tentar lembrar mentalmente de tudo, parte da
-                informação pode ser colocada no ambiente.
-              </p>
+              <p>{t("routineOrganization.memory.description")}</p>
 
               <div className="routine-memory-list">
-                <span>alarmes</span>
-                <span>calendário</span>
-                <span>lembretes</span>
-                <span>etiquetas</span>
-                <span>checklists</span>
-                <span>notas</span>
-                <span>aplicações</span>
+                {t("routineOrganization.memory.items", {
+                  returnObjects: true,
+                }).map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
               </div>
 
               <div className="routine-memory-highlight">
-                <strong>
-                  Usar lembretes não é falhar na organização. É uma estratégia
-                  de organização.
-                </strong>
+                <strong>{t("routineOrganization.memory.highlight")}</strong>
               </div>
             </div>
           </div>
@@ -639,46 +586,43 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Reduzir pequenas decisões
+              {t("routineOrganization.places.label")}
             </span>
 
-            <h2>Criar lugares fixos para objetos importantes</h2>
+            <h2>{t("routineOrganization.places.title")}</h2>
 
-            <p>
-              Ter um local previsível para objetos utilizados todos os dias pode
-              reduzir tempo de procura e esforço mental.
-            </p>
+            <p>{t("routineOrganization.places.description")}</p>
           </div>
 
           <div className="routine-places-grid">
             <article>
               <i className="bi bi-key"></i>
-              <span>chaves</span>
+              <span>{t("routineOrganization.places.items.keys")}</span>
             </article>
 
             <article>
               <i className="bi bi-wallet2"></i>
-              <span>carteira</span>
+              <span>{t("routineOrganization.places.items.wallet")}</span>
             </article>
 
             <article>
               <i className="bi bi-file-earmark-text"></i>
-              <span>documentos</span>
+              <span>{t("routineOrganization.places.items.documents")}</span>
             </article>
 
             <article>
               <i className="bi bi-backpack"></i>
-              <span>mochila</span>
+              <span>{t("routineOrganization.places.items.backpack")}</span>
             </article>
 
             <article>
               <i className="bi bi-capsule"></i>
-              <span>medicação</span>
+              <span>{t("routineOrganization.places.items.medication")}</span>
             </article>
 
             <article>
               <i className="bi bi-lightning-charge"></i>
-              <span>carregadores</span>
+              <span>{t("routineOrganization.places.items.chargers")}</span>
             </article>
           </div>
         </div>
@@ -689,48 +633,23 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Organização do ambiente
+              {t("routineOrganization.environment.label")}
             </span>
 
-            <h2>Organizar não significa esconder tudo</h2>
+            <h2>{t("routineOrganization.environment.title")}</h2>
 
-            <p>
-              Para algumas pessoas, reduzir excesso visual ajuda. Para outras,
-              deixar objetos importantes visíveis é essencial para se lembrarem
-              de que eles existem.
-            </p>
+            <p>{t("routineOrganization.environment.description")}</p>
           </div>
 
           <div className="routine-environment-grid">
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>usar caixas e etiquetas simples</span>
-            </div>
-
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>agrupar objetos por função</span>
-            </div>
-
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>deixar itens importantes acessíveis</span>
-            </div>
-
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>evitar sistemas excessivamente complexos</span>
-            </div>
-
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>reduzir estímulos quando ajudam</span>
-            </div>
-
-            <div>
-              <i className="bi bi-check-circle-fill"></i>
-              <span>criar um espaço de descanso</span>
-            </div>
+            {t("routineOrganization.environment.items", {
+              returnObjects: true,
+            }).map((item) => (
+              <div key={item}>
+                <i className="bi bi-check-circle-fill"></i>
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -743,22 +662,14 @@ function RoutineOrganization() {
 
             <div>
               <span className="routine-section-label">
-                Ajustar também faz parte
+                {t("routineOrganization.changeStrategy.label")}
               </span>
 
-              <h2>Quando uma estratégia deixa de funcionar</h2>
+              <h2>{t("routineOrganization.changeStrategy.title")}</h2>
 
-              <p>
-                Uma rotina pode funcionar durante meses e deixar de ser útil
-                quando mudam a escola, o trabalho, os horários, o nível de
-                stress ou as necessidades da pessoa.
-              </p>
+              <p>{t("routineOrganization.changeStrategy.paragraph1")}</p>
 
-              <p>
-                Não é necessário insistir num sistema apenas porque funcionou
-                anteriormente. Estratégias de organização podem e devem ser
-                revistas.
-              </p>
+              <p>{t("routineOrganization.changeStrategy.paragraph2")}</p>
             </div>
           </div>
         </div>
@@ -768,40 +679,42 @@ function RoutineOrganization() {
       <section className="routine-kit">
         <div className="container routine-container">
           <div className="routine-section-heading">
-            <span className="routine-section-label">Ferramentas simples</span>
+            <span className="routine-section-label">
+              {t("routineOrganization.kit.label")}
+            </span>
 
-            <h2>Um pequeno kit de organização</h2>
+            <h2>{t("routineOrganization.kit.title")}</h2>
           </div>
 
           <div className="routine-kit-grid">
             <article>
               <i className="bi bi-calendar3"></i>
-              <h3>Calendário</h3>
+              <h3>{t("routineOrganization.kit.items.calendar")}</h3>
             </article>
 
             <article>
               <i className="bi bi-hourglass-split"></i>
-              <h3>Timer</h3>
+              <h3>{t("routineOrganization.kit.items.timer")}</h3>
             </article>
 
             <article>
               <i className="bi bi-card-checklist"></i>
-              <h3>Checklist</h3>
+              <h3>{t("routineOrganization.kit.items.checklist")}</h3>
             </article>
 
             <article>
               <i className="bi bi-grid"></i>
-              <h3>Quadro semanal</h3>
+              <h3>{t("routineOrganization.kit.items.weeklyBoard")}</h3>
             </article>
 
             <article>
               <i className="bi bi-bell"></i>
-              <h3>Alarmes</h3>
+              <h3>{t("routineOrganization.kit.items.alarms")}</h3>
             </article>
 
             <article>
               <i className="bi bi-tags"></i>
-              <h3>Etiquetas</h3>
+              <h3>{t("routineOrganization.kit.items.labels")}</h3>
             </article>
           </div>
         </div>
@@ -812,42 +725,21 @@ function RoutineOrganization() {
         <div className="container routine-container">
           <div className="routine-section-heading">
             <span className="routine-section-label">
-              Quando organizar cria mais trabalho
+              {t("routineOrganization.notHelpful.label")}
             </span>
 
-            <h2>O que pode não ajudar?</h2>
+            <h2>{t("routineOrganization.notHelpful.title")}</h2>
           </div>
 
           <div className="routine-not-helpful-list">
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>listas enormes sem qualquer prioridade</span>
-            </div>
-
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>horários com cada minuto preenchido</span>
-            </div>
-
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>alterar várias rotinas ao mesmo tempo</span>
-            </div>
-
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>sistemas mais complicados do que a própria tarefa</span>
-            </div>
-
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>usar a rotina como forma de castigo ou controlo</span>
-            </div>
-
-            <div>
-              <i className="bi bi-x-circle"></i>
-              <span>interpretar dificuldade executiva como preguiça</span>
-            </div>
+            {t("routineOrganization.notHelpful.items", {
+              returnObjects: true,
+            }).map((item) => (
+              <div key={item}>
+                <i className="bi bi-x-circle"></i>
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -856,9 +748,11 @@ function RoutineOrganization() {
       <section className="routine-related">
         <div className="container routine-container">
           <div className="routine-section-heading">
-            <span className="routine-section-label">Também pode ser útil</span>
+            <span className="routine-section-label">
+              {t("routineOrganization.related.label")}
+            </span>
 
-            <h2>Outros temas relacionados</h2>
+            <h2>{t("routineOrganization.related.title")}</h2>
           </div>
 
           <div className="routine-related-grid">
@@ -867,15 +761,12 @@ function RoutineOrganization() {
                 <i className="bi bi-heart-pulse"></i>
               </div>
 
-              <h3>Ansiedade</h3>
+              <h3>{t("routineOrganization.related.anxiety.title")}</h3>
 
-              <p>
-                Quando mudanças, compromissos ou incerteza provocam sofrimento
-                significativo.
-              </p>
+              <p>{t("routineOrganization.related.anxiety.description")}</p>
 
               <Link to="/ansiedade">
-                Ler sobre ansiedade
+                {t("routineOrganization.related.anxiety.button")}
                 <i className="bi bi-arrow-right"></i>
               </Link>
             </article>
@@ -885,15 +776,12 @@ function RoutineOrganization() {
                 <i className="bi bi-cloud-lightning-rain"></i>
               </div>
 
-              <h3>Crises e sobrecarga</h3>
+              <h3>{t("routineOrganization.related.overload.title")}</h3>
 
-              <p>
-                Quando a acumulação de estímulos e exigências leva a pessoa ao
-                limite.
-              </p>
+              <p>{t("routineOrganization.related.overload.description")}</p>
 
               <Link to="/crises-sobrecarga">
-                Ler sobre crises e sobrecarga
+                {t("routineOrganization.related.overload.button")}
                 <i className="bi bi-arrow-right"></i>
               </Link>
             </article>
