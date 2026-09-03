@@ -177,9 +177,9 @@ function Navbar() {
 
             {/* Sobre */}
             <li className="nav-item">
-              <a className="nav-link" href="/sobre">
+              <Link className="nav-link" to="/sobre-nos">
                 Sobre nós
-              </a>
+              </Link>
             </li>
 
             {/* Idioma */}

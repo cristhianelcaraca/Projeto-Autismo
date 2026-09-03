@@ -20,6 +20,7 @@ import OverloadCrises from "./Pages/OverloadCrises";
 import Anxiety from "./Pages/Anxiety";
 import RoutineOrganization from "./Pages/RoutineOrganization";
 import Resources from "./Pages/Resources";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/ansiedade" element={<Anxiety />} />
         <Route path="/rotina-organizacao" element={<RoutineOrganization />} />
         <Route path="/recursos" element={<Resources />} />
+        <Route path="/sobre-nos" element={<About />} />
       </Routes>
 
       <Footer />

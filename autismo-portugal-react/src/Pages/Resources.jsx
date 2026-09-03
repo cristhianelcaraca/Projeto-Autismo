@@ -93,7 +93,7 @@ function Resources() {
       tag: "Diagnóstico tardio",
       description:
         "Katia, uma documentarista de 35 anos, começa a pesquisar sobre autismo e acaba por reconhecer características em si própria, iniciando um processo de diagnóstico e autoconhecimento.",
-      link: "https://www.netflix.com/br/title/82693392",
+      link: "https://www.imdb.com/pt/title/tt34487780/",
     },
     {
       title: "Mozart and the Whale",

@@ -62,7 +62,7 @@
 
 .navbar .nav-link {
   color: #142b55;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   padding: 8px 8px !important;
   white-space: nowrap;
@@ -88,7 +88,7 @@
 
 .dropdown-item {
   color: #142b55;
-  font-size: 13px;
+  font-size: 18px;
   padding: 9px 12px;
   border-radius: 8px;
 }
@@ -117,7 +117,7 @@
   background: transparent;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
   color: #142b55;
   cursor: pointer; /* mostra a "mãozinha" ao passar o mouse */
