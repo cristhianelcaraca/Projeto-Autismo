@@ -21,6 +21,7 @@ import Anxiety from "./Pages/Anxiety";
 import RoutineOrganization from "./Pages/RoutineOrganization";
 import Resources from "./Pages/Resources";
 import About from "./Pages/About";
+import SearchResults from "./Pages/SearchResults";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/rotina-organizacao" element={<RoutineOrganization />} />
         <Route path="/recursos" element={<Resources />} />
         <Route path="/sobre-nos" element={<About />} />
+        <Route path="/pesquisa" element={<SearchResults />} />
       </Routes>
 
       <Footer />

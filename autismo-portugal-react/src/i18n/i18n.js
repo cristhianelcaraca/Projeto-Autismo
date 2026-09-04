@@ -48,6 +48,8 @@ import schoolRightsEN from "../locales/en/schoolRights";
 import supportMeasuresEN from "../locales/en/supportMeasures";
 import suspicionEN from "../locales/en/suspicion";
 import autismQuizEN from "../locales/en/autismQuiz";
+import searchPagePT from "../locales/pt/searchPage";
+import searchPageEN from "../locales/en/searchPage";
 
 const savedLanguage = localStorage.getItem("language") || "pt";
 
@@ -78,6 +80,7 @@ i18n.use(initReactI18next).init({
         supportMeasures: supportMeasuresPT,
         suspicion: suspicionPT,
         autismQuiz: autismQuizPT,
+        searchPage: searchPagePT,
       },
     },
 
@@ -106,6 +109,7 @@ i18n.use(initReactI18next).init({
         supportMeasures: supportMeasuresEN,
         suspicion: suspicionEN,
         autismQuiz: autismQuizEN,
+        searchPage: searchPageEN,
       },
     },
   },
