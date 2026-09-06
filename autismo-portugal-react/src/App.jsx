@@ -1,8 +1,8 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+import LanguageLayout from "./Components/LanguageLayout";
 
 import Home from "./Pages/Home";
 import Diagnosis from "./Pages/Diagnosis";
@@ -26,30 +26,52 @@ import SearchResults from "./Pages/SearchResults";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/diagnostico" element={<Diagnosis />} />
-        <Route path="/suspeita" element={<Suspicion />} />
-        <Route path="/avaliacao" element={<Evaluation />} />
-        <Route path="/depois-diagnostico" element={<AfterDiagnosis />} />
-        <Route path="/direitos-escola" element={<SchoolRights />} />
-        <Route path="/medidas-suporte" element={<SupportMeasures />} />
-        <Route path="/PEI" element={<PEI />} />
-        <Route path="/ansiedade-crises" element={<AnxietyCrises />} />
-        <Route path="/amim" element={<AMIM />} />
-        <Route path="/psi" element={<PSI />} />
-        <Route path="/benefits" element={<Benefits />} />
-        <Route path="/crises-sobrecarga" element={<OverloadCrises />} />
-        <Route path="/ansiedade" element={<Anxiety />} />
-        <Route path="/rotina-organizacao" element={<RoutineOrganization />} />
-        <Route path="/recursos" element={<Resources />} />
-        <Route path="/sobre-nos" element={<About />} />
-        <Route path="/pesquisa" element={<SearchResults />} />
-      </Routes>
+        {/* Entrada principal */}
+        <Route path="/" element={<Navigate to="/pt" replace />} />
 
-      <Footer />
+        {/* Portal bilingue */}
+        <Route path="/:lang" element={<LanguageLayout />}>
+          <Route index element={<Home />} />
+
+          <Route path="diagnostico" element={<Diagnosis />} />
+
+          <Route path="suspeita" element={<Suspicion />} />
+
+          <Route path="avaliacao" element={<Evaluation />} />
+
+          <Route path="depois-diagnostico" element={<AfterDiagnosis />} />
+
+          <Route path="direitos-escola" element={<SchoolRights />} />
+
+          <Route path="medidas-suporte" element={<SupportMeasures />} />
+
+          <Route path="pei" element={<PEI />} />
+
+          <Route path="ansiedade-crises" element={<AnxietyCrises />} />
+
+          <Route path="amim" element={<AMIM />} />
+
+          <Route path="psi" element={<PSI />} />
+
+          <Route path="beneficios-apoios" element={<Benefits />} />
+
+          <Route path="crises-sobrecarga" element={<OverloadCrises />} />
+
+          <Route path="ansiedade" element={<Anxiety />} />
+
+          <Route path="rotina-organizacao" element={<RoutineOrganization />} />
+
+          <Route path="recursos" element={<Resources />} />
+
+          <Route path="sobre-nos" element={<About />} />
+
+          <Route path="pesquisa" element={<SearchResults />} />
+        </Route>
+
+        {/* URL desconhecida */}
+        <Route path="*" element={<Navigate to="/pt" replace />} />
+      </Routes>
     </BrowserRouter>
   );
 }

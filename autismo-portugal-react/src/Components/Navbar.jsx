@@ -1,20 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 function Navbar() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  const localizedPath = useLocalizedPath();
+
+  const { lang } = useParams();
+
+  const location = useLocation();
+
+  const navigate = useNavigate();
+
+  const currentLanguage = lang === "en" ? "en" : "pt";
 
   function changeLanguage(language) {
-    i18n.changeLanguage(language);
-    localStorage.setItem("language", language);
-    document.documentElement.lang = language;
+    const currentPath = location.pathname;
+
+    const pathWithoutLanguage = currentPath.replace(/^\/(pt|en)/, "");
+
+    const newPath =
+      pathWithoutLanguage === ""
+        ? `/${language}`
+        : `/${language}${pathWithoutLanguage}`;
+
+    navigate(`${newPath}${location.search}`);
   }
 
   return (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container">
         {/* Logo */}
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        <Link
+          className="navbar-brand d-flex align-items-center"
+          to={localizedPath("/")}
+        >
           <img
             src="/images/autismo_portugal_logo.png"
             alt="Autismo Portugal"
@@ -47,7 +69,7 @@ function Navbar() {
           <ul className="navbar-nav ms-auto align-items-lg-center">
             {/* Início */}
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to={localizedPath("/")}>
                 {t("navbar.home")}
               </Link>
             </li>
@@ -65,25 +87,37 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/suspeita">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/suspeita")}
+                  >
                     {t("navbar.suspicion")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/avaliacao">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/avaliacao")}
+                  >
                     {t("navbar.evaluation")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/diagnostico">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/diagnostico")}
+                  >
                     {t("navbar.diagnosis")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/depois-diagnostico">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/depois-diagnostico")}
+                  >
                     {t("navbar.afterDiagnosis")}
                   </Link>
                 </li>
@@ -103,25 +137,34 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/direitos-escola">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/direitos-escola")}
+                  >
                     {t("navbar.schoolRights")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/medidas-suporte">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/medidas-suporte")}
+                  >
                     {t("navbar.supportMeasures")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/PEI">
+                  <Link className="dropdown-item" to={localizedPath("/pei")}>
                     {t("navbar.pei")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/ansiedade-crises">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/ansiedade-crises")}
+                  >
                     {t("navbar.anxietyCrises")}
                   </Link>
                 </li>
@@ -141,19 +184,22 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/amim">
+                  <Link className="dropdown-item" to={localizedPath("/amim")}>
                     AMIM
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/psi">
+                  <Link className="dropdown-item" to={localizedPath("/psi")}>
                     {t("navbar.psi")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/benefits">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/beneficios-apoios")}
+                  >
                     {t("navbar.benefits")}
                   </Link>
                 </li>
@@ -173,19 +219,28 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/crises-sobrecarga">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/crises-sobrecarga")}
+                  >
                     {t("navbar.overloadCrises")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/ansiedade">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/ansiedade")}
+                  >
                     {t("navbar.anxiety")}
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/rotina-organizacao">
+                  <Link
+                    className="dropdown-item"
+                    to={localizedPath("/rotina-organizacao")}
+                  >
                     {t("navbar.routine")}
                   </Link>
                 </li>
@@ -194,14 +249,14 @@ function Navbar() {
 
             {/* Recursos */}
             <li className="nav-item">
-              <Link className="nav-link" to="/recursos">
+              <Link className="nav-link" to={localizedPath("/recursos")}>
                 {t("navbar.resources")}
               </Link>
             </li>
 
             {/* Sobre */}
             <li className="nav-item">
-              <Link className="nav-link" to="/sobre-nos">
+              <Link className="nav-link" to={localizedPath("/sobre-nos")}>
                 {t("navbar.about")}
               </Link>
             </li>
@@ -212,7 +267,7 @@ function Navbar() {
                 <button
                   type="button"
                   className={`lang-option ${
-                    i18n.language === "pt" ? "active" : ""
+                    currentLanguage === "pt" ? "active" : ""
                   }`}
                   onClick={() => changeLanguage("pt")}
                 >
@@ -222,7 +277,7 @@ function Navbar() {
                 <button
                   type="button"
                   className={`lang-option ${
-                    i18n.language === "en" ? "active" : ""
+                    currentLanguage === "en" ? "active" : ""
                   }`}
                   onClick={() => changeLanguage("en")}
                 >

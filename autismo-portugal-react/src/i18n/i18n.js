@@ -50,8 +50,19 @@ import suspicionEN from "../locales/en/suspicion";
 import autismQuizEN from "../locales/en/autismQuiz";
 import searchPagePT from "../locales/pt/searchPage";
 import searchPageEN from "../locales/en/searchPage";
+import seoPT from "../locales/pt/seo";
+import seoEN from "../locales/en/seo";
 
-const savedLanguage = localStorage.getItem("language") || "pt";
+const urlLanguage = window.location.pathname.split("/").filter(Boolean)[0];
+
+const savedLanguage = localStorage.getItem("language");
+
+const initialLanguage =
+  urlLanguage === "pt" || urlLanguage === "en"
+    ? urlLanguage
+    : savedLanguage === "en"
+      ? "en"
+      : "pt";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -81,6 +92,7 @@ i18n.use(initReactI18next).init({
         suspicion: suspicionPT,
         autismQuiz: autismQuizPT,
         searchPage: searchPagePT,
+        seo: seoPT,
       },
     },
 
@@ -110,11 +122,12 @@ i18n.use(initReactI18next).init({
         suspicion: suspicionEN,
         autismQuiz: autismQuizEN,
         searchPage: searchPageEN,
+        seo: seoEN,
       },
     },
   },
 
-  lng: savedLanguage,
+  lng: initialLanguage,
   fallbackLng: "pt",
 
   interpolation: {
@@ -122,6 +135,6 @@ i18n.use(initReactI18next).init({
   },
 });
 
-document.documentElement.lang = savedLanguage;
+document.documentElement.lang = initialLanguage;
 
 export default i18n;
