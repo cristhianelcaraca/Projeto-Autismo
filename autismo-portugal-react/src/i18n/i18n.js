@@ -24,6 +24,9 @@ import schoolRightsPT from "../locales/pt/schoolRights";
 import supportMeasuresPT from "../locales/pt/supportMeasures";
 import suspicionPT from "../locales/pt/suspicion";
 import autismQuizPT from "../locales/pt/autismQuiz";
+import searchPagePT from "../locales/pt/searchPage";
+import seoPT from "../locales/pt/seo";
+import breadcrumbsPT from "../locales/pt/breadcrumbs";
 
 import navbarEN from "../locales/en/navbar";
 import heroEN from "../locales/en/hero";
@@ -48,10 +51,9 @@ import schoolRightsEN from "../locales/en/schoolRights";
 import supportMeasuresEN from "../locales/en/supportMeasures";
 import suspicionEN from "../locales/en/suspicion";
 import autismQuizEN from "../locales/en/autismQuiz";
-import searchPagePT from "../locales/pt/searchPage";
 import searchPageEN from "../locales/en/searchPage";
-import seoPT from "../locales/pt/seo";
 import seoEN from "../locales/en/seo";
+import breadcrumbsEN from "../locales/en/breadcrumbs";
 
 const urlLanguage = window.location.pathname.split("/").filter(Boolean)[0];
 
@@ -93,6 +95,7 @@ i18n.use(initReactI18next).init({
         autismQuiz: autismQuizPT,
         searchPage: searchPagePT,
         seo: seoPT,
+        breadcrumbs: breadcrumbsPT,
       },
     },
 
@@ -123,6 +126,7 @@ i18n.use(initReactI18next).init({
         autismQuiz: autismQuizEN,
         searchPage: searchPageEN,
         seo: seoEN,
+        breadcrumbs: breadcrumbsEN,
       },
     },
   },
@@ -135,6 +139,6 @@ i18n.use(initReactI18next).init({
   },
 });
 
-document.documentElement.lang = initialLanguage;
+document.documentElement.lang = initialLanguage === "pt" ? "pt-PT" : "en";
 
 export default i18n;

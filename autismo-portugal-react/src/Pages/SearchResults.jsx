@@ -3,18 +3,16 @@ import { useTranslation } from "react-i18next";
 
 import { getSearchIndex } from "../searchUtils/searchIndex";
 import normalizeText from "../searchUtils/normalizeText";
+import useLocalizedPath from "../hooks/useLocalizedPath";
 
 import "./SearchResults.css";
 
 function SearchResults() {
   const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
+  const localizedPath = useLocalizedPath();
 
   const query = searchParams.get("q") || "";
-
-  /* =========================
-     LEVENSHTEIN
-  ========================= */
 
   function levenshteinDistance(a, b) {
     const matrix = Array.from({ length: b.length + 1 }, () =>
@@ -46,10 +44,6 @@ function SearchResults() {
     return matrix[b.length][a.length];
   }
 
-  /* =========================
-     SIMILARIDADE
-  ========================= */
-
   function getSimilarity(word, queryText) {
     const normalizedWord = normalizeText(word);
     const normalizedQuery = normalizeText(queryText);
@@ -69,17 +63,9 @@ function SearchResults() {
     return 1 - distance / maxLength;
   }
 
-  /* =========================
-     LIMPAR PALAVRA
-  ========================= */
-
   function cleanWord(word) {
     return word.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
   }
-
-  /* =========================
-     ENCONTRAR PALAVRA PRÓXIMA
-  ========================= */
 
   function findClosestWord(text, queryText) {
     const normalizedQuery = normalizeText(queryText);
@@ -102,13 +88,6 @@ function SearchResults() {
       }
     });
 
-    /*
-      0.7 permite erros como:
-      ansiedade -> ansiedaaaade
-      diagnostico -> diagnstico
-
-      Mas evita resultados demasiado diferentes.
-    */
     if (bestSimilarity >= 0.7) {
       return {
         word: bestMatch,
@@ -119,18 +98,16 @@ function SearchResults() {
     return null;
   }
 
-  /* =========================
-     CRIAR SNIPPET
-  ========================= */
-
   function createSnippet(content, queryText) {
     const normalizedContent = normalizeText(content);
+
     const normalizedQuery = normalizeText(queryText);
 
     const index = normalizedContent.indexOf(normalizedQuery);
 
     if (index === -1) {
       const shortText = content.slice(0, 180);
+
       const lastSpace = shortText.lastIndexOf(" ");
 
       if (lastSpace === -1) {
@@ -209,10 +186,6 @@ function SearchResults() {
     return snippet;
   }
 
-  /* =========================
-     SCORE
-  ========================= */
-
   function calculateScore(page, normalizedQuery, matchedWord = null) {
     const normalizedTitle = normalizeText(page.title);
 
@@ -232,21 +205,12 @@ function SearchResults() {
 
     score += occurrences;
 
-    /*
-      Se foi encontrado por similaridade,
-      adicionamos alguns pontos conforme
-      a proximidade da palavra.
-    */
     if (matchedWord) {
       score += matchedWord.similarity * 20;
     }
 
     return score;
   }
-
-  /* =========================
-     HIGHLIGHT
-  ========================= */
 
   function highlightText(text, queryText) {
     if (!queryText) {
@@ -268,10 +232,6 @@ function SearchResults() {
     });
   }
 
-  /* =========================
-     PESQUISA
-  ========================= */
-
   const normalizedQuery = normalizeText(query);
 
   const currentLanguage = i18n.resolvedLanguage || i18n.language || "pt";
@@ -285,10 +245,6 @@ function SearchResults() {
 
           const normalizedSearchableText = normalizeText(searchableText);
 
-          /*
-            Primeiro tentamos encontrar
-            exatamente o que foi digitado.
-          */
           const hasExactMatch =
             normalizedSearchableText.includes(normalizedQuery);
 
@@ -307,11 +263,6 @@ function SearchResults() {
             };
           }
 
-          /*
-            Caso não exista correspondência
-            exata, procuramos uma palavra
-            semelhante.
-          */
           const closestMatch = findClosestWord(searchableText, query);
 
           if (!closestMatch) {
@@ -334,10 +285,6 @@ function SearchResults() {
         .filter(Boolean)
         .sort((a, b) => b.score - a.score)
     : [];
-
-  /* =========================
-     RENDER
-  ========================= */
 
   return (
     <main className="search-results-page">
@@ -363,7 +310,7 @@ function SearchResults() {
 
               <p>{t("searchPage.emptySearch")}</p>
 
-              <Link to="/">{t("searchPage.backHome")}</Link>
+              <Link to={localizedPath("/")}>{t("searchPage.backHome")}</Link>
             </div>
           )}
 
@@ -373,13 +320,9 @@ function SearchResults() {
 
               <h2>{t("searchPage.noResultsTitle")}</h2>
 
-              <p>
-                {t("searchPage.noResults", {
-                  query,
-                })}
-              </p>
+              <p>{t("searchPage.noResults", { query })}</p>
 
-              <Link to="/">{t("searchPage.tryAgain")}</Link>
+              <Link to={localizedPath("/")}>{t("searchPage.tryAgain")}</Link>
             </div>
           )}
 
@@ -398,14 +341,17 @@ function SearchResults() {
                   <article key={result.route} className="search-page-card">
                     <div className="search-page-card-content">
                       <h2>
-                        <Link to={result.route}>
+                        <Link to={localizedPath(result.route)}>
                           {highlightText(result.title, result.matchedTerm)}
                         </Link>
                       </h2>
 
                       <p>{highlightText(result.snippet, result.matchedTerm)}</p>
 
-                      <Link to={result.route} className="search-page-link">
+                      <Link
+                        to={localizedPath(result.route)}
+                        className="search-page-link"
+                      >
                         {t("searchPage.openPage")}
 
                         <i className="bi bi-arrow-right"></i>

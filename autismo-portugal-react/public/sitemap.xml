@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- HOME PT -->
+  <url>
+    <loc>http://localhost:5173/pt</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-PT"
+      href="http://localhost:5173/pt"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:5173/en"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="http://localhost:5173/pt"
+    />
+  </url>
+
+  <!-- HOME EN -->
+  <url>
+    <loc>http://localhost:5173/en</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-PT"
+      href="http://localhost:5173/pt"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:5173/en"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="http://localhost:5173/pt"
+    />
+  </url>
+
+  <!-- SUSPEITA -->
+  <url>
+    <loc>http://localhost:5173/pt/suspeita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/suspeita" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/suspeita" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/suspeita" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/suspeita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/suspeita" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/suspeita" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/suspeita" />
+  </url>
+
+  <!-- AVALIAÇÃO -->
+  <url>
+    <loc>http://localhost:5173/pt/avaliacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/avaliacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/avaliacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/avaliacao" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/avaliacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/avaliacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/avaliacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/avaliacao" />
+  </url>
+
+  <!-- DIAGNÓSTICO -->
+  <url>
+    <loc>http://localhost:5173/pt/diagnostico</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/diagnostico" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/diagnostico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/diagnostico" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/diagnostico</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/diagnostico" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/diagnostico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/diagnostico" />
+  </url>
+
+  <!-- DEPOIS DO DIAGNÓSTICO -->
+  <url>
+    <loc>http://localhost:5173/pt/depois-diagnostico</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/depois-diagnostico" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/depois-diagnostico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/depois-diagnostico" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/depois-diagnostico</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/depois-diagnostico" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/depois-diagnostico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/depois-diagnostico" />
+  </url>
+
+  <!-- DIREITOS NA ESCOLA -->
+  <url>
+    <loc>http://localhost:5173/pt/direitos-escola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/direitos-escola" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/direitos-escola" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/direitos-escola" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/direitos-escola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/direitos-escola" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/direitos-escola" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/direitos-escola" />
+  </url>
+
+  <!-- MEDIDAS DE SUPORTE -->
+  <url>
+    <loc>http://localhost:5173/pt/medidas-suporte</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/medidas-suporte" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/medidas-suporte" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/medidas-suporte" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/medidas-suporte</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/medidas-suporte" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/medidas-suporte" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/medidas-suporte" />
+  </url>
+
+  <!-- PEI -->
+  <url>
+    <loc>http://localhost:5173/pt/pei</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/pei" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/pei" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/pei" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/pei</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/pei" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/pei" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/pei" />
+  </url>
+
+  <!-- ANSIEDADE E CRISES NA ESCOLA -->
+  <url>
+    <loc>http://localhost:5173/pt/ansiedade-crises</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade-crises" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade-crises" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade-crises" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/ansiedade-crises</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade-crises" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade-crises" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade-crises" />
+  </url>
+
+  <!-- AMIM -->
+  <url>
+    <loc>http://localhost:5173/pt/amim</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/amim" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/amim" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/amim" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/amim</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/amim" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/amim" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/amim" />
+  </url>
+
+  <!-- PSI -->
+  <url>
+    <loc>http://localhost:5173/pt/psi</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/psi" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/psi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/psi" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/psi</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/psi" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/psi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/psi" />
+  </url>
+
+  <!-- BENEFÍCIOS E APOIOS -->
+  <url>
+    <loc>http://localhost:5173/pt/beneficios-apoios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/beneficios-apoios" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/beneficios-apoios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/beneficios-apoios" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/beneficios-apoios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/beneficios-apoios" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/beneficios-apoios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/beneficios-apoios" />
+  </url>
+
+  <!-- CRISES E SOBRECARGA -->
+  <url>
+    <loc>http://localhost:5173/pt/crises-sobrecarga</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/crises-sobrecarga" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/crises-sobrecarga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/crises-sobrecarga" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/crises-sobrecarga</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/crises-sobrecarga" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/crises-sobrecarga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/crises-sobrecarga" />
+  </url>
+
+  <!-- ANSIEDADE -->
+  <url>
+    <loc>http://localhost:5173/pt/ansiedade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/ansiedade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade" />
+  </url>
+
+  <!-- ROTINA E ORGANIZAÇÃO -->
+  <url>
+    <loc>http://localhost:5173/pt/rotina-organizacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/rotina-organizacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/rotina-organizacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/rotina-organizacao" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/rotina-organizacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/rotina-organizacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/rotina-organizacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/rotina-organizacao" />
+  </url>
+
+  <!-- RECURSOS -->
+  <url>
+    <loc>http://localhost:5173/pt/recursos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/recursos" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/recursos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/recursos" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/recursos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/recursos" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/recursos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/recursos" />
+  </url>
+
+  <!-- SOBRE NÓS -->
+  <url>
+    <loc>http://localhost:5173/pt/sobre-nos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/sobre-nos" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/sobre-nos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/sobre-nos" />
+  </url>
+
+  <url>
+    <loc>http://localhost:5173/en/sobre-nos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/sobre-nos" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/sobre-nos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/sobre-nos" />
+  </url>
+
+</urlset>

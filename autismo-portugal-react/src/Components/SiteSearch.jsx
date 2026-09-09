@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 function SiteSearch() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
+  const localizedPath = useLocalizedPath();
 
   const [query, setQuery] = useState("");
-
-  useEffect(() => {
-    setQuery("");
-  }, [i18n.resolvedLanguage]);
 
   function handleSearch(event) {
     event.preventDefault();
@@ -21,7 +20,11 @@ function SiteSearch() {
       return;
     }
 
-    navigate(`/pesquisa?q=${encodeURIComponent(cleanQuery)}`);
+    navigate(
+      `${localizedPath("/pesquisa")}?q=${encodeURIComponent(cleanQuery)}`,
+    );
+
+    setQuery("");
   }
 
   return (

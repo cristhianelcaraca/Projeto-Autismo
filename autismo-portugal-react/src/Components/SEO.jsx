@@ -7,6 +7,7 @@ function SEO({
   pagePath,
   image = "/images/autism.png",
   noIndex = false,
+  breadcrumbLabel = null,
 }) {
   useEffect(() => {
     const siteUrl = (
@@ -21,10 +22,11 @@ function SEO({
           : `/${pagePath}`;
 
     const portugueseUrl = `${siteUrl}/pt${cleanPath}`;
-
     const englishUrl = `${siteUrl}/en${cleanPath}`;
 
     const canonicalUrl = language === "en" ? englishUrl : portugueseUrl;
+
+    const homeUrl = language === "en" ? `${siteUrl}/en` : `${siteUrl}/pt`;
 
     const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image}`;
 
@@ -58,7 +60,9 @@ function SEO({
 
       if (!meta) {
         meta = document.createElement("meta");
+
         meta.setAttribute("property", property);
+
         document.head.appendChild(meta);
       }
 
@@ -79,9 +83,6 @@ function SEO({
 
     /*
       CANONICAL + HREFLANG
-
-      Só são adicionados às páginas
-      que podem ser indexadas.
     */
     if (!noIndex) {
       /*
@@ -130,11 +131,8 @@ function SEO({
       setAlternateLanguage("x-default", portugueseUrl);
     } else {
       /*
-        PÁGINAS NOINDEX
-
         Remove canonical e hreflang
-        que possam ter ficado da
-        página anterior.
+        das páginas noindex.
       */
       document.querySelector('link[rel="canonical"]')?.remove();
 
@@ -188,7 +186,92 @@ function SEO({
     }
 
     setMeta("twitter:image", imageUrl);
-  }, [title, description, language, pagePath, image, noIndex]);
+
+    /*
+      STRUCTURED DATA / JSON-LD
+    */
+    let structuredData = document.querySelector(
+      "#autismo-portugal-structured-data",
+    );
+
+    if (!noIndex) {
+      const jsonLd = {
+        "@context": "https://schema.org",
+
+        "@graph": [
+          {
+            "@type": "WebPage",
+
+            "@id": `${canonicalUrl}#webpage`,
+
+            url: canonicalUrl,
+
+            name: title,
+
+            description,
+
+            inLanguage: language === "en" ? "en" : "pt-PT",
+
+            image: imageUrl,
+
+            ...(breadcrumbLabel && {
+              breadcrumb: `${canonicalUrl}#breadcrumb`,
+            }),
+          },
+
+          ...(breadcrumbLabel
+            ? [
+                {
+                  "@type": "BreadcrumbList",
+
+                  "@id": `${canonicalUrl}#breadcrumb`,
+
+                  itemListElement: [
+                    {
+                      "@type": "ListItem",
+
+                      position: 1,
+
+                      name: language === "en" ? "Home" : "Início",
+
+                      item: homeUrl,
+                    },
+
+                    {
+                      "@type": "ListItem",
+
+                      position: 2,
+
+                      name: breadcrumbLabel,
+
+                      item: canonicalUrl,
+                    },
+                  ],
+                },
+              ]
+            : []),
+        ],
+      };
+
+      if (!structuredData) {
+        structuredData = document.createElement("script");
+
+        structuredData.setAttribute("type", "application/ld+json");
+
+        structuredData.setAttribute("id", "autismo-portugal-structured-data");
+
+        document.head.appendChild(structuredData);
+      }
+
+      structuredData.textContent = JSON.stringify(jsonLd);
+    } else {
+      /*
+        Remove JSON-LD
+        das páginas noindex.
+      */
+      structuredData?.remove();
+    }
+  }, [title, description, language, pagePath, image, noIndex, breadcrumbLabel]);
 
   return null;
 }
