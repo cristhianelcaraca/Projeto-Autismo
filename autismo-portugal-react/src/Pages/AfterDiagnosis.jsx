@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./AfterDiagnosis.css";
 
 function AfterDiagnosis() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="after-diagnosis-page">
@@ -77,6 +81,7 @@ function AfterDiagnosis() {
               </div>
 
               <h3>{t("afterDiagnosis.supports.psychology.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.psychology.description")}</p>
             </div>
 
@@ -86,6 +91,7 @@ function AfterDiagnosis() {
               </div>
 
               <h3>{t("afterDiagnosis.supports.speech.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.speech.description")}</p>
             </div>
 
@@ -95,6 +101,7 @@ function AfterDiagnosis() {
               </div>
 
               <h3>{t("afterDiagnosis.supports.occupational.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.occupational.description")}</p>
             </div>
 
@@ -104,6 +111,7 @@ function AfterDiagnosis() {
               </div>
 
               <h3>{t("afterDiagnosis.supports.physiotherapy.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.physiotherapy.description")}</p>
             </div>
 
@@ -113,6 +121,7 @@ function AfterDiagnosis() {
               </div>
 
               <h3>{t("afterDiagnosis.supports.medical.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.medical.description")}</p>
             </div>
           </div>
@@ -124,7 +133,9 @@ function AfterDiagnosis() {
 
             <div>
               <h3>{t("afterDiagnosis.supports.bestTherapy.title")}</h3>
+
               <p>{t("afterDiagnosis.supports.bestTherapy.paragraph1")}</p>
+
               <p>{t("afterDiagnosis.supports.bestTherapy.paragraph2")}</p>
             </div>
           </div>
@@ -159,7 +170,10 @@ function AfterDiagnosis() {
               ))}
             </ul>
 
-            <Link to="/direitos-escola" className="after-link-button">
+            <Link
+              to={localizedPath("/direitos-escola")}
+              className="after-link-button"
+            >
               {t("afterDiagnosis.school.button")}
               <i className="bi bi-arrow-right"></i>
             </Link>
@@ -185,6 +199,7 @@ function AfterDiagnosis() {
             <h2>{t("afterDiagnosis.disclosure.title")}</h2>
 
             <p>{t("afterDiagnosis.disclosure.paragraph1")}</p>
+
             <p>{t("afterDiagnosis.disclosure.paragraph2")}</p>
 
             <div className="disclosure-questions">
@@ -200,6 +215,7 @@ function AfterDiagnosis() {
             </div>
 
             <p>{t("afterDiagnosis.disclosure.paragraph3")}</p>
+
             <p>{t("afterDiagnosis.disclosure.paragraph4")}</p>
           </div>
         </div>
@@ -255,6 +271,7 @@ function AfterDiagnosis() {
                 <div className="masking-icon green">
                   <i className="bi bi-chat-dots"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.rehearse")}</span>
               </li>
 
@@ -262,6 +279,7 @@ function AfterDiagnosis() {
                 <div className="masking-icon purple">
                   <i className="bi bi-people"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.imitate")}</span>
               </li>
 
@@ -269,6 +287,7 @@ function AfterDiagnosis() {
                 <div className="masking-icon blue">
                   <i className="bi bi-eye"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.eyeContact")}</span>
               </li>
 
@@ -276,6 +295,7 @@ function AfterDiagnosis() {
                 <div className="masking-icon yellow">
                   <i className="bi bi-arrow-repeat"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.movements")}</span>
               </li>
 
@@ -283,6 +303,7 @@ function AfterDiagnosis() {
                 <div className="masking-icon pink">
                   <i className="bi bi-chat-left-text"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.control")}</span>
               </li>
 
@@ -290,11 +311,13 @@ function AfterDiagnosis() {
                 <div className="masking-icon turquoise">
                   <i className="bi bi-heart-pulse"></i>
                 </div>
+
                 <span>{t("afterDiagnosis.masking.items.discomfort")}</span>
               </li>
             </ul>
 
             <p>{t("afterDiagnosis.masking.paragraph2")}</p>
+
             <p>{t("afterDiagnosis.masking.paragraph3")}</p>
           </div>
         </div>

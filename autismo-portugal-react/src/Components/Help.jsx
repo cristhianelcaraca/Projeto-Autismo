@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 function Help() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <section className="help-section">
@@ -24,7 +27,10 @@ function Help() {
 
               <p>{t("help.diagnosis.description")}</p>
 
-              <Link to="/diagnostico" className="help-link text-purple">
+              <Link
+                to={localizedPath("/diagnostico")}
+                className="help-link text-purple"
+              >
                 {t("help.learnMore")} →
               </Link>
             </div>
@@ -40,7 +46,10 @@ function Help() {
 
               <p>{t("help.school.description")}</p>
 
-              <Link to="/direitos-escola" className="help-link text-green">
+              <Link
+                to={localizedPath("/direitos-escola")}
+                className="help-link text-green"
+              >
                 {t("help.learnMore")} →
               </Link>
             </div>
@@ -56,7 +65,10 @@ function Help() {
 
               <p>{t("help.rights.description")}</p>
 
-              <Link to="/benefits" className="help-link text-yellow">
+              <Link
+                to={localizedPath("/beneficios-apoios")}
+                className="help-link text-yellow"
+              >
                 {t("help.learnMore")} →
               </Link>
             </div>
@@ -72,7 +84,10 @@ function Help() {
 
               <p>{t("help.dailyLife.description")}</p>
 
-              <Link to="/rotina-organizacao" className="help-link text-pink">
+              <Link
+                to={localizedPath("/rotina-organizacao")}
+                className="help-link text-pink"
+              >
                 {t("help.learnMore")} →
               </Link>
             </div>
@@ -88,7 +103,10 @@ function Help() {
 
               <p>{t("help.resources.description")}</p>
 
-              <Link to="/recursos" className="help-link text-blue">
+              <Link
+                to={localizedPath("/recursos")}
+                className="help-link text-blue"
+              >
                 {t("help.learnMore")} →
               </Link>
             </div>

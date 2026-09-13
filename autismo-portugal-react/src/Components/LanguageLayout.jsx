@@ -6,34 +6,29 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import SEO from "./SEO";
 import Breadcrumbs from "./Breadcrumbs";
+import ScrollToTop from "./ScrollToTop";
 
 const supportedLanguages = ["pt", "en"];
 
 const seoRoutes = {
   "": "home",
   "/": "home",
-
   "/suspeita": "suspicion",
   "/avaliacao": "evaluation",
   "/diagnostico": "diagnosis",
   "/depois-diagnostico": "afterDiagnosis",
-
   "/direitos-escola": "schoolRights",
   "/medidas-suporte": "supportMeasures",
   "/pei": "pei",
   "/ansiedade-crises": "anxietyCrises",
-
   "/amim": "amim",
   "/psi": "psi",
   "/beneficios-apoios": "benefits",
-
   "/crises-sobrecarga": "overloadCrises",
   "/ansiedade": "anxiety",
   "/rotina-organizacao": "routine",
-
   "/recursos": "resources",
   "/sobre-nos": "about",
-
   "/pesquisa": "search",
 };
 
@@ -71,6 +66,8 @@ function LanguageLayout() {
 
   return (
     <>
+      <ScrollToTop />
+
       <SEO
         title={t(`seo.${seoKey}.title`)}
         description={t(`seo.${seoKey}.description`)}

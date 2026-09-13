@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./AnxietyCrises.css";
 
 function AnxietyCrises() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="anxiety-page">
@@ -121,6 +125,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.sensory.title")}</h3>
+
               <p>{t("anxietyCrises.causes.sensory.description")}</p>
             </article>
 
@@ -130,6 +135,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.routine.title")}</h3>
+
               <p>{t("anxietyCrises.causes.routine.description")}</p>
             </article>
 
@@ -139,6 +145,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.social.title")}</h3>
+
               <p>{t("anxietyCrises.causes.social.description")}</p>
             </article>
 
@@ -148,6 +155,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.academic.title")}</h3>
+
               <p>{t("anxietyCrises.causes.academic.description")}</p>
             </article>
 
@@ -157,6 +165,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.transition.title")}</h3>
+
               <p>{t("anxietyCrises.causes.transition.description")}</p>
             </article>
 
@@ -166,6 +175,7 @@ function AnxietyCrises() {
               </div>
 
               <h3>{t("anxietyCrises.causes.bullying.title")}</h3>
+
               <p>{t("anxietyCrises.causes.bullying.description")}</p>
             </article>
           </div>
@@ -190,6 +200,7 @@ function AnxietyCrises() {
             <h2>{t("anxietyCrises.meltdown.title")}</h2>
 
             <p>{t("anxietyCrises.meltdown.paragraph1")}</p>
+
             <p>{t("anxietyCrises.meltdown.paragraph2")}</p>
 
             <div className="shutdown-box">
@@ -252,18 +263,23 @@ function AnxietyCrises() {
 
           <div className="anxiety-observation-flow">
             <div>{t("anxietyCrises.after.questions.before")}</div>
+
             <i className="bi bi-arrow-down"></i>
 
             <div>{t("anxietyCrises.after.questions.where")}</div>
+
             <i className="bi bi-arrow-down"></i>
 
             <div>{t("anxietyCrises.after.questions.stimuli")}</div>
+
             <i className="bi bi-arrow-down"></i>
 
             <div>{t("anxietyCrises.after.questions.change")}</div>
+
             <i className="bi bi-arrow-down"></i>
 
             <div>{t("anxietyCrises.after.questions.demand")}</div>
+
             <i className="bi bi-arrow-down"></i>
 
             <div>{t("anxietyCrises.after.questions.recovery")}</div>
@@ -289,6 +305,7 @@ function AnxietyCrises() {
             <h2>{t("anxietyCrises.avoidance.title")}</h2>
 
             <p>{t("anxietyCrises.avoidance.paragraph1")}</p>
+
             <p>{t("anxietyCrises.avoidance.paragraph2")}</p>
 
             <div className="anxiety-avoidance-highlight">
@@ -314,41 +331,67 @@ function AnxietyCrises() {
           <div className="anxiety-school-grid">
             <div className="anxiety-school-item">
               <i className="bi bi-calendar-check"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.routine")}</p>
             </div>
 
             <div className="anxiety-school-item">
               <i className="bi bi-door-open"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.quietSpace")}</p>
             </div>
 
             <div className="anxiety-school-item">
               <i className="bi bi-pause-circle"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.breaks")}</p>
             </div>
 
             <div className="anxiety-school-item">
               <i className="bi bi-person-check"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.adult")}</p>
             </div>
 
             <div className="anxiety-school-item">
               <i className="bi bi-sliders"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.adapt")}</p>
             </div>
 
             <div className="anxiety-school-item">
               <i className="bi bi-people"></i>
+
               <p>{t("anxietyCrises.schoolSupport.items.teamwork")}</p>
             </div>
           </div>
 
           <div className="anxiety-links">
-            <Link to="/medidas-suporte" className="anxiety-button">
+            <Link
+              to={localizedPath("/medidas-suporte")}
+              className="anxiety-button"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "auto",
+                })
+              }
+            >
               {t("anxietyCrises.schoolSupport.supportButton")}
             </Link>
 
-            <Link to="/direitos-escola" className="anxiety-button secondary">
+            <Link
+              to={localizedPath("/direitos-escola")}
+              className="anxiety-button secondary"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "auto",
+                })
+              }
+            >
               {t("anxietyCrises.schoolSupport.rightsButton")}
             </Link>
           </div>
@@ -396,7 +439,9 @@ function AnxietyCrises() {
             </p>
 
             <p>{t("anxietyCrises.experience.paragraph2")}</p>
+
             <p>{t("anxietyCrises.experience.paragraph3")}</p>
+
             <p>{t("anxietyCrises.experience.paragraph4")}</p>
 
             <p>
@@ -405,7 +450,9 @@ function AnxietyCrises() {
             </p>
 
             <p>{t("anxietyCrises.experience.paragraph6")}</p>
+
             <p>{t("anxietyCrises.experience.paragraph7")}</p>
+
             <p>{t("anxietyCrises.experience.paragraph8")}</p>
 
             <div className="anxiety-experience-note">
@@ -431,6 +478,7 @@ function AnxietyCrises() {
               <h2>{t("anxietyCrises.professional.title")}</h2>
 
               <p>{t("anxietyCrises.professional.paragraph1")}</p>
+
               <p>{t("anxietyCrises.professional.paragraph2")}</p>
             </div>
           </div>

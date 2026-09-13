@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+
 import "./SupportMeasures.css";
 
 function SupportMeasures() {
@@ -19,16 +20,18 @@ function SupportMeasures() {
   return (
     <section className="support-measures">
       <div className="container support-measures-container">
+        {/* HERO */}
         <div className="support-measures-heading">
           <span className="support-measures-label">
             {t("supportMeasures.hero.label")}
           </span>
 
-          <h2>{t("supportMeasures.hero.title")}</h2>
+          <h1>{t("supportMeasures.hero.title")}</h1>
 
           <p>{t("supportMeasures.hero.description")}</p>
         </div>
 
+        {/* INTRO */}
         <div className="support-measures-intro">
           <div className="support-measures-intro-icon">
             <i className="bi bi-lightbulb"></i>
@@ -37,6 +40,7 @@ function SupportMeasures() {
           <p>{t("supportMeasures.intro")}</p>
         </div>
 
+        {/* MEDIDAS */}
         <div className="support-measures-grid">
           {/* MEDIDAS UNIVERSAIS */}
           <article className="support-measure-card universal">
@@ -156,6 +160,7 @@ function SupportMeasures() {
           </article>
         </div>
 
+        {/* NOTA */}
         <div className="support-measures-note">
           <div className="support-measures-note-icon">
             <i className="bi bi-arrow-repeat"></i>

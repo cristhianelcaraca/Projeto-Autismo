@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./Anxiety.css";
 
 function Anxiety() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="daily-anxiety-page">
@@ -264,6 +268,7 @@ function Anxiety() {
               <div className="daily-anxiety-impact-icon school">
                 <i className="bi bi-backpack"></i>
               </div>
+
               <h3>{t("anxiety.impact.school.title")}</h3>
               <p>{t("anxiety.impact.school.description")}</p>
             </article>
@@ -272,6 +277,7 @@ function Anxiety() {
               <div className="daily-anxiety-impact-icon social">
                 <i className="bi bi-people"></i>
               </div>
+
               <h3>{t("anxiety.impact.social.title")}</h3>
               <p>{t("anxiety.impact.social.description")}</p>
             </article>
@@ -280,6 +286,7 @@ function Anxiety() {
               <div className="daily-anxiety-impact-icon independence">
                 <i className="bi bi-signpost-split"></i>
               </div>
+
               <h3>{t("anxiety.impact.independence.title")}</h3>
               <p>{t("anxiety.impact.independence.description")}</p>
             </article>
@@ -288,6 +295,7 @@ function Anxiety() {
               <div className="daily-anxiety-impact-icon health">
                 <i className="bi bi-heart-pulse"></i>
               </div>
+
               <h3>{t("anxiety.impact.wellbeing.title")}</h3>
               <p>{t("anxiety.impact.wellbeing.description")}</p>
             </article>
@@ -348,7 +356,17 @@ function Anxiety() {
 
               <p>{t("anxiety.overload.description")}</p>
 
-              <Link to="/crises-sobrecarga" className="daily-anxiety-button">
+              <Link
+                to={localizedPath("/crises-sobrecarga")}
+                className="daily-anxiety-button"
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  })
+                }
+              >
                 {t("anxiety.overload.button")}
                 <i className="bi bi-arrow-right"></i>
               </Link>

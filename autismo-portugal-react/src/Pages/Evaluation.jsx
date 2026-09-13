@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./Evaluation.css";
 
 function Evaluation() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="evaluation-page">
@@ -251,7 +255,7 @@ function Evaluation() {
 
           <p>{t("evaluation.next.description")}</p>
 
-          <Link to="/diagnostico" className="evaluation-link">
+          <Link to={localizedPath("/diagnostico")} className="evaluation-link">
             {t("evaluation.next.button")}
             <i className="bi bi-arrow-right"></i>
           </Link>

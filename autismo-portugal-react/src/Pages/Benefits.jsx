@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./Benefits.css";
 
 function Benefits() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="benefits-page">
@@ -44,6 +48,7 @@ function Benefits() {
           <div className="benefits-flow">
             <article className="benefits-flow-card">
               <span>1</span>
+
               <i className="bi bi-clipboard2-pulse"></i>
 
               <h3>{t("benefits.start.diagnosis.title")}</h3>
@@ -57,6 +62,7 @@ function Benefits() {
 
             <article className="benefits-flow-card">
               <span>2</span>
+
               <i className="bi bi-file-earmark-medical"></i>
 
               <h3>{t("benefits.start.amim.title")}</h3>
@@ -70,6 +76,7 @@ function Benefits() {
 
             <article className="benefits-flow-card">
               <span>3</span>
+
               <i className="bi bi-search-heart"></i>
 
               <h3>{t("benefits.start.support.title")}</h3>
@@ -113,7 +120,17 @@ function Benefits() {
 
               <p>{t("benefits.main.psi.description")}</p>
 
-              <Link to="/psi" className="benefits-card-link">
+              <Link
+                to={localizedPath("/psi")}
+                className="benefits-card-link"
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  })
+                }
+              >
                 {t("benefits.main.psi.link")}
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -381,11 +398,13 @@ function Benefits() {
           <div className="benefits-difference-list">
             <article>
               <div className="benefits-difference-name">AMIM</div>
+
               <p>{t("benefits.differences.amim")}</p>
             </article>
 
             <article>
               <div className="benefits-difference-name">PSI</div>
+
               <p>{t("benefits.differences.psi")}</p>
             </article>
 
@@ -393,6 +412,7 @@ function Benefits() {
               <div className="benefits-difference-name">
                 {t("benefits.differences.taxTitle")}
               </div>
+
               <p>{t("benefits.differences.tax")}</p>
             </article>
 
@@ -400,6 +420,7 @@ function Benefits() {
               <div className="benefits-difference-name">
                 {t("benefits.differences.priorityTitle")}
               </div>
+
               <p>{t("benefits.differences.priority")}</p>
             </article>
 
@@ -407,6 +428,7 @@ function Benefits() {
               <div className="benefits-difference-name">
                 {t("benefits.differences.parkingTitle")}
               </div>
+
               <p>{t("benefits.differences.parking")}</p>
             </article>
 
@@ -414,6 +436,7 @@ function Benefits() {
               <div className="benefits-difference-name">
                 {t("benefits.differences.productsTitle")}
               </div>
+
               <p>{t("benefits.differences.products")}</p>
             </article>
           </div>

@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 function AboutUs() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <section className="about-us">
@@ -12,12 +15,12 @@ function AboutUs() {
         </div>
 
         <div className="about-text">
-          <h3>{t("aboutUs.title")}</h3>
+          <h2>{t("aboutUs.title")}</h2>
 
           <p>{t("aboutUs.description")}</p>
         </div>
 
-        <Link to="/sobre-nos" className="btn-white">
+        <Link to={localizedPath("/sobre-nos")} className="btn-white">
           {t("aboutUs.button")}
         </Link>
       </div>

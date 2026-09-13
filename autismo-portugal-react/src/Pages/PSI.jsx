@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./PSI.css";
 
 function PSI() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
+
+  const requestSteps = t("psi.request.steps", {
+    returnObjects: true,
+  });
 
   return (
     <main className="psi-page">
@@ -46,6 +54,7 @@ function PSI() {
               </div>
 
               <h3>{t("psi.eligibility.disability.title")}</h3>
+
               <p>{t("psi.eligibility.disability.description")}</p>
             </article>
 
@@ -55,6 +64,7 @@ function PSI() {
               </div>
 
               <h3>{t("psi.eligibility.residence.title")}</h3>
+
               <p>{t("psi.eligibility.residence.description")}</p>
             </article>
 
@@ -64,12 +74,14 @@ function PSI() {
               </div>
 
               <h3>{t("psi.eligibility.conditions.title")}</h3>
+
               <p>{t("psi.eligibility.conditions.description")}</p>
             </article>
           </div>
 
           <div className="psi-important-note">
             <i className="bi bi-info-circle"></i>
+
             <p>{t("psi.eligibility.note")}</p>
           </div>
         </div>
@@ -104,6 +116,7 @@ function PSI() {
 
               <div className="psi-value-box">
                 <span>{t("psi.components.valueLabel")}</span>
+
                 <strong>333,64 €</strong>
               </div>
 
@@ -121,6 +134,7 @@ function PSI() {
 
               <div className="psi-value-box">
                 <span>{t("psi.components.valueLabel")}</span>
+
                 <strong>670 €</strong>
               </div>
 
@@ -135,6 +149,7 @@ function PSI() {
 
             <div>
               <h3>{t("psi.components.warning.title")}</h3>
+
               <p>{t("psi.components.warning.description")}</p>
             </div>
           </div>
@@ -157,6 +172,7 @@ function PSI() {
               <h2>{t("psi.children.title")}</h2>
 
               <p>{t("psi.children.paragraph1")}</p>
+
               <p>{t("psi.children.paragraph2")}</p>
 
               <div className="psi-children-highlight">
@@ -182,7 +198,17 @@ function PSI() {
 
               <p>{t("psi.amim.description")}</p>
 
-              <Link to="/amim" className="psi-button">
+              <Link
+                to={localizedPath("/amim")}
+                className="psi-button"
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  })
+                }
+              >
                 {t("psi.amim.button")}
               </Link>
             </div>
@@ -202,8 +228,8 @@ function PSI() {
           </div>
 
           <div className="psi-steps">
-            {t("psi.request.steps", { returnObjects: true }).map(
-              (step, index) => (
+            {Array.isArray(requestSteps) &&
+              requestSteps.map((step, index) => (
                 <article className="psi-step" key={step.title}>
                   <span>{index + 1}</span>
 
@@ -212,8 +238,7 @@ function PSI() {
                     <p>{step.description}</p>
                   </div>
                 </article>
-              ),
-            )}
+              ))}
           </div>
         </div>
       </section>
@@ -236,6 +261,7 @@ function PSI() {
               </div>
 
               <h3>{t("psi.income.base.title")}</h3>
+
               <p>{t("psi.income.base.description")}</p>
             </article>
 
@@ -245,12 +271,14 @@ function PSI() {
               </div>
 
               <h3>{t("psi.income.complement.title")}</h3>
+
               <p>{t("psi.income.complement.description")}</p>
             </article>
           </div>
 
           <div className="psi-income-note">
             <i className="bi bi-calculator"></i>
+
             <p>{t("psi.income.note")}</p>
           </div>
         </div>
@@ -270,10 +298,12 @@ function PSI() {
               <h2>{t("psi.work.title")}</h2>
 
               <p>{t("psi.work.paragraph1")}</p>
+
               <p>{t("psi.work.paragraph2")}</p>
 
               <div className="psi-work-highlight">
                 <strong>{t("psi.work.highlightStrong")}</strong>
+
                 <p>{t("psi.work.highlight")}</p>
               </div>
             </div>
@@ -297,6 +327,7 @@ function PSI() {
               <i className="bi bi-file-earmark-medical"></i>
 
               <h3>AMIM</h3>
+
               <p>{t("psi.differences.amim")}</p>
             </article>
 
@@ -304,6 +335,7 @@ function PSI() {
               <i className="bi bi-mortarboard"></i>
 
               <h3>{t("psi.differences.education.title")}</h3>
+
               <p>{t("psi.differences.education.description")}</p>
             </article>
 
@@ -311,6 +343,7 @@ function PSI() {
               <i className="bi bi-person-plus"></i>
 
               <h3>{t("psi.differences.allowance.title")}</h3>
+
               <p>{t("psi.differences.allowance.description")}</p>
             </article>
           </div>
@@ -354,6 +387,7 @@ function PSI() {
 
             <div>
               <h2>{t("psi.update.title")}</h2>
+
               <p>{t("psi.update.description")}</p>
             </div>
           </div>
@@ -373,7 +407,7 @@ function PSI() {
             <i className="bi bi-building"></i>
 
             <div>
-              <h3>gov.pt — Prestação Social para a Inclusão</h3>
+              <h3>gov.pt — PSI</h3>
 
               <p>{t("psi.sources.psi.description")}</p>
 

@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 import AutismCharacteristicsQuiz from "../Components/AutismCharacteristicsQuiz";
+import useLocalizedPath from "../hooks/useLocalizedPath";
+
 import "./Suspicion.css";
 
 function Suspicion() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <main className="suspicion-page">
@@ -88,7 +92,10 @@ function Suspicion() {
 
               <p>{t("suspicion.assessment.paragraph2")}</p>
 
-              <Link to="/diagnostico" className="assessment-button">
+              <Link
+                to={localizedPath("/diagnostico")}
+                className="assessment-button"
+              >
                 {t("suspicion.assessment.button")}
               </Link>
             </div>
