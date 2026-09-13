@@ -521,8 +521,7 @@
 ===================================================== */
 
 .about-contact {
-  background-color: #f8fbfc;
-  border-radius: 20px;
+  background-color: #ffffff;
 }
 
 .about-contact-box {
@@ -584,12 +583,6 @@
   background-color: #329676;
   color: #ffffff;
   transform: translateY(-2px);
-}
-
-.about-contact-email {
-  margin-top: 15px;
-  color: #71808c !important;
-  font-size: 17px !important;
 }
 
 /* =====================================================

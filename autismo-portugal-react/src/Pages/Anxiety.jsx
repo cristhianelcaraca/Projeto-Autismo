@@ -195,17 +195,11 @@ function Anxiety() {
           <div className="daily-anxiety-cycle">
             {t("anxiety.anticipatory.cycle", {
               returnObjects: true,
-            }).map((item, index, array) => (
-              <span key={item}>
-                <article>
-                  <span>{index + 1}</span>
-                  <h3>{item}</h3>
-                </article>
-
-                {index < array.length - 1 && (
-                  <i className="bi bi-arrow-right"></i>
-                )}
-              </span>
+            }).map((item, index) => (
+              <article key={item}>
+                <span>{index + 1}</span>
+                <h3>{item}</h3>
+              </article>
             ))}
           </div>
 
@@ -492,7 +486,6 @@ function Anxiety() {
 
             <div>
               <h2>{t("anxiety.urgent.title")}</h2>
-
               <p>{t("anxiety.urgent.description")}</p>
             </div>
           </div>

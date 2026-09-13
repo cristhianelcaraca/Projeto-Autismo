@@ -4,7 +4,7 @@
 
 .support-measures {
   padding: 75px 0;
-  background-color: #f8fbfc;
+
   border-radius: 20px;
 }
 
@@ -34,7 +34,7 @@
   font-weight: 700;
 }
 
-.support-measures-heading h2 {
+.support-measures-heading h1 {
   margin: 0 0 18px;
 
   color: #142b55;
@@ -433,7 +433,7 @@
     padding: 0 20px;
   }
 
-  .support-measures-heading h2 {
+  .support-measures-heading h1 {
     font-size: 30px;
   }
 

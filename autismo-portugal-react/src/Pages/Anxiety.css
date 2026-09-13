@@ -359,14 +359,20 @@
 }
 
 .daily-anxiety-cycle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
+  max-width: 850px;
+  margin: 0 auto;
+  align-items: stretch;
 }
 
 .daily-anxiety-cycle article {
-  width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   min-height: 125px;
   padding: 20px;
   background-color: #f8fbfc;
@@ -391,11 +397,6 @@
   margin: 0;
   color: #142b55;
   font-size: 19px;
-}
-
-.daily-anxiety-cycle > i {
-  color: #3fb28f;
-  font-size: 23px;
 }
 
 .daily-anxiety-cycle-note {
@@ -961,16 +962,11 @@
   }
 
   .daily-anxiety-cycle {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .daily-anxiety-cycle article {
-    width: 100%;
     min-height: auto;
-  }
-
-  .daily-anxiety-cycle > i {
-    transform: rotate(90deg);
   }
 
   .daily-anxiety-control-box,

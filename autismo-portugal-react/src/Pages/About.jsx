@@ -111,6 +111,7 @@ function About() {
               </div>
 
               <h3>{t("about.project.experience.title")}</h3>
+
               <p>{t("about.project.experience.description")}</p>
             </article>
 
@@ -120,6 +121,7 @@ function About() {
               </div>
 
               <h3>{t("about.project.research.title")}</h3>
+
               <p>{t("about.project.research.description")}</p>
             </article>
 
@@ -129,6 +131,7 @@ function About() {
               </div>
 
               <h3>{t("about.project.technology.title")}</h3>
+
               <p>{t("about.project.technology.description")}</p>
             </article>
           </div>
@@ -144,6 +147,7 @@ function About() {
             </span>
 
             <h2>{t("about.purpose.title")}</h2>
+
             <p>{t("about.purpose.description")}</p>
           </div>
 
@@ -152,6 +156,7 @@ function About() {
               <i className="bi bi-chat-left-text"></i>
 
               <h3>{t("about.purpose.clear.title")}</h3>
+
               <p>{t("about.purpose.clear.description")}</p>
             </article>
 
@@ -159,6 +164,7 @@ function About() {
               <i className="bi bi-journal-check"></i>
 
               <h3>{t("about.purpose.sources.title")}</h3>
+
               <p>{t("about.purpose.sources.description")}</p>
             </article>
 
@@ -166,6 +172,7 @@ function About() {
               <i className="bi bi-people"></i>
 
               <h3>{t("about.purpose.diversity.title")}</h3>
+
               <p>{t("about.purpose.diversity.description")}</p>
             </article>
 
@@ -173,6 +180,7 @@ function About() {
               <i className="bi bi-signpost-split"></i>
 
               <h3>{t("about.purpose.practical.title")}</h3>
+
               <p>{t("about.purpose.practical.description")}</p>
             </article>
           </div>
@@ -222,7 +230,9 @@ function About() {
               <h3>{t("about.disclaimer.subtitle")}</h3>
 
               <p>{t("about.disclaimer.paragraph1")}</p>
+
               <p>{t("about.disclaimer.paragraph2")}</p>
+
               <p>{t("about.disclaimer.paragraph3")}</p>
             </div>
           </div>
@@ -245,9 +255,13 @@ function About() {
 
               <div className="about-topics">
                 <span>{t("about.growing.topics.diagnosis")}</span>
+
                 <span>{t("about.growing.topics.school")}</span>
+
                 <span>{t("about.growing.topics.rights")}</span>
+
                 <span>{t("about.growing.topics.dailyLife")}</span>
+
                 <span>{t("about.growing.topics.resources")}</span>
               </div>
             </div>
@@ -268,6 +282,7 @@ function About() {
             </span>
 
             <h2>{t("about.technology.title")}</h2>
+
             <p>{t("about.technology.description")}</p>
           </div>
 
@@ -301,14 +316,14 @@ function About() {
               <p>{t("about.contact.description")}</p>
 
               <a
-                href="mailto:cristhianelcaraca@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=cristhianelcaraca@gmail.com"
+                target="_blank"
+                rel="noreferrer"
                 className="about-contact-button"
               >
                 <i className="bi bi-envelope"></i>
                 {t("about.contact.button")}
               </a>
-
-              <p className="about-contact-email">cristhianelcaraca@gmail.com</p>
             </div>
           </div>
         </div>
