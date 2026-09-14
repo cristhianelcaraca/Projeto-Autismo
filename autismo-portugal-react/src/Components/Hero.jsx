@@ -44,7 +44,12 @@ function Hero() {
 
           <div className="col-lg-6">
             <div className="hero-image">
-              <img src="/images/zoe.jpg" alt={t("hero.imageAlt")} />
+              <img
+                src="/images/zoe.webp"
+                width="750"
+                height="938"
+                alt={t("hero.imageAlt")}
+              />
             </div>
           </div>
         </div>
