@@ -1,287 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-  <!-- HOME PT -->
   <url>
-    <loc>http://localhost:5173/pt</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-PT"
-      href="http://localhost:5173/pt"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:5173/en"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
-      href="http://localhost:5173/pt"
-    />
-  </url>
-
-  <!-- HOME EN -->
-  <url>
-    <loc>http://localhost:5173/en</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-PT"
-      href="http://localhost:5173/pt"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:5173/en"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
-      href="http://localhost:5173/pt"
-    />
-  </url>
-
-  <!-- SUSPEITA -->
-  <url>
-    <loc>http://localhost:5173/pt/suspeita</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/suspeita" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/suspeita" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/suspeita" />
+    <loc>https://autismoportugal.netlify.app/pt</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://autismoportugal.netlify.app/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autismoportugal.netlify.app/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autismoportugal.netlify.app/pt" />
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/suspeita</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/suspeita" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/suspeita" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/suspeita" />
-  </url>
-
-  <!-- AVALIAÇÃO -->
-  <url>
-    <loc>http://localhost:5173/pt/avaliacao</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/avaliacao" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/avaliacao" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/avaliacao" />
+    <loc>https://autismoportugal.netlify.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://autismoportugal.netlify.app/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autismoportugal.netlify.app/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autismoportugal.netlify.app/pt" />
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/avaliacao</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/avaliacao" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/avaliacao" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/avaliacao" />
+    <loc>https://autismoportugal.netlify.app/pt/diagnostico</loc>
   </url>
-
-  <!-- DIAGNÓSTICO -->
   <url>
-    <loc>http://localhost:5173/pt/diagnostico</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/diagnostico" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/diagnostico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/diagnostico" />
+    <loc>https://autismoportugal.netlify.app/en/diagnostico</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/diagnostico</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/diagnostico" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/diagnostico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/diagnostico" />
+    <loc>https://autismoportugal.netlify.app/pt/suspeita</loc>
   </url>
-
-  <!-- DEPOIS DO DIAGNÓSTICO -->
   <url>
-    <loc>http://localhost:5173/pt/depois-diagnostico</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/depois-diagnostico" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/depois-diagnostico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/depois-diagnostico" />
+    <loc>https://autismoportugal.netlify.app/en/suspeita</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/depois-diagnostico</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/depois-diagnostico" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/depois-diagnostico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/depois-diagnostico" />
+    <loc>https://autismoportugal.netlify.app/pt/avaliacao</loc>
   </url>
-
-  <!-- DIREITOS NA ESCOLA -->
   <url>
-    <loc>http://localhost:5173/pt/direitos-escola</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/direitos-escola" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/direitos-escola" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/direitos-escola" />
+    <loc>https://autismoportugal.netlify.app/en/avaliacao</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/direitos-escola</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/direitos-escola" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/direitos-escola" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/direitos-escola" />
+    <loc>https://autismoportugal.netlify.app/pt/depois-diagnostico</loc>
   </url>
-
-  <!-- MEDIDAS DE SUPORTE -->
   <url>
-    <loc>http://localhost:5173/pt/medidas-suporte</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/medidas-suporte" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/medidas-suporte" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/medidas-suporte" />
+    <loc>https://autismoportugal.netlify.app/en/depois-diagnostico</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/medidas-suporte</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/medidas-suporte" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/medidas-suporte" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/medidas-suporte" />
+    <loc>https://autismoportugal.netlify.app/pt/direitos-escola</loc>
   </url>
-
-  <!-- PEI -->
   <url>
-    <loc>http://localhost:5173/pt/pei</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/pei" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/pei" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/pei" />
+    <loc>https://autismoportugal.netlify.app/en/direitos-escola</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/pei</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/pei" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/pei" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/pei" />
+    <loc>https://autismoportugal.netlify.app/pt/medidas-suporte</loc>
   </url>
-
-  <!-- ANSIEDADE E CRISES NA ESCOLA -->
   <url>
-    <loc>http://localhost:5173/pt/ansiedade-crises</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade-crises" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade-crises" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade-crises" />
+    <loc>https://autismoportugal.netlify.app/en/medidas-suporte</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/ansiedade-crises</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade-crises" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade-crises" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade-crises" />
+    <loc>https://autismoportugal.netlify.app/pt/pei</loc>
   </url>
-
-  <!-- AMIM -->
   <url>
-    <loc>http://localhost:5173/pt/amim</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/amim" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/amim" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/amim" />
+    <loc>https://autismoportugal.netlify.app/en/pei</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/amim</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/amim" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/amim" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/amim" />
+    <loc>https://autismoportugal.netlify.app/pt/ansiedade-crises</loc>
   </url>
-
-  <!-- PSI -->
   <url>
-    <loc>http://localhost:5173/pt/psi</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/psi" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/psi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/psi" />
+    <loc>https://autismoportugal.netlify.app/en/ansiedade-crises</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/psi</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/psi" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/psi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/psi" />
+    <loc>https://autismoportugal.netlify.app/pt/amim</loc>
   </url>
-
-  <!-- BENEFÍCIOS E APOIOS -->
   <url>
-    <loc>http://localhost:5173/pt/beneficios-apoios</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/beneficios-apoios" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/beneficios-apoios" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/beneficios-apoios" />
+    <loc>https://autismoportugal.netlify.app/en/amim</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/beneficios-apoios</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/beneficios-apoios" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/beneficios-apoios" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/beneficios-apoios" />
+    <loc>https://autismoportugal.netlify.app/pt/psi</loc>
   </url>
-
-  <!-- CRISES E SOBRECARGA -->
   <url>
-    <loc>http://localhost:5173/pt/crises-sobrecarga</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/crises-sobrecarga" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/crises-sobrecarga" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/crises-sobrecarga" />
+    <loc>https://autismoportugal.netlify.app/en/psi</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/crises-sobrecarga</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/crises-sobrecarga" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/crises-sobrecarga" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/crises-sobrecarga" />
+    <loc>https://autismoportugal.netlify.app/pt/beneficios-apoios</loc>
   </url>
-
-  <!-- ANSIEDADE -->
   <url>
-    <loc>http://localhost:5173/pt/ansiedade</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade" />
+    <loc>https://autismoportugal.netlify.app/en/beneficios-apoios</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/ansiedade</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/ansiedade" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/ansiedade" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/ansiedade" />
+    <loc>https://autismoportugal.netlify.app/pt/crises-sobrecarga</loc>
   </url>
-
-  <!-- ROTINA E ORGANIZAÇÃO -->
   <url>
-    <loc>http://localhost:5173/pt/rotina-organizacao</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/rotina-organizacao" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/rotina-organizacao" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/rotina-organizacao" />
+    <loc>https://autismoportugal.netlify.app/en/crises-sobrecarga</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/rotina-organizacao</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/rotina-organizacao" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/rotina-organizacao" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/rotina-organizacao" />
+    <loc>https://autismoportugal.netlify.app/pt/ansiedade</loc>
   </url>
-
-  <!-- RECURSOS -->
   <url>
-    <loc>http://localhost:5173/pt/recursos</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/recursos" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/recursos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/recursos" />
+    <loc>https://autismoportugal.netlify.app/en/ansiedade</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/recursos</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/recursos" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/recursos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/recursos" />
+    <loc>https://autismoportugal.netlify.app/pt/rotina-organizacao</loc>
   </url>
-
-  <!-- SOBRE NÓS -->
   <url>
-    <loc>http://localhost:5173/pt/sobre-nos</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/sobre-nos" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/sobre-nos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/sobre-nos" />
+    <loc>https://autismoportugal.netlify.app/en/rotina-organizacao</loc>
   </url>
 
   <url>
-    <loc>http://localhost:5173/en/sobre-nos</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="http://localhost:5173/pt/sobre-nos" />
-    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5173/en/sobre-nos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:5173/pt/sobre-nos" />
+    <loc>https://autismoportugal.netlify.app/pt/recursos</loc>
+  </url>
+  <url>
+    <loc>https://autismoportugal.netlify.app/en/recursos</loc>
   </url>
 
+  <url>
+    <loc>https://autismoportugal.netlify.app/pt/sobre-nos</loc>
+  </url>
+  <url>
+    <loc>https://autismoportugal.netlify.app/en/sobre-nos</loc>
+  </url>
 </urlset>
