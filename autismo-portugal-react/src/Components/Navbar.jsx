@@ -1,17 +1,15 @@
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
 
 import useLocalizedPath from "../hooks/useLocalizedPath";
 
 function Navbar() {
   const { t } = useTranslation();
-
   const localizedPath = useLocalizedPath();
 
   const { lang } = useParams();
-
   const location = useLocation();
-
   const navigate = useNavigate();
 
   const currentLanguage = lang === "en" ? "en" : "pt";
@@ -30,16 +28,23 @@ function Navbar() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white">
+    <nav
+      className="navbar navbar-expand-lg bg-white"
+      aria-label={
+        currentLanguage === "pt" ? "Navegação principal" : "Main navigation"
+      }
+    >
       <div className="container">
         {/* Logo */}
         <Link
           className="navbar-brand d-flex align-items-center"
           to={localizedPath("/")}
+          aria-label="Autismo Portugal"
         >
           <img
             src="/images/autismo_portugal_logo.png"
-            alt="Autismo Portugal"
+            alt=""
+            aria-hidden="true"
             width="55"
             className="me-2"
           />
@@ -263,13 +268,23 @@ function Navbar() {
 
             {/* Idioma */}
             <li className="nav-item ms-lg-3">
-              <div className="lang-toggle">
+              <div
+                className="lang-toggle"
+                role="group"
+                aria-label={
+                  currentLanguage === "pt"
+                    ? "Selecionar idioma"
+                    : "Select language"
+                }
+              >
                 <button
                   type="button"
                   className={`lang-option ${
                     currentLanguage === "pt" ? "active" : ""
                   }`}
                   onClick={() => changeLanguage("pt")}
+                  aria-pressed={currentLanguage === "pt"}
+                  aria-label="Português"
                 >
                   PT
                 </button>
@@ -280,6 +295,8 @@ function Navbar() {
                     currentLanguage === "en" ? "active" : ""
                   }`}
                   onClick={() => changeLanguage("en")}
+                  aria-pressed={currentLanguage === "en"}
+                  aria-label="English"
                 >
                   EN
                 </button>

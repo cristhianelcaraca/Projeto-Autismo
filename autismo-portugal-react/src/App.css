@@ -45,7 +45,7 @@
 
 .navbar-brand small {
   display: block;
-  color: #2a8882;
+  color: #0f766e;
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -72,7 +72,7 @@
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #2bb5ae;
+  color: #0f766e;
 }
 
 /* =========================
@@ -107,7 +107,7 @@
 .lang-toggle {
   display: flex;
   background-color: #ffffff;
-  border: 1px solid #2a8882;
+  border: 1px solid #0f766e;
   border-radius: 25px;
   padding: 3px;
   gap: 2px;
@@ -126,7 +126,7 @@
 }
 
 .lang-option.active {
-  background-color: #308983;
+  background-color: #237c76;
   color: #ffffff;
 }
 
@@ -173,11 +173,11 @@
 }
 
 .help {
-  color: #ba5679;
+  color: #b5486e;
 }
 
 .inclusion {
-  color: #258b88;
+  color: #237c76;
 }
 
 /* =========================
@@ -264,7 +264,7 @@
 }
 
 .search-icon {
-  color: #999999;
+  color: #666666;
   margin-right: 8px;
   font-size: 18px;
 }
@@ -281,7 +281,7 @@
 }
 
 .search-btn {
-  background-color: #238b86;
+  background-color: #237c76;
   color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -293,12 +293,12 @@
 
 .search-btn:hover,
 .search-btn:focus {
-  background-color: #239b95;
+  background-color: #195f5b;
   color: #ffffff;
 }
 
 .search-example {
-  color: #777777;
+  color: #666666;
   font-size: 14px;
   margin-top: 10px;
 }
@@ -401,43 +401,43 @@
 /* Cores de cada card */
 
 .bg-purple {
-  background-color: #9b8ce0;
+  background-color: #6f5cc2;
 }
 
 .bg-green {
-  background-color: #3fb28f;
+  background-color: #287f67;
 }
 
 .bg-yellow {
-  background-color: #f0b429;
+  background-color: #8a6200;
 }
 
 .bg-pink {
-  background-color: #f087a8;
+  background-color: #b5486e;
 }
 
 .bg-blue {
-  background-color: #4a9fd8;
+  background-color: #2f78aa;
 }
 
 .text-purple {
-  color: #9b8ce0;
+  color: #6f5cc2;
 }
 
 .text-green {
-  color: #3fb28f;
+  color: #287f67;
 }
 
 .text-yellow {
-  color: #f0b429;
+  color: #8a6200;
 }
 
 .text-pink {
-  color: #f087a8;
+  color: #b5486e;
 }
 
 .text-blue {
-  color: #4a9fd8;
+  color: #2f78aa;
 }
 
 /* =========================
@@ -514,15 +514,15 @@
 }
 
 .btn-purple {
-  background-color: #9b8ce0;
+  background-color: #6f5cc2;
 }
 
 .btn-green {
-  background-color: #3fb28f;
+  background-color: #287f67;
 }
 
 .btn-yellow {
-  background-color: #f0b429;
+  background-color: #8a6200;
 }
 
 /* =========================
@@ -552,7 +552,7 @@
   text-align: center;
 }
 
-.about-text h3 {
+.about-text h2 {
   font-weight: 600;
   color: #142b55;
   margin-bottom: 12px;
@@ -686,7 +686,7 @@
 }
 
 .breadcrumb-list a {
-  color: #2bb5ae;
+  color: #0f766e;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1085,7 +1085,7 @@
     text-align: center;
   }
 
-  .about-text h3 {
+  .about-text h2 {
     font-size: 22px;
   }
 
@@ -1271,7 +1271,7 @@
     padding: 30px 18px;
   }
 
-  .about-text h3 {
+  .about-text h2 {
     font-size: 20px;
   }
 
