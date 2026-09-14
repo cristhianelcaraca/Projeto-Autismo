@@ -5,12 +5,12 @@ import AboutUs from "../Components/AboutUs";
 
 function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <Help />
       <Articles />
       <AboutUs />
-    </>
+    </main>
   );
 }
 
