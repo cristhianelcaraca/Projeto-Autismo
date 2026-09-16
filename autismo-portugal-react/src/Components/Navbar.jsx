@@ -42,7 +42,7 @@ function Navbar() {
           aria-label="Autismo Portugal"
         >
           <img
-            src="/images/autismo_portugal_logo.png"
+            src="/images/autismo_portugal_logo.webp"
             alt=""
             aria-hidden="true"
             width="55"
