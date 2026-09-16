@@ -1,0 +1,62 @@
+/* =====================================================
+   BOOTSTRAP CUSTOM
+   Apenas os módulos utilizados pelo Autismo Portugal
+===================================================== */
+
+/* Core obrigatório */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+/* =====================================================
+   UTILITIES
+   Mantemos apenas as utilities realmente usadas
+===================================================== */
+
+$utilities: (
+  "display": map-get($utilities, "display"),
+  "align-items": map-get($utilities, "align-items"),
+  "margin-end": map-get($utilities, "margin-end"),
+  "margin-start": map-get($utilities, "margin-start"),
+  "background-color": map-get($utilities, "background-color"),
+);
+
+/* =====================================================
+   BASE
+===================================================== */
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+/* =====================================================
+   COMPONENTS UTILIZADOS
+===================================================== */
+
+/* Pesquisa */
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+
+/* Navbar mobile / collapse */
+@import "bootstrap/scss/transitions";
+
+/* Menus */
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+
+/* =====================================================
+   GERA AS UTILITIES SELECIONADAS
+===================================================== */
+
+@import "bootstrap/scss/utilities/api";

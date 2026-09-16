@@ -316,11 +316,21 @@
 
 .hero-image {
   display: flex;
-  height: 500px;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4 / 5;
   margin-top: 60px;
   margin-left: 95px;
-  align-self: right;
   border-radius: 40px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 /* =========================
@@ -701,7 +711,6 @@
 
 /* =====================================================
    RESPONSIVE / MEDIA QUERIES
-   Todas reunidas no final do ficheiro
 ===================================================== */
 
 @media (max-width: 991px) {
@@ -801,14 +810,14 @@
   ========================= */
 
   .hero-image {
-    height: auto;
+    width: 100%;
+    max-width: 480px;
     margin: 40px auto 0;
     justify-content: center;
   }
 
   .hero-image img {
     width: 100%;
-    max-width: 480px;
     height: auto;
   }
 
@@ -1023,11 +1032,8 @@
   ========================= */
 
   .hero-image {
-    margin-top: 30px;
-  }
-
-  .hero-image img {
     max-width: 380px;
+    margin-top: 30px;
   }
 
   /* =========================
@@ -1227,7 +1233,9 @@
     margin-right: 8px;
   }
 
-  /* Busca */
+  /* =========================
+     SEARCH
+  ========================= */
 
   .search-box {
     padding: 4px;
@@ -1252,20 +1260,26 @@
     font-size: 13px;
   }
 
-  /* Imagem */
+  /* =========================
+     HERO IMAGE
+  ========================= */
 
-  .hero-image img {
+  .hero-image {
     max-width: 300px;
   }
 
-  /* Titles */
+  /* =========================
+     TITLES
+  ========================= */
 
   .help-title,
   .articles-title {
     font-size: 25px;
   }
 
-  /* About */
+  /* =========================
+     ABOUT
+  ========================= */
 
   .about-us {
     padding: 30px 18px;
@@ -1275,7 +1289,9 @@
     font-size: 20px;
   }
 
-  /* Footer */
+  /* =========================
+     FOOTER
+  ========================= */
 
   .footer-item p {
     font-size: 13px;
