@@ -1,131 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
+
   <url>
-    <loc>https://autismoportugal.netlify.app/pt</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://autismoportugal.netlify.app/pt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autismoportugal.netlify.app/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autismoportugal.netlify.app/pt" />
+    <loc>https://autismoportugal.org/pt</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-PT"
+      href="https://autismoportugal.org/pt"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://autismoportugal.org/en"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://autismoportugal.org/pt"
+    />
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/en</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://autismoportugal.netlify.app/pt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autismoportugal.netlify.app/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autismoportugal.netlify.app/pt" />
+    <loc>https://autismoportugal.org/en</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-PT"
+      href="https://autismoportugal.org/pt"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://autismoportugal.org/en"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://autismoportugal.org/pt"
+    />
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/diagnostico</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/diagnostico</loc>
+    <loc>https://autismoportugal.org/pt/diagnostico</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/suspeita</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/suspeita</loc>
+    <loc>https://autismoportugal.org/en/diagnostico</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/avaliacao</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/avaliacao</loc>
+    <loc>https://autismoportugal.org/pt/suspeita</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/depois-diagnostico</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/depois-diagnostico</loc>
+    <loc>https://autismoportugal.org/en/suspeita</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/direitos-escola</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/direitos-escola</loc>
+    <loc>https://autismoportugal.org/pt/avaliacao</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/medidas-suporte</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/medidas-suporte</loc>
+    <loc>https://autismoportugal.org/en/avaliacao</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/pei</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/pei</loc>
+    <loc>https://autismoportugal.org/pt/depois-diagnostico</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/ansiedade-crises</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/ansiedade-crises</loc>
+    <loc>https://autismoportugal.org/en/depois-diagnostico</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/amim</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/amim</loc>
+    <loc>https://autismoportugal.org/pt/direitos-escola</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/psi</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/psi</loc>
+    <loc>https://autismoportugal.org/en/direitos-escola</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/beneficios-apoios</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/beneficios-apoios</loc>
+    <loc>https://autismoportugal.org/pt/medidas-suporte</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/crises-sobrecarga</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/crises-sobrecarga</loc>
+    <loc>https://autismoportugal.org/en/medidas-suporte</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/ansiedade</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/ansiedade</loc>
+    <loc>https://autismoportugal.org/pt/pei</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/rotina-organizacao</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/rotina-organizacao</loc>
+    <loc>https://autismoportugal.org/en/pei</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/recursos</loc>
-  </url>
-  <url>
-    <loc>https://autismoportugal.netlify.app/en/recursos</loc>
+    <loc>https://autismoportugal.org/pt/ansiedade-crises</loc>
   </url>
 
   <url>
-    <loc>https://autismoportugal.netlify.app/pt/sobre-nos</loc>
+    <loc>https://autismoportugal.org/en/ansiedade-crises</loc>
   </url>
+
   <url>
-    <loc>https://autismoportugal.netlify.app/en/sobre-nos</loc>
+    <loc>https://autismoportugal.org/pt/amim</loc>
   </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/amim</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/psi</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/psi</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/beneficios-apoios</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/beneficios-apoios</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/crises-sobrecarga</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/crises-sobrecarga</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/ansiedade</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/ansiedade</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/rotina-organizacao</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/rotina-organizacao</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/recursos</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/recursos</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/pt/sobre-nos</loc>
+  </url>
+
+  <url>
+    <loc>https://autismoportugal.org/en/sobre-nos</loc>
+  </url>
+
 </urlset>

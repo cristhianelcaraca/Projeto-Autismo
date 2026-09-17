@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autismoportugal.netlify.app/sitemap.xml
+Sitemap: https://autismoportugal.org/sitemap.xml
